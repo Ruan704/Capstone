@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Muli:wght@400;500&display=swap");
+
+body {
+  font-family: "Baloo Bhai 2", cursive;
+  background-color: #eeeeee;
+}
+
+.containerFluid {
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.containerFluid h2 {
+  color: hotpink;
+  position: relative;
+  width: 36rem;
+}
+
+/* .containerFluid h2::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  right: 12px;
+  width: 67px;
+  height: 2px;
+  background-color: hotpink;
+} */
+
+

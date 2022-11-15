@@ -1,0 +1,15 @@
+.location{
+    font-family: cursive;
+    display: flex;
+    font-size: 40px;
+    justify-content: center;
+    align-items: center;
+    color: brown; 
+}
+.location-intro{
+    font-family: Serif;
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+}
