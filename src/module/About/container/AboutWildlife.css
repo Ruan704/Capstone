@@ -1,0 +1,36 @@
+.aboutwildlife{
+    margin: 4rem 6rem;
+}
+
+/* .aboutwildlife h1{
+    font-size: 5rem;
+} */
+
+.first{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4.5rem;
+}
+
+.des-text{
+    width: 45%;
+    text-align: start;
+    font-size: 1.1rem;
+}
+
+.des-text h2{
+    padding-bottom: 5rem;
+}
+
+.image{
+    position: relative;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    z-index: -99;
+}
+.image img{
+    width: 600px;
+    height: 600px;
+}

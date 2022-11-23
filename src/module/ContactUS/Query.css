@@ -1,172 +1,73 @@
-.contact{
-    padding-top: 4rem;
-    padding-bottom: 2rem;
-}
-.contact-heading{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 4rem;
-    padding-right: 2rem;
-}
-.contact-heading h2{
-    color: #287ff9;
-    font-size: 2rem;
-    font-weight: 600;
-    letter-spacing: 2px;
-    position: relative;
-    font-family: "Bai Jamjuree", sans-serif;
-}
-.contact-heading h2::before{
-    position: absolute;
-    top: 50%;
-    right: -80px;
-    content: '';
-    width: 70px;
-    height: 2px;
-    background-color: #287ff9;
-}
-.contact-heading h2::after{
-    position: absolute;
-    top: 50%;
-    right: -80px;
-    content: '';
-    width: 70px;
-    height: 2px;
-    background-color: #287ff9;
-}
 .container{
-    max-width: 1170px;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    margin: auto;
+  width: 80%;
+  margin: 50px auto;
 }
-.row{
+.contact-box{
+    background: #fff;
     display: flex;
-    flex-wrap: wrap;
 }
-.column{
-    flex: 0 0 auto;
-    width: 50%;
+.contact-left{
+    flex-basis: 60%;
+    padding: 40px 60px;
 }
-.contact-widget{
-    margin-bottom: 40px;
-    padding-right: 10px;
-}
-.contact-widget item{
-    overflow: hidden;
-    margin-bottom: 40px;
-}
-.icon{
-    height: 60px;
-    width: 60px;
-    background: #287ff9;
-    border-radius: 50%;
-    line-height: 60px;
-    text-align: center;
-    margin-right: 30px;
-    float: left;
-}
-.icon i{
-    font-size: 43px;
+.contact-right{
+    flex-basis: 40%;
+    padding: 40px;
+    background: #1c00b5;
     color: #fff;
-    position: relative;
-    top: 3px;
 }
-.text{
-    overflow: hidden;
+h1{
+    margin-bottom: 10px;
 }
-.text h5{
-    color: #111;
-    font-size: 20px;
-    font-weight: 500;
-    margin-bottom: 6px;
-}
-.text p{
-    font-size: 16px;
-    font-family: "Bai Jamjuree", sans-serif;
-    color: #111;
-    font-weight: 400;
-    line-height: 28px;
-    margin: 0 0 15px 0;
-}
-.contact-form{
-    text-align: center;
+.container p{
     margin-bottom: 40px;
 }
-form{
-    display: block;
-    margin-top: 0rem;
-}
-form input{
-    height: 46px;
-    width: 100%;
-    padding-left: 20px;
-    font-size: 15px;
-    color: #111;
-    border: 1px solid #e1e1e1;
+/* .input-row{
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 20px;
-    border-radius: 4px;
-    transition: all , .3s;
-}
-form button{
-    width: 80%;
-    cursor: pointer;
-    color: rgba(255,215,35.3);
-}
-.site-btn{
-    border: none;
-    display: inline-block;
-    /* background-color: rgba(255,215,35.3); */
-    /* color: #111; */
-    color: rgba(255,215,35.3);
-    font-size: 14px;
-    font-family: 14px;
-    font-weight: 500;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    border-radius: 80px;
-    padding: 12px 40px 10px;
-}
-/* .map-column{
-    flex: 0 0 auto;
-    width:100%;
-}
-.contact-map iframe{
-    width: 100%
 } */
-
-@media screen and (max-width:1200px){
-    .container{
-        max-width:960px;
-    }
+.input-row .input-group{
+    flex-basis: 45%;
 }
-@media screen and (max-width:990px){
-    .container{
-        max-width:720px;
-    }
+input{
+    width:100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding-bottom: 5px;
 }
-@media screen and (max-width:768px){
-    .container{
-        max-width:5400px;
-    }
-    .column{
-        width: 100%;
-    }
+.textarea{
+    width: 300%;
+    height: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
 }
-@media screen and (max-width:500px){
-    .contact-heading{
-        padding-right: 0;
-    }
-    .contact-heading h2{
-       font-size: 22px;
-    }
-    .contact-heading h2::before{
-        right: -60px;
-        width:50px;
-    }
-    .contact-heading h2::after{
-        left:-60px;
-        width:50px;
-    }
+label{
+    margin-bottom: 6px;
+    display: block;
+    color: #1c00b5;
+}
+.btn{
+    background: #1c00b5;
+    width: 100px;
+    border: none;
+    outline: none; 
+    color: #fff;
+    height:35px;
+    border-radius:30px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px 0px rgba(28,0,181,0.3);
+}
+.contact-left h3{
+color: #1c00b5;
+font-weight: 600;
+margin-bottom: 30px;
+}
+.contact-right h3{
+    color: #1c00b5;
+    font-weight: 600;
+    margin-bottom: 30px;
 }

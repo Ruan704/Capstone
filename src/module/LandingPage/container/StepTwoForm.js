@@ -1,25 +1,24 @@
 import React, { Component } from "react";
 import Grid from "@mui/material/Grid";
-import TextField from "@mui/material/TextField";
+import { connect } from "react-redux";
+import { onAddFormData } from "../../../action";
+import "./StepOneForm.css";
+import Button from "@mui/material/Button";
+import { v4 as uuid } from "uuid";
 
 class StepTwoForm extends Component {
   constructor() {
     super();
     this.state = {
       NRIC: "",
-      ZIP: "",
       formIsValid: false,
       NRICError: "",
-      ZIPError: "",
     };
   }
 
   handleChange = (e) => {
     if (e.target.id == "NRIC") {
       this.validateNRIC(e.target.value);
-    }
-    if (e.target.id == "ZIP") {
-      this.validateZIP(e.target.value);
     }
   };
 
@@ -47,66 +46,80 @@ class StepTwoForm extends Component {
     return formIsValid;
   };
 
-  validateZIP = (ZIP) => {
-    let ZIPError = this.state.ZIPError;
-    let formIsValid = this.state.formIsValid;
-    // You need to validate a ZIP code (U.S. postal code), allowing both the five-digit and nine-digit (called ZIP+4) formats. The regex should match 12345 and 12345-6789,
-    var patterns = new RegExp("^[0-9]{5}(?:-[0-9]{4})?$");
-    if (String(ZIP).trim() === "") {
-      ZIPError = "*Please enter your ZIP.";
-      formIsValid = false;
-    } else if (!patterns.test(ZIP)) {
-      formIsValid = false;
-      ZIPError = "Please enter valid ZIP";
-    } else {
-      ZIPError = "";
-      formIsValid = true;
+  handleSubmit = (e) => {
+    e.preventDefault();
+    if (
+      this.validateNRIC(this.state.NRIC)
+    ) {
+      console.log(uuid());
+      //string value
+      const unique_id = uuid().slice(0, 8); //'fygdyegu-fiufififo'
+
+      //send data-class based
+      this.props.onAddForm({ ...this.state, id: unique_id });
+
+      let NRIC = "";
+     let NRICError = "";
+
+      this.setState({
+        NRIC: NRIC,
+        NRICError :NRICError,
+      });
     }
-    this.setState({
-      ZIP,
-      ZIPError,
-      formIsValid,
-    });
-    return formIsValid;
   };
 
   render() {
     return (
       <React.Fragment>
         <Grid container spacing={3}>
-          <Grid item xs={12} md={6}>
-            <TextField
-              required
+          <Grid form xs={12} md={6}>
+
+            <div style={{fontSize:"15px"}}> For Singaporean Citizens Only *</div>
+
+            <Grid form xs={12}>
+            <label style={{ fontSize: "20px" }}>Contact: </label>
+            <input
               id="NRIC"
+              label="Enter NRIC"
+              name="NRIC"
               type="NRIC"
               value={this.state.NRIC}
               onChange={this.handleChange}
-              name="NRIC"
-              label="NRIC"
-              fullWidth
-              autoComplete="given-NRIC"
-              variant="standard"
+              placeholder="Please enter your NRIC"
+              style={{ fontSize: "20px" }}
             />
-            <p style={{ color: "red" }}>{this.state.NRICError}</p>
+            <p style={{ color: "red", fontSize: "15px" }}>
+              {this.state.NRICError}
+            </p>
           </Grid>
-          <Grid item xs={12} sm={6}>
-            <TextField
-              required
-              id="ZIP"
-              type="ZIP"
-              value={this.state.ZIP}
-              onChange={this.handleChange}
-              name="ZIP"
-              label="Please enter your ZIP / Postal code"
-              fullWidth
-              autoComplete="family-ZIP"
-              variant="standard"
-            />
-            <p style={{ color: "red" }}>{this.state.ZIPError}</p>
+
+          <Button
+                  type="submit"
+                  variant="contained"
+                  className="btn"
+                  // sx={{ mt: 3, mb: 2 }}
+                  onClick={this.handleSubmit}
+                >
+                  Submit Us
+                </Button>
           </Grid>
         </Grid>
       </React.Fragment>
     );
   }
 }
-export default StepTwoForm;
+
+const mapStateToProps = (state) => {
+  return {
+    form: state.form,
+  };
+};
+
+//created inside the action file
+const mapDispatchToProps = (dispatch) => {
+  return {
+    onAddForm: (item) => dispatch(onAddFormData(item)),
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(StepTwoForm);

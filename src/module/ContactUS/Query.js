@@ -1,11 +1,8 @@
 import React, { Component } from "react";
 import Button from "@mui/material/Button";
-import TextField from "@mui/material/TextField";
-import Container from "@mui/material/Container";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import ContactPhoneIcon from "@mui/icons-material/ContactPhone";
 import EmailIcon from "@mui/icons-material/Email";
-import { Form } from "react-bootstrap";
 //generate unique id everytime (this is especially useful when u want to post data)
 import {v4 as uuid} from 'uuid';
 import "./Query.css";
@@ -13,15 +10,18 @@ import { connect } from "react-redux";
 import { onAddContactData } from "../../action";
 
 class Query extends Component {
+
   constructor() {
     super();
     this.state = {
       name: "",
       email: "",
+      subject: "",
       message: "",
       formIsValid: false,
       nameError: "",
       emailError: "",
+      subjectError:"",
       messageError: "",
     };
   }
@@ -31,6 +31,9 @@ class Query extends Component {
     }
     if (e.target.id == "email") {
       this.validateEmail(e.target.value);
+    }
+    if (e.target.id == "subject") {
+      this.validateSubject(e.target.value);
     }
     if (e.target.id == "message") {
       this.validateMessage(e.target.value);
@@ -87,13 +90,32 @@ class Query extends Component {
     return formIsValid;
   };
 
+  validateSubject = (subject) => {
+    let subjectError = this.state.subjectError;
+    let formIsValid = this.state.formIsValid;
+    if (String(subject).trim() === "") {
+      subjectError = "*Please enter your subject.";
+      formIsValid = false;
+    } else {
+      subjectError = "";
+      formIsValid = true;
+    }
+    this.setState({
+      subject,
+      subjectError,
+      formIsValid,
+    });
+    return formIsValid;
+  };
+  
   validateMessage = (message) => {
     let messageError = this.state.messageError;
     let formIsValid = this.state.formIsValid;
+    var patterns = new RegExp(/^[a-z]{0,500}$/);
     if (String(message).trim() === "") {
       messageError = "*Please enter your message.";
       formIsValid = false;
-    } else {
+    }  else {
       messageError = "";
       formIsValid = true;
     }
@@ -113,9 +135,9 @@ class Query extends Component {
     if (
       this.validateName(this.state.name) &&
       this.validateEmail(this.state.email) &&
+      this.validateSubject(this.state.subject)&&
       this.validateMessage(this.state.message)
     ) {
-
       //to add the data push the data inside the reducer once the user
       //click on handlesubmit
       //string value
@@ -129,17 +151,21 @@ class Query extends Component {
 
       let name = "";
       let email = "";
+      let subject = "";
       let message = "";
       let nameError = "";
       let emailError = "";
       let messageError = "";
+      let subjectError = "";
 
       this.setState({
         name: name,
         email: email,
         message: message,
+        subject: subject,
         NameError: nameError,
         emailError: emailError,
+        subjectError : subjectError,
         messageError: messageError,
       });
     }
@@ -147,92 +173,68 @@ class Query extends Component {
 
   render() {
     return (
-      <>
-        <>
-          <div className="contact-heading">
-            <h2>Contact Us</h2>
-          </div>
-          <div className="container">
-            <div className="row">
-              <div className="column">
-                <div className="icon">
-                  <i>
-                    <LocationOnIcon fontSize="large" />
-                  </i>
+      <div className="container">
+        <h2 style={{ textAlign: "center", fontSize:"40px" , fontWeight: "bold"}}>Contact Us</h2>
+        <h3 style={{ textAlign: "center", fontSize:"25px" }}>
+          We would like to hear from your question and <br></br> help us success{" "}
+          Feel free to get in touch with <br></br>us
+        </h3>
+        <div className="contact-box">
+          <div className="contact-left">
+            <h3 style={{ fontSize: "30px", font: "bold" }}>
+              Send your request
+            </h3>
+            <form>
+              <div class="input-row">
+                <div class="input-group">
+                  <label style={{ fontSize: "20px" }}>Name: </label>
+                  <input
+                    id="name"
+                    label="Enter Name"
+                    name="name"
+                    type="name"
+                    value={this.state.name}
+                    onChange={this.handleChange}
+                    placeholder="Please enter your name"
+                    style={{ fontSize: "20px" }}
+                  />
                 </div>
-                <div className="contact-widget-item">
-                  <div className="text">
-                    <h5>Address</h5>
-                    <p>River Wonders 80 Mandai Lake Rd, Singapore 729826</p>
-                  </div>
+                <p style={{ color: "red" , fontSize: "15px"}}>{this.state.nameError}</p>
+                <br></br>
+                <div class="input-group">
+                  <label style={{ fontSize: "20px" }}>Email: </label>
+                  <input
+                    id="email"
+                    label="Email Address"
+                    name="email"
+                    type="email"
+                    value={this.state.email}
+                    onChange={this.handleChange}
+                    placeholder="Enter Email"
+                    style={{ fontSize: "20px" }}
+                  />
+                  <p style={{ color: "red" , fontSize: "15px"}}>{this.state.emailError}</p>
                 </div>
-
-                <div className="contact-widget-item">
-                  <div className="icon">
-                    <i>
-                      <ContactPhoneIcon fontSize="large" />
-                    </i>
-                  </div>
-                  <div className="text">
-                    <h5>Contact Us</h5>
-                    <p>+65-62693411</p>
-                  </div>
-                </div>
-
-                <div className="contact-widget-item">
+                <br></br>
+                <div class="input-group">
+                  <label style={{ fontSize: "20px" }}>Subject: </label>
+                  <input
+                    id="subject"
+                    label="subject"
+                    name="subject"
+                    type="subject"
+                    value={this.state.subject}
+                    onChange={this.handleChange}
+                    placeholder="Enter subject"
+                    style={{ fontSize: "20px" }}
+                  />
+                  <p style={{ color: "red" , fontSize: "15px"}}>{this.state.subjectError}</p>
                   <br></br>
-                  <div className="icon">
-                    <i>
-                      <EmailIcon fontSize="large" />
-                    </i>
-                  </div>
-                  <div className="text">
-                    <h5>Mail</h5>
-                    <p>WWF@gmail.com</p>
-                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
+                <br></br>
 
-          <div class="wrapper">
-            <Container
-              component="main"
-              maxWidth="xs"
-              style={{ marginTop: "20px" }}
-            >
-              <div class="input_field">
-                <TextField
-                  id="name"
-                  label="Enter Name"
-                  name="name"
-                  type="name"
-                  value={this.state.name}
-                  onChange={this.handleChange}
-                  placeholder="Please enter your name"
-                />
-                <p style={{ color: "red" }}>{this.state.nameError}</p>
-              </div>
-
-              <br></br>
-              <br></br>
-              <div class="input_field">
-                <TextField
-                  id="email"
-                  label="Email Address"
-                  name="email"
-                  type="email"
-                  value={this.state.email}
-                  onChange={this.handleChange}
-                  placeholder="Enter Email"
-                />
-                <p style={{ color: "red" }}>{this.state.emailError}</p>
-              </div>
-              <br></br>
-              <br></br>
-
-              <div class="input_field">
-                <TextField
+                <label style={{ fontSize: "20px" }}>Message</label>
+                <textarea
                   id="message"
                   label="Message Entered"
                   name="message"
@@ -240,42 +242,52 @@ class Query extends Component {
                   value={this.state.message}
                   onChange={this.handleChange}
                   placeholder="Enter Message Here"
+                  style={{ width: "600px", height: "300px", fontSize: "20px" }}
                 />
-                <p style={{ color: "red" }}>{this.state.messageError}</p>
-              </div>
-              <br></br>
-              <br></br>
-              <Button
-                type="submit"
-                variant="contained"
-                className="btn"
-                // sx={{ mt: 3, mb: 2 }}
-                onClick={this.handleSubmit}
-              >
-                Contact Us
-              </Button>
+                <p style={{ color: "red" , fontSize: "15px"}}>{this.state.messageError}</p>
+                <br></br>
 
-              {contact.length ? (<Display contactData={this.props.contact} />) : ('') }
-              
-            </Container>
+                <Button
+                  type="submit"
+                  variant="contained"
+                  className="btn"
+                  // sx={{ mt: 3, mb: 2 }}
+                  onClick={this.handleSubmit}
+                  style={{width:"200px", height:"150px", margin: "auto", marginLeft: '140px'}}
+                >
+                  <span style={{fontSize:"20px"}}>Contact Us</span>
+                </Button>
+              </div>
+            </form>
           </div>
-        </>
-        <br></br>
-        {/* <div className="row">
-          <div className="map-column">
-            <div className="contact-map">
-              <iframe
-                width="600"
-                height="450"
-                style={{ border: 0 }}
-                allowFullScreen=""
-                loading="lazy"
-                src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=wildlife resorve&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-              ></iframe>
-            </div>
+          <div className="contact-right">
+            <h3>Reach Us</h3>
+            <table>
+
+              <tr>
+                <td style={{ fontSize: "20px" }}><EmailIcon fontSize="large" />&nbsp;&nbsp;Email:&nbsp;</td>
+                <td style={{ fontSize: "20px" }}>WLP@gmail.com</td>
+              </tr>
+              <br></br>
+
+              <tr>
+                <td style={{ fontSize: "20px" }}><ContactPhoneIcon fontSize="large" />&nbsp;&nbsp;&nbsp;Phone:&nbsp;</td>
+                <td style={{ fontSize: "20px" }}>+65 6438 8900</td>
+              </tr>
+              <br></br>
+
+<br></br><br></br>
+              <tr>
+                <td style={{ fontSize: "20px",  marginLeft: '300px'}}><LocationOnIcon fontSize="large" />&nbsp;&nbsp;&nbsp;Address:&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td style={{ fontSize: "20px" }}>
+                  4 Shenton Way No 01-01 SGX <br></br> Centre 2  068807
+                  Singapore{" "}
+                </td>
+              </tr>
+            </table>
           </div>
-        </div> */}
-      </>
+        </div>
+      </div>
     );
   }
 }
@@ -298,3 +310,4 @@ const mapDispatchToProps = (dispatch) =>{
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Query);
+

@@ -3,6 +3,7 @@ import * as actions from "./actionType";
 const initState = {
   employee: [],
   contact:[],
+  form:[]
 };
 
 const reducer = (state = initState, action) => {
@@ -15,7 +16,7 @@ const reducer = (state = initState, action) => {
         ...state,
         employee: state.employee.filter((info) => info.id != action.payload),
       };
-      case actions.ADD_DATA:
+      case actions.ADD_CONTACT:
       console.log(action);
       //adding a data inside the store.
       return { ...state, contact: [...state.contact, action.payload] };
@@ -24,6 +25,15 @@ const reducer = (state = initState, action) => {
         ...state,
         contact: state.contact.filter((info) => info.id != action.payload),
       };
+      case actions.ADD_ITEM:
+        console.log(action);
+        //adding a data inside the store.
+        return { ...state, form: [...state.form, action.payload] };
+      case actions.DELETE_FORM:
+        return {
+          ...state,
+          form: state.form.filter((info) => info.id != action.payload),
+        };
     default:
       return state;
   }

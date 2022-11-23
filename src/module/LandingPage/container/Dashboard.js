@@ -23,13 +23,14 @@ import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import StepOneForm from './StepOneForm';
 import StepTwoForm from './StepTwoForm';
-
+import "./Dashboard.css";
 function Copyright() {
   return (
-    <Typography variant="body2" color="text.secondary" align="center">
+    <Typography variant="body2" color="text.secondary" align="center" style={{fontSize: "30px"}}>
       {'Copyright © '}
-      <Link color="inherit" href="https://mui.com/">
-        WWF
+      <Link color="inherit" href="https://education.nationalgeographic.org/resource/wildlife-conservation"
+      >
+       WWP
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -82,9 +83,9 @@ export default function Dashboard() {
         </Toolbar>
       </AppBar>
       <Container component="main" maxWidth="sm" sx={{ mb: 4 }}>
-        <Paper variant="outlined" sx={{ my: { xs: 3, md: 6 }, p: { xs: 2, md: 3 } }}>
+        <Paper variant="outlined" sx={{ my: { xs: 3, md: 6 }, p: { xs: 2, md: 3 } }} style={{width:"900px",height:"800px"}}>
           <Typography component="h1" variant="h4" align="center">
-          Join Our Team
+          JOIN US NOW 
           </Typography>
           <Stepper activeStep={activeStep} sx={{ pt: 3, pb: 5 }}>
 
@@ -96,10 +97,10 @@ export default function Dashboard() {
           </Stepper>
           {activeStep === steps.length ? (
             <React.Fragment>
-              <Typography variant="h5" gutterBottom>
+              <Typography variant="h5" gutterBottom style={{fontSize: "30px" , fontWeight:"bold"}}>
                 Thank you for Joining
               </Typography>
-              <Typography variant="subtitle1">
+              <Typography variant="subtitle1" style={{fontSize: "20px"}}>
                 Thanks you for the interest for joining our team. we hope to see you soon. 😀 😃 😄 😁 
               </Typography>
             </React.Fragment>

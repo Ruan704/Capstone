@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import Home from "./Home.js";
 import WildlifeThreat from "./WildlifeThreats.js";
 import Youtube from "./youtube.js";
-
 class Frontpage extends Component {
   render() {
     return (
@@ -10,11 +9,8 @@ class Frontpage extends Component {
         <Home />
         <br></br>
         <p style={{textAlign: 'center',alignItems:"center", width: '100%',fontSize: 20, color:"brown"}}>
-          The World Wide Fund for Nature (formerly World Wildlife Fund (WWF))
-          aims to conserve nature and ecological processes by preserving
-          biodiversity, ensuring sustainable use of natural resources and
-          promoting the reduction of pollution and wasteful use of resources and
-          energy.
+          The Protecting Wildlife program is one of Singapore largest wildlife protection organisation, delivering <br></br> and influencing
+          effective conservation platform for more than 10 million people in Singapore.
         </p>
         <br></br>
         <Youtube videoId='Tss6HtHlLuw'/>

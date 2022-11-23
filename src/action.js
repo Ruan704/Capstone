@@ -27,6 +27,17 @@ export const onAddContactData = (item) => {
     // }
     return {
         // return to home component
+        type: actions.ADD_CONTACT,
+        payload: item
+    }
+}
+
+export const onAddFormData = (item) => {
+    // return  {
+    //     axios.post(url, {}, {headers}).then().catch()
+    // }
+    return {
+        // return to home component
         type: actions.ADD_ITEM,
         payload: item
     }

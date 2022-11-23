@@ -13,21 +13,20 @@ const Item = styled(Paper)(({ theme }) => ({
     color: theme.palette.text.secondary,
 }));
 
-
 const Recipe = () => {
 
     return (
-        <div style={{ textAlign: "center" }}>
+        <div style={{ textAlign: "center"}}>
 
-            <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
+            <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }} >
 
                 {data.threats.map(item => {
                     return (
-                        <Grid item xs={2} sm={4} md={4} key={item.idCategory}>
+                        <Grid item xs={2} sm={4} md={4} key={item.idCategory} style={{width:"800px"}}>
                             <Item>
-                                <img src={item.strNamePicture} alt="recipe-data" style={{  width: "140px", height: "150px"}} />
-                                <p style={{ fontWeight: 'bold' , fontSize:"15px"}} >{item.strName}</p>
-                                <p>{item.strNameDescription}</p>
+                                <img src={item.strNamePicture} alt="recipe-data" style={{  width: "200px", height: "200px"}} />
+                                <p style={{ fontWeight: 'bold' , fontSize:"30px"}} >{item.strName}</p>
+                                <p style={{ fontSize:"20px",  textAlign:"center", display: "inline"}}>{item.strNameDescription}</p>
                             </Item>
                         </Grid>
                     )

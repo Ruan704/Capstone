@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import YouTube from "react-youtube";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container } from "react-bootstrap";
-// import "./y"
+
 class youtube extends Component {
 
     videoonReady (event) {
@@ -23,10 +22,6 @@ class youtube extends Component {
     const opts = {
       height: "350",
       width: "500",
-      playerVars: {
-        // https://developers.google.com/youtube/player_parameters
-        autoplay: 1,
-      },
     };
 
     const {videoId} = this.props
@@ -34,7 +29,7 @@ class youtube extends Component {
     return (
         <div style={{fontSize:"25px", color:"light-brown",textAlign:"center", 
         background: "#cc9900"
-     ,}}> What is  World Wide Fund?
+     ,}}> What is  Wildlife protection Program?
            <br></br><br></br>
       <YouTube videoId={videoId} opts={opts} onReady={this.videoonReady} 
       onPlay={this.videoOnPlay} onStateChange={this.videoStateChange}/>

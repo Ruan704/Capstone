@@ -1,42 +1,108 @@
-import React from 'react'
-import Navbar from 'react-bootstrap/Navbar';
-import image from '../../images/logo.png';
-import { Switch, Route, Routes, Link } from "react-router-dom";
-import Nav from 'react-bootstrap/Nav';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import './Navbar.css'
-import Container from 'react-bootstrap/Container';
-import 'bootstrap/dist/css/bootstrap.min.css';
-function Navbars() {
+import React from "react";
+import Container from "react-bootstrap/Container";
+import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
+import "./Navbar.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Link } from "react-router-dom";
+import NavDropdown from "react-bootstrap/NavDropdown";
+function ColorSchemesExample() {
   return (
     <>
-    <Navbar className='bgColor textColor' expand="md">
-      <Container>
-        <Navbar.Brand as={Link} to="/"><img src={image} style={{ height: "53px", width: "53px" }} /></Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-
-            <Nav.Link as={Link} to="/Frontpage" className="words">Home</Nav.Link>
-
-            <NavDropdown title="Wildlife Sanctuary" id="basic-nav-dropdown" className="words">
-              <NavDropdown.Item as={Link} to="/sanctuary">Searching wildilife</NavDropdown.Item>
-               </NavDropdown>
-
-               <NavDropdown title="Join Our Team" id="basic-nav-dropdown">
-              <NavDropdown.Item as={Link} to="/Dashboard">Join Us</NavDropdown.Item>
-               </NavDropdown>
-
-               <NavDropdown title="Contact Us" id="basic-nav-dropdown">
-              <NavDropdown.Item as={Link} to="/ContactUs">Contact</NavDropdown.Item>
+      <Navbar bg="dark" variant="dark" expand="md">
+        <Container>
+          <h1>
+            WILDLIFE<span> PROTECTION</span>
+          </h1>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse>
+            <Nav style={{ padding: "15px 30px" }} className="me-auto">
+              &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+              <li>
+                <Nav.Link
+                  as={Link}
+                  to="/Frontpage"
+                  className="words"
+                  style={{ fontSize: "20px" }}
+                >
+                  Home
+                </Nav.Link>
+              </li>
+              <li>
+                <Nav.Link
+                  as={Link}
+                  to="/aboutComponent"
+                  style={{ fontSize: "20px" }}
+                >
+                  About
+                </Nav.Link>
+              </li>
+              <li>
+                <Nav.Link
+                  as={Link}
+                  to="/sanctuary"
+                  style={{ fontSize: "20px" }}
+                >
+                  Species
+                </Nav.Link>
+              </li>
+              <br></br>
+              <br></br>
+              <NavDropdown
+                style={{ padding: "15px 15px", fontSize: "23px" }}
+                title="Services"
+                id="basic-nav-dropdown"
+              >
+                <NavDropdown.Item
+                  as={Link}
+                  to="/Services"
+                  style={{ fontSize: "20px" }}
+                >
+                  Services
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  as={Link}
+                  to="/WildlifeSupporting"
+                  style={{ fontSize: "20px" }}
+                >
+                  Wildlife Supporting
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  as={Link}
+                  to="/WildlifeEducation"
+                  style={{ fontSize: "20px" }}
+                >
+                  Wildlife Education
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  as={Link}
+                  to="/WildlifeSave"
+                  style={{ fontSize: "20px" }}
+                >
+                  Wildlife Save
+                </NavDropdown.Item>
               </NavDropdown>
-
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+              <li>
+                <Nav.Link as={Link} to="/Front" style={{ fontSize: "20px" }}>
+                  Join
+                </Nav.Link>
+              </li>
+              <li>
+                <Nav.Link
+                  as={Link}
+                  to="/ContactUs"
+                  style={{ fontSize: "20px" }}
+                >
+                  Contact
+                </Nav.Link>
+              </li>
+              {/* <li><Nav.Link  }>Services</Nav.Link></li> */}
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
     </>
   );
 }
 
-export default Navbars;
+export default ColorSchemesExample;

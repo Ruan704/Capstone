@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Container from '@mui/material/Container';
-import TextField from '@mui/material/TextField';
-import Button from '@mui/material/Button';
+import { Link } from "react-router-dom";
+import Nav from "react-bootstrap/Nav";
 class Footer extends Component {
   render() {
     return (
@@ -10,26 +9,28 @@ class Footer extends Component {
         <footer class="text-center text-lg-start bg-white text-muted">
           <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
             <div class="me-5 d-none d-lg-block">
-              <span>Get connected with us on social networks:</span>
+              <span style={{color:"grey", fontSize: "25px" }}>
+                Get connected with us on social networks:
+              </span>
             </div>
-            <div>
+            <div style={{textAlign:"center"}}>
               <a href="" class="me-4 link-secondary">
-                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-facebook-f fa-3x"></i>
               </a>
               <a href="" class="me-4 link-secondary">
-                <i class="fab fa-twitter"></i>
+                <i class="fab fa-twitter fa-3x"></i>
               </a>
               <a href="" class="me-4 link-secondary">
-                <i class="fab fa-google"></i>
+                <i class="fab fa-google fa-3x"></i>
               </a>
               <a href="" class="me-4 link-secondary">
-                <i class="fab fa-instagram"></i>
+                <i class="fab fa-instagram fa-3x"></i>
               </a>
               <a href="" class="me-4 link-secondary">
-                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-linkedin fa-3x"></i>
               </a>
               <a href="" class="me-4 link-secondary">
-                <i class="fab fa-github"></i>
+                <i class="fab fa-github fa-3x"></i>
               </a>
             </div>
           </section>
@@ -37,80 +38,121 @@ class Footer extends Component {
             <div class="container text-center text-md-start mt-5">
               <div class="row mt-3">
                 <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                  <h6 class="text-uppercase fw-bold mb-4">
-                    <i class="fas fa-gem me-3 text-secondary"></i>WWF
+                  
+                    <i class="bi bi-bug bi-3x" style={{ fontSize: "20px" ,margintop: '400px'}}/>
+                    <h6
+                    class="text-uppercase fw-bold mb-4" style={{fontSize:"20px"}}
+                  >
+                   WWP
                   </h6>
-                  <p>
-                    Mandai Wildlife Reserve, Mandai River Wonders, Singapore
-                    Zoo, Night Safari, Wildlife Reserves Singapore and Jurong
-                    Bird Park are copyrighted by and/or trade marks of Singapore
-                    Zoological Gardens (and/or its affiliate(s)) in Singapore
-                    and/or other countries, as the case may be.
+                  <p style={{ fontSize: "20px" , display: "inline", textAlign:"center"}}>
+                    The World Widelife Protection is an international
+                    non-governmental organization founded in 1961 that works in
+                    the field of wilderness preservation and the reduction of
+                    human impact on the environment.
                   </p>
                 </div>
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                  <h6 class="text-uppercase fw-bold mb-4">About Mandai</h6>
-                  <p>
-                    <a href="#!" class="text-reset">
-                      Angular
-                    </a>
-                  </p>
-                  <p>
-                    <a href="#!" class="text-reset">
-                      React
-                    </a>
-                  </p>
-                  <p>
-                    <a href="#!" class="text-reset">
-                    Project
-                    </a>
-                  </p>
-                  <p>
-                    <a href="#!" class="text-reset">
-                    Media Centre
-                    </a>
-                  </p>
+                  <h6
+                    class="text-uppercase fw-bold mb-4"
+                    style={{ fontSize: "20px" }}
+                  >
+                    Involve
+                  </h6>
+                  <li>
+                    <Nav.Link
+                      as={Link}
+                      to="/Frontpage"
+                      className="words"
+                      style={{ fontSize: "20px" }}
+                    >
+                      Home
+                    </Nav.Link>
+                  </li>
+                  <br></br>
+                  <li>
+                    <Nav.Link
+                      as={Link}
+                      to="/aboutComponent"
+                      style={{ fontSize: "20px" }}
+                    >
+                      About
+                    </Nav.Link>
+                  </li>
+                  <br></br>
+                  <li>
+                    <Nav.Link
+                      as={Link}
+                      to="/sanctuary"
+                      style={{ fontSize: "20px" }}
+                    >
+                      Species
+                    </Nav.Link>
+                  </li>
+                  <li>
+                    <Nav.Link
+                      as={Link}
+                      to="/Services"
+                      style={{ fontSize: "20px" }}
+                    >
+                      Services
+                    </Nav.Link>
+                  </li>
+                  <br></br>
+                  <li>
+                    <Nav.Link
+                      as={Link}
+                      to="/Front"
+                      style={{ fontSize: "20px" }}
+                    >
+                      Join
+                    </Nav.Link>
+                  </li>
+                  <br></br>
+                  <li>
+                    <Nav.Link
+                      as={Link}
+                      to="/ContactUs"
+                      style={{ fontSize: "20px" }}
+                    >
+                      Contact
+                    </Nav.Link>
+                  </li>
+                  <li>
+                    <Nav.Link
+                      as={Link}
+                      to="/TermsAndCondition"
+                      style={{ fontSize: "20px" }}
+                    >
+                      Terms And Condition
+                    </Nav.Link>
+                  </li>
                 </div>
-                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                  <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
-                  <p>
-                    <a href="#!" class="text-reset">
-                      Pricing
-                    </a>
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4" style={{display: "inline", textAlign:"center"}}>
+                  <h6
+                    class="text-uppercase fw-bold mb-4"
+                    style={{ fontSize: "20px" }}
+                  >
+                    Contact
+                  </h6>
+                  <p style={{ fontSize: "20px",  display: "inline" }}>
+                    <i class="fas fa-home me-3 text-secondary fa-2x"></i>
+                    <h4>
+                     4 Shenton Way No 01-01 SGX Centre 2 Singapore, 068807
+                    Singapore
+                    </h4>
                   </p>
-                  <p>
-                    <a href="#!" class="text-reset">
-                      Settings
-                    </a>
+                  <p style={{ fontSize: "20px",  display: "inline"  }}>
+                    <i class="fas fa-envelope me-3 text-secondary fa-2x"></i>
+                    <h4>
+                    WLP@gmail.com
+                    </h4>
                   </p>
-                  <p>
-                    <a href="#!" class="text-reset">
-                      Orders
-                    </a>
-                  </p>
-                  <p>
-                    <a href="#!" class="text-reset">
-                      Help
-                    </a>
-                  </p>
-                </div>
-                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                  <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-                  <p>
-                    <i class="fas fa-home me-3 text-secondary"></i> New York, NY
-                    10012, US
-                  </p>
-                  <p>
-                    <i class="fas fa-envelope me-3 text-secondary"></i>
-                    info@example.com
-                  </p>
-                  <p>
-                    <i class="fas fa-phone me-3 text-secondary"></i> + 01 234
-                    567 88
-                  </p>
-                  <p>
-                    <i class="fas fa-print me-3 text-secondary"></i> + 01 234
-                    567 89
+                  <p style={{ fontSize: "20px" }}>
+                    <i class="fas fa-phone me-3 text-secondary fa-2x"></i> 
+                    <h4>
+                    	+65 6438 8900
+                     </h4> 
                   </p>
                 </div>
               </div>
@@ -123,7 +165,6 @@ class Footer extends Component {
             </a>
           </div>
         </footer>
-       
       </>
     );
   }
