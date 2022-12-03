@@ -45,9 +45,7 @@ class News extends Component {
   };
   handleSubmit = (e) => {
     e.preventDefault();
-    if (
-      this.validateEmail(this.state.email)
-    ) {
+    if (this.validateEmail(this.state.email)) {
       //to add the data push the data inside the reducer once the user
       //click on handlesubmit
       //string value
@@ -78,7 +76,8 @@ class News extends Component {
                   fontSize: "40px",
                   color: "#557153",
                   textAlign: "center",
-                  fontFamily: "Lato",
+                  fontFamily: "Baloo Bhai 2",
+                  cursive,
                 }}
               >
                 Sign Up for Our Updates
@@ -97,7 +96,7 @@ class News extends Component {
                             name="email"
                             type="text"
                             value={this.state.email}
-                    onChange={this.handleChange}
+                            onChange={this.handleChange}
                             placeholder="Enter Email"
                             style={{
                               fontSize: "20px",
@@ -105,10 +104,20 @@ class News extends Component {
                               height: "50px",
                               backgroundColor: "transparent",
                               margin: "auto",
-                              fontFamily:"Lato",
+                              fontFamily: "Baloo Bhai 2",
+                              cursive,
                             }}
                           />
-                          <p style={{ color: "red" , fontSize: "15px" , fontFamily:"Lato"}}>{this.state.emailError}</p>
+                          <p
+                            style={{
+                              color: "red",
+                              fontSize: "15px",
+                              fontFamily: "Baloo Bhai 2",
+                              cursive,
+                            }}
+                          >
+                            {this.state.emailError}
+                          </p>
                         </div>
                         <div class="box-right">
                           <Button
@@ -121,8 +130,9 @@ class News extends Component {
                               height: "50px",
                               fontSize: "20px",
                               marginLeft: "25px",
-                              fontFamily:"Lato",
-                              backgroundColor: "#f4a460"
+                              fontFamily: "Baloo Bhai 2",
+                              cursive,
+                              backgroundColor: "#f4a460",
                             }}
                             onClick={() => {
                               this.setState({

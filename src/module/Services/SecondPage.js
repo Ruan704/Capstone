@@ -3,15 +3,14 @@ import { useNavigate } from "react-router";
 import "./SecondPage.css";
 
 const SecondPage = () => {
-
- const navigate = useNavigate();
+  const navigate = useNavigate();
   return (
     <>
       <h1 className="text-center text-success my-5">Services</h1>
       <div className="container" style={{ marginbottom: "10px" }}>
         <div className="row">
-          <div className="col-md-3" style={{marginRight: "100px"}}>
-            <div class="card" style={{marginRight: "50px"}}>
+          <div className="col-md-3" style={{ marginRight: "100px" }}>
+            <div class="card" style={{ marginRight: "50px" }}>
               <img
                 class="card-img-top"
                 src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Human-wildlife_conflict.jpg"
@@ -21,25 +20,38 @@ const SecondPage = () => {
               <div class="card-body">
                 <h5
                   class="card-title"
-                  style={{ fontWeight: "bold", fontSize: "30px", textAlign:"center" , fontFamily:"Lato",}}
+                  style={{
+                    fontWeight: "bold",
+                    fontSize: "30px",
+                    textAlign: "center",
+                    fontFamily: "Baloo Bhai 2",
+                    cursive,
+                  }}
                 >
                   Wildlife Supporting
                 </h5>
-                <p class="card-text" style={{ fontSize: "20px", fontFamily:"Lato", }}>
+                <p
+                  class="card-text"
+                  style={{
+                    fontSize: "20px",
+                    fontFamily: "Baloo Bhai 2",
+                    cursive,
+                  }}
+                >
                   Have a real life distance between u and the wildlife
                 </p>
                 <button
                   className="btn btn-primary"
-                  onClick={() =>navigate('/wildlifeSupporting')}
+                  onClick={() => navigate("/wildlifeSupporting")}
                   style={{
                     width: "250px",
                     height: "50px",
                     fontSize: "20px",
                     marginLeft: "25px",
-                    fontFamily:"Lato",
-                    backgroundColor: "#f4a460"
+                    fontFamily: "Baloo Bhai 2",
+                    cursive,
+                    backgroundColor: "#f4a460",
                   }}
-
                 >
                   Read More
                 </button>
@@ -47,34 +59,67 @@ const SecondPage = () => {
             </div>
           </div>
           &nbsp;&nbsp;
-          <div className="col-md-3" style={{marginRight: "150px", fontFamily:"Lato",}}>
-            <div class="card" style={{marginRight: "100px", fontFamily:"Lato",}}>
+          <div
+            className="col-md-3"
+            style={{
+              marginRight: "150px",
+              fontFamily: "Baloo Bhai 2",
+              cursive,
+            }}
+          >
+            <div
+              class="card"
+              style={{
+                marginRight: "100px",
+                fontFamily: "Baloo Bhai 2",
+                cursive,
+              }}
+            >
               <img
                 class="card-img-top"
                 src="https://www.librarypoint.org/wp-content/uploads/sites/60/2018/04/raina1med.jpg"
                 alt="Card image cap"
-                style={{ width: "350px", height: "200px", fontFamily:"Lato", }}
+                style={{
+                  width: "350px",
+                  height: "200px",
+                  fontFamily: "Baloo Bhai 2",
+                  cursive,
+                }}
               />
               <div class="card-body">
                 <h5
                   class="card-title"
-                  style={{ fontWeight: "bold", fontSize: "30px",  textAlign:"center", fontFamily:"Lato", }}
+                  style={{
+                    fontWeight: "bold",
+                    fontSize: "30px",
+                    textAlign: "center",
+                    fontFamily: "Baloo Bhai 2",
+                    cursive,
+                  }}
                 >
                   Wildlife Education
                 </h5>
-                <p class="card-text" style={{ fontSize: "20px" , fontFamily:"Lato",}}>
+                <p
+                  class="card-text"
+                  style={{
+                    fontSize: "20px",
+                    fontFamily: "Baloo Bhai 2",
+                    cursive,
+                  }}
+                >
                   Learning more about wildlife by Knowledge
                 </p>
                 <button
                   className="btn btn-primary"
-                  onClick={() =>navigate('/wildlifeEducation')}
+                  onClick={() => navigate("/wildlifeEducation")}
                   style={{
                     width: "250px",
-                  height: "50px",
-                  fontSize: "20px",
-                  marginLeft: "25px",
-                  fontFamily:"Lato",
-                  backgroundColor: "#f4a460"
+                    height: "50px",
+                    fontSize: "20px",
+                    marginLeft: "25px",
+                    fontFamily: "Baloo Bhai 2",
+                    cursive,
+                    backgroundColor: "#f4a460",
                   }}
                 >
                   Read More
@@ -93,23 +138,37 @@ const SecondPage = () => {
               <div class="card-body">
                 <h5
                   class="card-title"
-                  style={{ fontWeight: "bold", fontSize: "30px",  textAlign:"center", fontFamily:"Lato", }}
+                  style={{
+                    fontWeight: "bold",
+                    fontSize: "30px",
+                    textAlign: "center",
+                    fontFamily: "Baloo Bhai 2",
+                    cursive,
+                  }}
                 >
                   Wildlife Save
                 </h5>
-                <p class="card-text" style={{ fontSize: "20px" , fontFamily:"Lato",}}>
+                <p
+                  class="card-text"
+                  style={{
+                    fontSize: "20px",
+                    fontFamily: "Baloo Bhai 2",
+                    cursive,
+                  }}
+                >
                   What measures are we using to save the wildlife
                 </p>
                 <button
                   className="btn btn-primary"
-                  onClick={() =>navigate('/wildlifeSave')}
+                  onClick={() => navigate("/wildlifeSave")}
                   style={{
                     width: "250px",
                     height: "50px",
                     fontSize: "20px",
                     marginLeft: "25px",
-                    fontFamily:"Lato",
-                    backgroundColor: "#f4a460"
+                    fontFamily: "Baloo Bhai 2",
+                    cursive,
+                    backgroundColor: "#f4a460",
                   }}
                 >
                   Read More

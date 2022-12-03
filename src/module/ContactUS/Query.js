@@ -4,13 +4,12 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import ContactPhoneIcon from "@mui/icons-material/ContactPhone";
 import EmailIcon from "@mui/icons-material/Email";
 //generate unique id everytime (this is especially useful when u want to post data)
-import {v4 as uuid} from 'uuid';
+import { v4 as uuid } from "uuid";
 import "./Query.css";
 import { connect } from "react-redux";
 import { onAddContactData } from "../../action";
 
 class Query extends Component {
-
   constructor() {
     super();
     this.state = {
@@ -21,7 +20,7 @@ class Query extends Component {
       formIsValid: false,
       nameError: "",
       emailError: "",
-      subjectError:"",
+      subjectError: "",
       messageError: "",
     };
   }
@@ -107,7 +106,7 @@ class Query extends Component {
     });
     return formIsValid;
   };
-  
+
   validateMessage = (message) => {
     let messageError = this.state.messageError;
     let formIsValid = this.state.formIsValid;
@@ -115,7 +114,7 @@ class Query extends Component {
     if (String(message).trim() === "") {
       messageError = "*Please enter your message.";
       formIsValid = false;
-    }  else {
+    } else {
       messageError = "";
       formIsValid = true;
     }
@@ -135,7 +134,7 @@ class Query extends Component {
     if (
       this.validateName(this.state.name) &&
       this.validateEmail(this.state.email) &&
-      this.validateSubject(this.state.subject)&&
+      this.validateSubject(this.state.subject) &&
       this.validateMessage(this.state.message)
     ) {
       //to add the data push the data inside the reducer once the user
@@ -165,7 +164,7 @@ class Query extends Component {
         subject: subject,
         NameError: nameError,
         emailError: emailError,
-        subjectError : subjectError,
+        subjectError: subjectError,
         messageError: messageError,
       });
     }
@@ -174,20 +173,52 @@ class Query extends Component {
   render() {
     return (
       <div className="container">
-        <h2 style={{ textAlign: "center", fontSize:"40px" , fontWeight: "bold", fontFamily:"Lato"}}>Contact Us</h2>
-        <h3 style={{ textAlign: "center", fontSize:"25px", fontFamily:"Lato" }}>
+        <h2
+          style={{
+            textAlign: "center",
+            fontSize: "40px",
+            fontWeight: "bold",
+            fontFamily: "Baloo Bhai 2",
+            cursive,
+          }}
+        >
+          Contact Us
+        </h2>
+        <h3
+          style={{
+            textAlign: "center",
+            fontSize: "25px",
+            fontFamily: "Baloo Bhai 2",
+            cursive,
+          }}
+        >
           We would like to hear from your question and <br></br> help us success{" "}
           Feel free to get in touch with <br></br>us
         </h3>
         <div className="contact-box">
           <div className="contact-left">
-            <h3 style={{ fontSize: "30px", font: "bold", fontFamily:"Lato" }}>
+            <h3
+              style={{
+                fontSize: "30px",
+                font: "bold",
+                fontFamily: "Baloo Bhai 2",
+                cursive,
+              }}
+            >
               Send your request
             </h3>
             <form>
               <div class="input-row">
                 <div class="input-group">
-                  <label style={{ fontSize: "20px", fontFamily:"Lato" }}>Name: </label>
+                  <label
+                    style={{
+                      fontSize: "20px",
+                      fontFamily: "Baloo Bhai 2",
+                      cursive,
+                    }}
+                  >
+                    Name:{" "}
+                  </label>
                   <input
                     id="name"
                     label="Enter Name"
@@ -196,13 +227,27 @@ class Query extends Component {
                     value={this.state.name}
                     onChange={this.handleChange}
                     placeholder="Please enter your name"
-                    style={{ fontSize: "20px", fontFamily:"Lato" }}
+                    style={{
+                      fontSize: "20px",
+                      fontFamily: "Baloo Bhai 2",
+                      cursive,
+                    }}
                   />
                 </div>
-                <p style={{ color: "red" , fontSize: "15px"}}>{this.state.nameError}</p>
+                <p style={{ color: "red", fontSize: "15px" }}>
+                  {this.state.nameError}
+                </p>
                 <br></br>
                 <div class="input-group">
-                  <label style={{ fontSize: "20px" , fontFamily:"Lato" }}>Email: </label>
+                  <label
+                    style={{
+                      fontSize: "20px",
+                      fontFamily: "Baloo Bhai 2",
+                      cursive,
+                    }}
+                  >
+                    Email:{" "}
+                  </label>
                   <input
                     id="email"
                     label="Email Address"
@@ -211,13 +256,34 @@ class Query extends Component {
                     value={this.state.email}
                     onChange={this.handleChange}
                     placeholder="Enter Email"
-                    style={{ fontSize: "20px", fontFamily:"Lato" }}
+                    style={{
+                      fontSize: "20px",
+                      fontFamily: "Baloo Bhai 2",
+                      cursive,
+                    }}
                   />
-                  <p style={{ color: "red" , fontSize: "15px" , fontFamily:"Lato"}}>{this.state.emailError}</p>
+                  <p
+                    style={{
+                      color: "red",
+                      fontSize: "15px",
+                      fontFamily: "Baloo Bhai 2",
+                      cursive,
+                    }}
+                  >
+                    {this.state.emailError}
+                  </p>
                 </div>
                 <br></br>
                 <div class="input-group">
-                  <label style={{ fontSize: "20px" , fontFamily:"Lato" }}>Subject: </label>
+                  <label
+                    style={{
+                      fontSize: "20px",
+                      fontFamily: "Baloo Bhai 2",
+                      cursive,
+                    }}
+                  >
+                    Subject:{" "}
+                  </label>
                   <input
                     id="subject"
                     label="subject"
@@ -228,12 +294,29 @@ class Query extends Component {
                     placeholder="Enter subject"
                     style={{ fontSize: "20px" }}
                   />
-                  <p style={{ color: "red" , fontSize: "15px" , fontFamily:"Lato"}}>{this.state.subjectError}</p>
+                  <p
+                    style={{
+                      color: "red",
+                      fontSize: "15px",
+                      fontFamily: "Baloo Bhai 2",
+                      cursive,
+                    }}
+                  >
+                    {this.state.subjectError}
+                  </p>
                   <br></br>
                 </div>
                 <br></br>
 
-                <label style={{ fontSize: "20px", fontFamily:"Lato" }}>Message</label>
+                <label
+                  style={{
+                    fontSize: "20px",
+                    fontFamily: "Baloo Bhai 2",
+                    cursive,
+                  }}
+                >
+                  Message
+                </label>
                 <textarea
                   id="message"
                   label="Message Entered"
@@ -242,56 +325,110 @@ class Query extends Component {
                   value={this.state.message}
                   onChange={this.handleChange}
                   placeholder="Enter Message Here"
-                  style={{ width: "600px", height: "300px", fontSize: "20px" , fontFamily:"Lato" }}
+                  style={{
+                    width: "600px",
+                    height: "300px",
+                    fontSize: "20px",
+                    fontFamily: "Baloo Bhai 2",
+                    cursive,
+                  }}
                 />
-                <p style={{ color: "red" , fontSize: "15px" , fontFamily:"Lato"}}>{this.state.messageError}</p>
+                <p
+                  style={{
+                    color: "red",
+                    fontSize: "15px",
+                    fontFamily: "Baloo Bhai 2",
+                    cursive,
+                  }}
+                >
+                  {this.state.messageError}
+                </p>
                 <br></br>
 
-
-               {/* <p style={{color:maroon}} >{email.error}</p> */}
+                {/* <p style={{color:maroon}} >{email.error}</p> */}
                 <Button
-                // data-testid="button-up"
+                  // data-testid="button-up"
                   type="submit"
                   variant="contained"
                   className="btn"
                   // sx={{ mt: 3, mb: 2 }}
                   onClick={this.handleSubmit}
-                  style={{ width: "200px",
-                  height: "100px",
-                  margin: "auto",
-                  marginLeft: "200px",
-                  fontSize: "30px",
-                  fontFamily:"Lato",
-              backgroundColor: "#f4a460"}}
+                  style={{
+                    width: "200px",
+                    height: "100px",
+                    margin: "auto",
+                    marginLeft: "200px",
+                    fontSize: "30px",
+                    fontFamily: "Baloo Bhai 2",
+                    cursive,
+                    backgroundColor: "#f4a460",
+                  }}
                 >
-                  <span style={{fontSize:"20px",fontFamily:"Lato" }}>Contact Us</span>
+                  <span
+                    style={{
+                      fontSize: "20px",
+                      fontFamily: "Baloo Bhai 2",
+                      cursive,
+                    }}
+                  >
+                    Contact Us
+                  </span>
                 </Button>
-
               </div>
             </form>
           </div>
           <div className="contact-right">
             <h3>Reach Us</h3>
             <table>
-
               <tr>
-                <td style={{ fontSize: "20px" }}><EmailIcon fontSize="large" />&nbsp;&nbsp;Email:&nbsp;</td>
-                <td style={{ fontSize: "20px", fontFamily:"Lato" }}>WLP@gmail.com</td>
+                <td style={{ fontSize: "20px" }}>
+                  <EmailIcon fontSize="large" />
+                  &nbsp;&nbsp;Email:&nbsp;
+                </td>
+                <td
+                  style={{
+                    fontSize: "20px",
+                    fontFamily: "Baloo Bhai 2",
+                    cursive,
+                  }}
+                >
+                  WLP@gmail.com
+                </td>
               </tr>
               <br></br>
 
               <tr>
-                <td style={{ fontSize: "20px" }}><ContactPhoneIcon fontSize="large" />&nbsp;&nbsp;&nbsp;Phone:&nbsp;</td>
-                <td style={{ fontSize: "20px", fontFamily:"Lato" }}>+65 6438 8900</td>
+                <td style={{ fontSize: "20px" }}>
+                  <ContactPhoneIcon fontSize="large" />
+                  &nbsp;&nbsp;&nbsp;Phone:&nbsp;
+                </td>
+                <td
+                  style={{
+                    fontSize: "20px",
+                    fontFamily: "Baloo Bhai 2",
+                    cursive,
+                  }}
+                >
+                  +65 6438 8900
+                </td>
               </tr>
               <br></br>
 
-<br></br><br></br>
+              <br></br>
+              <br></br>
               <tr>
-                <td style={{ fontSize: "20px",  marginLeft: '300px'}}><LocationOnIcon fontSize="large" />&nbsp;&nbsp;&nbsp;Address:&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                <td style={{ fontSize: "20px", fontFamily:"Lato" }}>
-                  4 Shenton Way No 01-01 SGX <br></br> Centre 2  068807
-                  Singapore{" "}
+                <td style={{ fontSize: "20px", marginLeft: "300px" }}>
+                  <LocationOnIcon fontSize="large" />
+                  &nbsp;&nbsp;&nbsp;Address:&nbsp;&nbsp;&nbsp;&nbsp;
+                </td>
+                <td
+                  style={{
+                    fontSize: "20px",
+                    fontFamily: "Baloo Bhai 2",
+                    cursive,
+                  }}
+                >
+                  4 Shenton Way No 01-01 SGX <br></br> Centre 2 068807 Singapore{" "}
                 </td>
               </tr>
             </table>
@@ -303,21 +440,20 @@ class Query extends Component {
 }
 
 const mapStateToProps = (state) => {
-  return{
-    contact: state.contact
+  return {
+    contact: state.contact,
   };
 };
 
 // const ma
 //creating structure to displatch(派遣)
 //send the data when the data was being submitted.
-const mapDispatchToProps = (dispatch) =>{
+const mapDispatchToProps = (dispatch) => {
   //onAddData was implemented in the action file.
-  return{
+  return {
     //whatever data receving it will recevive as argument.
-    onAddQuery: (item) => dispatch(onAddContactData(item))
+    onAddQuery: (item) => dispatch(onAddContactData(item)),
   };
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Query);
-

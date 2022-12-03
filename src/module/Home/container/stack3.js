@@ -23,16 +23,47 @@ export default function Stac3() {
       >
         <Item sx={{ boxShadow: "none", backgroundColor: "#557153" }}>
           <div className="homevolunteer">
-            <h1 style={{ fontSize:"25px", color:"light-brown",textAlign:"center", 
-        color:"#E6E5A3", fontFamily:"Lato", marginTop:"25px",paddingLeft:"25px", paddingRight:"25px" }}>
+            <h1
+              style={{
+                fontSize: "25px",
+                color: "light-brown",
+                textAlign: "center",
+                color: "#E6E5A3",
+                fontFamily: "Baloo Bhai 2",
+                cursive,
+                marginTop: "25px",
+                paddingLeft: "25px",
+                paddingRight: "25px",
+              }}
+            >
               Protecting Wildlife for a Healthy Planet
             </h1>
-            <div style={{ fontSize: "20px" , paddingLeft:"40px", paddingRight:"40px" }}>
-              <h8 style={{ textAlign: 'center',alignItems:"center", width: '100%',fontSize: "20px", color:"#A9AF7E", fontFamily:"Lato", paddingLeft:"40px", paddingRight:"40px"}}>
+            <div
+              style={{
+                fontSize: "20px",
+                paddingLeft: "40px",
+                paddingRight: "40px",
+              }}
+            >
+              <h8
+                style={{
+                  textAlign: "center",
+                  alignItems: "center",
+                  width: "100%",
+                  fontSize: "20px",
+                  color: "#A9AF7E",
+                  fontFamily: "Baloo Bhai 2",
+                  cursive,
+                  paddingLeft: "40px",
+                  paddingRight: "40px",
+                }}
+              >
                 {" "}
-                Wildlife protection Conservation is an organisation dedicated to the
-                conservation of biodiversity, animal species and their habitats,
-                through the collaboration with local residents and organisations.Overhere u can check for the various kinds of species that we save and protected
+                Wildlife protection Conservation is an organisation dedicated to
+                the conservation of biodiversity, animal species and their
+                habitats, through the collaboration with local residents and
+                organisations.Overhere u can check for the various kinds of
+                species that we save and protected
               </h8>
               <br></br>
               <button
@@ -43,8 +74,9 @@ export default function Stac3() {
                   height: "50px",
                   fontSize: "20px",
                   marginLeft: "25px",
-                  fontFamily:"Lato",
-                  backgroundColor: "#f4a460"
+                  fontFamily: "Baloo Bhai 2",
+                  cursive,
+                  backgroundColor: "#f4a460",
                 }}
               >
                 Search wildlife species
@@ -52,10 +84,9 @@ export default function Stac3() {
             </div>
           </div>
         </Item>
-        <Item sx={{ boxShadow: "none" , backgroundColor: "#557153"}}>
+        <Item sx={{ boxShadow: "none", backgroundColor: "#557153" }}>
           <img
             src={Home}
-
             alt="Joinus"
             style={{ width: "400px", height: "300px" }}
           />

@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Muli:wght@400;500&display=swap");
 
 body {
-  font-family: "Baloo Bhai 2", cursive;
+  font-family: "" Baloo Bhai 2 ", cursive";
   background-color: #eeeeee;
 }
 
@@ -20,5 +20,3 @@ body {
   height: 2px;
   background-color: hotpink;
 } */
-
-

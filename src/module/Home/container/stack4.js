@@ -36,7 +36,8 @@ export default function Stack4() {
                 color: "light-brown",
                 textAlign: "center",
                 color: "#E6E5A3",
-                fontFamily: "Lato",
+                fontFamily: "Baloo Bhai 2",
+                cursive,
                 marginTop: "25px",
                 paddingLeft: "25px",
                 paddingRight: "25px",
@@ -52,7 +53,8 @@ export default function Stack4() {
                   width: "100%",
                   fontSize: "20px",
                   color: "#A9AF7E",
-                  fontFamily: "Lato",
+                  fontFamily: "Baloo Bhai 2",
+                  cursive,
                   paddingLeft: "40px",
                   paddingRight: "40px",
                 }}
@@ -70,7 +72,8 @@ export default function Stack4() {
                   height: "50px",
                   fontSize: "20px",
                   marginLeft: "25px",
-                  fontFamily: "Lato",
+                  fontFamily: "Baloo Bhai 2",
+                  cursive,
                   backgroundColor: "#f4a460",
                 }}
               >

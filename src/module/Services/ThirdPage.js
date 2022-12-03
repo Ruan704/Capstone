@@ -47,7 +47,8 @@ const ThirdPage = () => {
                   style={{
                     fontWeight: "bold",
                     fontSize: "30px",
-                    fontFamily: "Lato",
+                    fontFamily: "Baloo Bhai 2",
+                    cursive,
                   }}
                 >
                   {p.author}
@@ -62,12 +63,25 @@ const ThirdPage = () => {
                     objectFit: "cover",
                     borderRadius: "15px",
                     margin: "5px",
-                    fontFamily: "Lato",
+                    fontFamily: "Baloo Bhai 2",
+                    cursive,
                   }}
                 />
                 <div className="type">
-                  <p style={{ fontSize: "18px", fontFamily: "Lato" }}>
-                    <div style={{ color: "brown", fontFamily: "Lato" }}>
+                  <p
+                    style={{
+                      fontSize: "18px",
+                      fontFamily: "Baloo Bhai 2",
+                      cursive,
+                    }}
+                  >
+                    <div
+                      style={{
+                        color: "brown",
+                        fontFamily: "Baloo Bhai 2",
+                        cursive,
+                      }}
+                    >
                       Description:
                     </div>{" "}
                     {p.description}
@@ -80,7 +94,8 @@ const ThirdPage = () => {
                     height: "50px",
                     fontSize: "20px",
                     marginLeft: "25px",
-                    fontFamily: "Lato",
+                    fontFamily: "Baloo Bhai 2",
+                    cursive,
                     backgroundColor: "#f4a460",
                   }}
                 >
@@ -104,7 +119,8 @@ const ThirdPage = () => {
           fontWeight: "bold",
           fontSize: "35px",
           background: "#E6E5A3",
-          fontFamily: "Lato",
+          fontFamily: "Baloo Bhai 2",
+          cursive,
         }}
       >
         Articles

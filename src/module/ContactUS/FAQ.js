@@ -13,8 +13,21 @@ export default function ControlledAccordions() {
   };
 
   return (
-    <div class="containerFluid" style={{width:"1250px", textAlign:"center"}}>
-      <h2 style={{ textAlign: "center", fontSize:"40px" , fontWeight: "bold" , fontFamily:"Lato"}}>Frequently Asked Questions(FAQs)</h2>
+    <div
+      class="containerFluid"
+      style={{ width: "1250px", textAlign: "center" }}
+    >
+      <h2
+        style={{
+          textAlign: "center",
+          fontSize: "40px",
+          fontWeight: "bold",
+          fontFamily: "Baloo Bhai 2",
+          cursive,
+        }}
+      >
+        Frequently Asked Questions(FAQs)
+      </h2>
       <Accordion
         expanded={expanded === "panel1"}
         onChange={handleChange("panel1")}
@@ -25,12 +38,26 @@ export default function ControlledAccordions() {
           aria-controls="panel1bh-content"
           id="panel1bh-header"
         >
-          <Typography sx={{ color: "text.secondary",  fontSize: "20px", fontFamily:"Lato"}}>
+          <Typography
+            sx={{
+              color: "text.secondary",
+              fontSize: "20px",
+              fontFamily: "Baloo Bhai 2",
+              cursive,
+            }}
+          >
             #1 What does it mean that WWF is accredited by GFAS?{" "}
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography style={{ fontSize: "20px", marginRight: '120px', fontFamily:"Lato" }}>
+          <Typography
+            style={{
+              fontSize: "20px",
+              marginRight: "120px",
+              fontFamily: "Baloo Bhai 2",
+              cursive,
+            }}
+          >
             Accreditation by the Global Federation of Animal Sanctuaries (GFAS)
             is a lengthy and thorough process which only 150 sanctuaries
             worldwide have achieved. This accreditation assures the public that
@@ -48,18 +75,33 @@ export default function ControlledAccordions() {
           aria-controls="panel2bh-content"
           id="panel2bh-header"
         >
-          <Typography sx={{ color: "text.secondary" , fontSize: "20px", fontFamily:"Lato" }}>
+          <Typography
+            sx={{
+              color: "text.secondary",
+              fontSize: "20px",
+              fontFamily: "Baloo Bhai 2",
+              cursive,
+            }}
+          >
             #2 Can people pet the animals at WWH?
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography style={{ fontSize: "20px", marginRight: '120px', fontFamily:"Lato" }}>
+          <Typography
+            style={{
+              fontSize: "20px",
+              marginRight: "120px",
+              fontFamily: "Baloo Bhai 2",
+              cursive,
+            }}
+          >
             No. The animal residents live at WWH for refuge and to have a safe
             and caring environment. Interaction with humans can be frightening
             and disruptive to wild and exotic animals. It is also dangerous both
             for the visitor and the animal. The only human interaction sanctuary
             residents have is with the highly skilled keepers who provide care,
-            enrichment and medical treatment for <br></br> the animal’s well- being.
+            enrichment and medical treatment for <br></br> the animal’s well-
+            being.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -72,12 +114,26 @@ export default function ControlledAccordions() {
           aria-controls="panel3bh-content"
           id="panel3bh-header"
         >
-          <Typography sx={{ color: "text.secondary" , fontSize: "20px", fontFamily:"Lato"}}>
+          <Typography
+            sx={{
+              color: "text.secondary",
+              fontSize: "20px",
+              fontFamily: "Baloo Bhai 2",
+              cursive,
+            }}
+          >
             #3 Can I take photographs?
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography style={{ fontSize: "20px", marginRight: '120px', fontFamily:"Lato" }}>
+          <Typography
+            style={{
+              fontSize: "20px",
+              marginRight: "120px",
+              fontFamily: "Baloo Bhai 2",
+              cursive,
+            }}
+          >
             Yes, but WWH rules require guests turn off their flash, and never
             taunt, yell, or scream at the animal residents for photographs.
           </Typography>
@@ -92,16 +148,30 @@ export default function ControlledAccordions() {
           aria-controls="panel4bh-content"
           id="panel4bh-header"
         >
-          <Typography sx={{ color: "text.secondary",  fontSize: "20px" , fontFamily:"Lato"}}>
+          <Typography
+            sx={{
+              color: "text.secondary",
+              fontSize: "20px",
+              fontFamily: "Baloo Bhai 2",
+              cursive,
+            }}
+          >
             #4 Do I need a reservation?
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography style={{ fontSize: "20px", marginRight: '120px', fontFamily:"Lato" }}>
+          <Typography
+            style={{
+              fontSize: "20px",
+              marginRight: "120px",
+              fontFamily: "Baloo Bhai 2",
+              cursive,
+            }}
+          >
             Reservations are not necessary for general visitation on Wednesdays,
             which is available only to Park Pal members, due to COVID 19
             procedures. We recommend calling ahead to make reservations for
-            guided and private tours as tour  size is limited.
+            guided and private tours as tour size is limited.
           </Typography>
         </AccordionDetails>
       </Accordion>

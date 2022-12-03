@@ -18,7 +18,10 @@ function Navbars() {
       >
         <Container>
           <h1>
-          <img src={Wildlife} style={{ width: "150px", height: "70px", marginTop: "25px"}} />
+            <img
+              src={Wildlife}
+              style={{ width: "150px", height: "70px", marginTop: "25px" }}
+            />
           </h1>
           &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -30,7 +33,11 @@ function Navbars() {
                   as={Link}
                   to="/"
                   className="words"
-                  style={{ fontSize: "20px", fontFamily:"Lato" }}
+                  style={{
+                    fontSize: "20px",
+                    fontFamily: "Baloo Bhai 2",
+                    cursive,
+                  }}
                 >
                   Home
                 </Nav.Link>
@@ -39,7 +46,11 @@ function Navbars() {
                 <Nav.Link
                   as={Link}
                   to="/overview"
-                  style={{ fontSize: "20px", fontFamily:"Lato" }}
+                  style={{
+                    fontSize: "20px",
+                    fontFamily: "Baloo Bhai 2",
+                    cursive,
+                  }}
                 >
                   About
                 </Nav.Link>
@@ -48,48 +59,81 @@ function Navbars() {
                 <Nav.Link
                   as={Link}
                   to="/gallery-animal"
-                  style={{ fontSize: "20px" , fontFamily:"Lato"}}
+                  style={{
+                    fontSize: "20px",
+                    fontFamily: "Baloo Bhai 2",
+                    cursive,
+                  }}
                 >
                   Species
                 </Nav.Link>
               </li>
               <NavDropdown
-                style={{ marginTop: "6px", fontSize: "20px" , fontFamily:"Lato"}}
+                style={{
+                  marginTop: "6px",
+                  fontSize: "20px",
+                  fontFamily: "Baloo Bhai 2",
+                  cursive,
+                }}
                 title="Services"
                 id="basic-nav-dropdown"
               >
                 <NavDropdown.Item
                   as={Link}
                   to="/Services"
-                  style={{ fontSize: "20px" , fontFamily:"Lato"}}
+                  style={{
+                    fontSize: "20px",
+                    fontFamily: "Baloo Bhai 2",
+                    cursive,
+                  }}
                 >
                   Services
                 </NavDropdown.Item>
                 <NavDropdown.Item
                   as={Link}
                   to="/Services-WildlifeSupporting"
-                  style={{ fontSize: "20px" , fontFamily:"Lato"}}
+                  style={{
+                    fontSize: "20px",
+                    fontFamily: "Baloo Bhai 2",
+                    cursive,
+                  }}
                 >
                   Wildlife Supporting
                 </NavDropdown.Item>
                 <NavDropdown.Item
                   as={Link}
                   to="/Services-WildlifeEducation"
-                  style={{ fontSize: "20px" , fontFamily:"Lato"}}
+                  style={{
+                    fontSize: "20px",
+                    fontFamily: "Baloo Bhai 2",
+                    cursive,
+                  }}
                 >
                   Wildlife Education
                 </NavDropdown.Item>
                 <NavDropdown.Item
                   as={Link}
                   to="/Services-WildlifeSave"
-                  style={{ fontSize: "20px" , fontFamily:"Lato"}}
+                  style={{
+                    fontSize: "20px",
+                    fontFamily: "Baloo Bhai 2",
+                    cursive,
+                  }}
                 >
                   Wildlife Save
                 </NavDropdown.Item>
               </NavDropdown>
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <li>
-                <Nav.Link as={Link} to="/Front" style={{ fontSize: "20px" , fontFamily:"Lato"}}>
+                <Nav.Link
+                  as={Link}
+                  to="/Front"
+                  style={{
+                    fontSize: "20px",
+                    fontFamily: "Baloo Bhai 2",
+                    cursive,
+                  }}
+                >
                   Join Us
                 </Nav.Link>
               </li>
@@ -112,4 +156,3 @@ function Navbars() {
 }
 
 export default Navbars;
-

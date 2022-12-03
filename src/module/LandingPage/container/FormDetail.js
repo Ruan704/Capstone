@@ -70,14 +70,23 @@ export class FormDetail extends Component {
                     textAlign: "center",
                     fontSize: "40px",
                     fontWeight: "bold",
-                    fontFamily:"Lato"
+                    fontFamily: "Baloo Bhai 2",
+                    cursive,
                   }}
                 >
                   Join Our Volunteer Team
                 </Typography>
                 <div class="input-row">
                   <div class="input-group">
-                    <label style={{ fontSize: "20px", fontFamily:"Lato"}}>Name: </label>
+                    <label
+                      style={{
+                        fontSize: "20px",
+                        fontFamily: "Baloo Bhai 2",
+                        cursive,
+                      }}
+                    >
+                      Name:{" "}
+                    </label>
                     <input
                       margin="normal"
                       required
@@ -96,7 +105,15 @@ export class FormDetail extends Component {
                   </div>
 
                   <div class="input-group">
-                    <label style={{ fontSize: "20px" , fontFamily:"Lato"}}>Email: </label>
+                    <label
+                      style={{
+                        fontSize: "20px",
+                        fontFamily: "Baloo Bhai 2",
+                        cursive,
+                      }}
+                    >
+                      Email:{" "}
+                    </label>
                     <input
                       margin="normal"
                       required
@@ -109,11 +126,22 @@ export class FormDetail extends Component {
                       onChange={handleChange("email")}
                       style={{ fontSize: "20px", fontSize: "15px" }}
                     />
-                    <p style={{ color: "maroon" , fontSize: "15px"}}>{values.emailError}</p>
+                    <p style={{ color: "maroon", fontSize: "15px" }}>
+                      {values.emailError}
+                    </p>
                   </div>
 
                   <div class="input-group">
-                    <label style={{ fontSize: "20px" , fontSize: "15px", fontFamily:"Lato"}}>Number: </label>
+                    <label
+                      style={{
+                        fontSize: "20px",
+                        fontSize: "15px",
+                        fontFamily: "Baloo Bhai 2",
+                        cursive,
+                      }}
+                    >
+                      Number:{" "}
+                    </label>
                     <input
                       margin="normal"
                       required
@@ -143,8 +171,9 @@ export class FormDetail extends Component {
                       margin: "auto",
                       marginLeft: "200px",
                       fontSize: "30px",
-                      fontFamily:"Lato",
-                  backgroundColor: "#f4a460"
+                      fontFamily: "Baloo Bhai 2",
+                      cursive,
+                      backgroundColor: "#f4a460",
                     }}
                   >
                     Continue

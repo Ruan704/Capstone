@@ -13,10 +13,8 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 
-
-
 export default function Stack1() {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
   return (
     <div>
       <Stack
@@ -25,10 +23,41 @@ export default function Stack1() {
       >
         <Item sx={{ boxShadow: "none", backgroundColor: "#557153" }}>
           <div className="homevolunteer">
-            <h1 style={{ fontSize:"25px", color:"light-brown",textAlign:"center", 
-        color:"#E6E5A3", fontFamily:"Lato", marginTop:"25px",paddingLeft:"25px", paddingRight:"25px" }}>About Us</h1>
-            <div style={{ fontSize: "20px" , paddingLeft:"40px", paddingRight:"40px"}}>
-              <h8 style={{textAlign: 'center',alignItems:"center", width: '100%',fontSize: "20px", color:"#A9AF7E", fontFamily:"Lato", paddingLeft:"40px", paddingRight:"40px" }}>
+            <h1
+              style={{
+                fontSize: "25px",
+                color: "light-brown",
+                textAlign: "center",
+                color: "#E6E5A3",
+                fontFamily: "Baloo Bhai 2",
+                cursive,
+                marginTop: "25px",
+                paddingLeft: "25px",
+                paddingRight: "25px",
+              }}
+            >
+              About Us
+            </h1>
+            <div
+              style={{
+                fontSize: "20px",
+                paddingLeft: "40px",
+                paddingRight: "40px",
+              }}
+            >
+              <h8
+                style={{
+                  textAlign: "center",
+                  alignItems: "center",
+                  width: "100%",
+                  fontSize: "20px",
+                  color: "#A9AF7E",
+                  fontFamily: "Baloo Bhai 2",
+                  cursive,
+                  paddingLeft: "40px",
+                  paddingRight: "40px",
+                }}
+              >
                 {" "}
                 Wildlife conservation volunteering is the perfect conservation
                 opportunity to protect endangered species from extinction.
@@ -36,9 +65,9 @@ export default function Stack1() {
                 monitor exotic species for research and anti-poaching measures.
                 Volunteer with those animals that cannot be released back into
                 the wild. Learn to care for these animals and help these animals
-                by giving your unconditional love.
-                Make a difference and conserve the diversity of life on earth by
-                protecting endangered wildlife!
+                by giving your unconditional love. Make a difference and
+                conserve the diversity of life on earth by protecting endangered
+                wildlife!
               </h8>
               <br></br>
               <button
@@ -49,8 +78,9 @@ export default function Stack1() {
                   height: "50px",
                   fontSize: "20px",
                   marginLeft: "25px",
-                  fontFamily:"Lato",
-                  backgroundColor: "#f4a460"
+                  fontFamily: "Baloo Bhai 2",
+                  cursive,
+                  backgroundColor: "#f4a460",
                 }}
               >
                 Read More About Us

@@ -51,7 +51,11 @@ export class FormConfirm extends Component {
     const { values, handleChange } = this.props;
     return (
       <>
-        <Container component="main" maxWidth="sm" style={{ marginTop: "20px",  marginLeft: "200px" }}>
+        <Container
+          component="main"
+          maxWidth="sm"
+          style={{ marginTop: "20px", marginLeft: "200px" }}
+        >
           <CssBaseline />
 
           <div className="contact-box">
@@ -67,14 +71,23 @@ export class FormConfirm extends Component {
                     textAlign: "center",
                     fontSize: "40px",
                     fontWeight: "bold",
-                    fontFamily:"Lato",
+                    fontFamily: "Baloo Bhai 2",
+                    cursive,
                   }}
                 >
                   We would like to hear more about you
                 </Typography>
                 <div class="input-row">
                   <div class="input-group">
-                    <label style={{ fontSize: "20px",  fontFamily:"Lato",}}>occupation: </label>
+                    <label
+                      style={{
+                        fontSize: "20px",
+                        fontFamily: "Baloo Bhai 2",
+                        cursive,
+                      }}
+                    >
+                      occupation:{" "}
+                    </label>
                     <input
                       margin="normal"
                       required
@@ -87,11 +100,21 @@ export class FormConfirm extends Component {
                       onChange={handleChange("occupation")}
                       style={{ fontSize: "20px" }}
                     />
-                    <p style={{ color: "maroon" , fontSize: "15px"}}>{values.occupationError}</p>
+                    <p style={{ color: "maroon", fontSize: "15px" }}>
+                      {values.occupationError}
+                    </p>
                   </div>
 
                   <div class="input-group">
-                    <label style={{ fontSize: "20px" ,  fontFamily:"Lato"}}>NRIC: </label>
+                    <label
+                      style={{
+                        fontSize: "20px",
+                        fontFamily: "Baloo Bhai 2",
+                        cursive,
+                      }}
+                    >
+                      NRIC:{" "}
+                    </label>
                     <input
                       margin="normal"
                       required
@@ -104,24 +127,37 @@ export class FormConfirm extends Component {
                       onChange={handleChange("NRIC")}
                       style={{ fontSize: "20px" }}
                     />
-                    <p style={{ color: "maroon", fontSize: "15px"  }}>{values.NRICError}</p>
+                    <p style={{ color: "maroon", fontSize: "15px" }}>
+                      {values.NRICError}
+                    </p>
                   </div>
 
                   <div class="input-group">
-                  <label style={{ fontSize: "20px" ,  fontFamily:"Lato"}}>Remark: </label>
-                  <TextareaAutosize
-                    aria-label="empty textarea"
-                    style={{ width: 400, height: 200,  fontSize: "20px"}}
-                    id="remark"
-                    name="remark"
-                    placeholder="Tell us about your interest and why do u like to join our team."
-                    defaultValue={values.remark}
-                    onChange={handleChange("remark")}
-                  />
-                  <p style={{ color: "maroon" , fontSize: "15px"}}>{values.remarkError}</p>
+                    <label
+                      style={{
+                        fontSize: "20px",
+                        fontFamily: "Baloo Bhai 2",
+                        cursive,
+                      }}
+                    >
+                      Remark:{" "}
+                    </label>
+                    <TextareaAutosize
+                      aria-label="empty textarea"
+                      style={{ width: 400, height: 200, fontSize: "20px" }}
+                      id="remark"
+                      name="remark"
+                      placeholder="Tell us about your interest and why do u like to join our team."
+                      defaultValue={values.remark}
+                      onChange={handleChange("remark")}
+                    />
+                    <p style={{ color: "maroon", fontSize: "15px" }}>
+                      {values.remarkError}
+                    </p>
                   </div>
 
-                  <br></br><br></br>
+                  <br></br>
+                  <br></br>
                   <FormControlLabel
                     control={
                       <Checkbox
@@ -129,10 +165,9 @@ export class FormConfirm extends Component {
                         checked={this.state.isChecked}
                         onChange={this.handleClick}
                         inputProps={{ "aria-label": "controlled" }}
-                         label="I agreed to the Terms and Conditions"
+                        label="I agreed to the Terms and Conditions"
                       />
                     }
-                   
                   />
                   <Typography
                     component="h1"
@@ -149,11 +184,11 @@ export class FormConfirm extends Component {
                     disabled={this.state.isChecked ? false : true}
                     onClick={this.continue}
                     style={{
-                        width: "150px",
-                        height: "100px",
-                        margin: "auto",
-                        fontSize: "20px",
-                      }}
+                      width: "150px",
+                      height: "100px",
+                      margin: "auto",
+                      fontSize: "20px",
+                    }}
                   >
                     Submit Form
                   </Button>

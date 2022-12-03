@@ -15,7 +15,14 @@ function Home() {
           style={{ height: "500px", width: "900px" }}
         />
         <Carousel.Caption
-          style={{ color: "#557153", fontWeight: "bold", fontSize: "25px", fontFamily:"Lato", opacity: ".5" }}
+          style={{
+            color: "#557153",
+            fontWeight: "bold",
+            fontSize: "25px",
+            fontFamily: "Baloo Bhai 2",
+            cursive,
+            opacity: ".5",
+          }}
         >
           <p
             style={{
@@ -24,11 +31,12 @@ function Home() {
               color: "#557153",
               textAlign: "center",
               height: "300px",
-              paddingTop:"40px",
-              paddingLeft:"40px",
-              paddingRight:"40px",
-              background:"white",
-              font:"Lato"
+              paddingTop: "40px",
+              paddingLeft: "40px",
+              paddingRight: "40px",
+              background: "white",
+              font: "Baloo Bhai 2",
+              cursive,
             }}
           >
             Welcome to World Wildlife Protection (WWP). WWP works in unity with
@@ -45,7 +53,14 @@ function Home() {
           style={{ height: "500px", width: "900px" }}
         />
         <Carousel.Caption
-          style={{ color: "#557153", fontWeight: "bold", fontSize: "25px", fontFamily:"Lato", opacity: ".5" }}
+          style={{
+            color: "#557153",
+            fontWeight: "bold",
+            fontSize: "25px",
+            fontFamily: "Baloo Bhai 2",
+            cursive,
+            opacity: ".5",
+          }}
         >
           <h5
             style={{
@@ -54,16 +69,19 @@ function Home() {
               color: "#557153",
               textAlign: "center",
               height: "300px",
-              paddingTop:"40px",
-              paddingLeft:"40px",
-              paddingRight:"40px",
-              background:"white",
-              font:"Lato"
+              paddingTop: "40px",
+              paddingLeft: "40px",
+              paddingRight: "40px",
+              background: "white",
+              font: "Baloo Bhai 2",
+              cursive,
             }}
           >
             Service to wildlife protection
-            <br></br><br></br>
-            At WWP we includes serveral kinds of different services such as contact us, FAQ and be a volunteer services
+            <br></br>
+            <br></br>
+            At WWP we includes serveral kinds of different services such as
+            contact us, FAQ and be a volunteer services
           </h5>
         </Carousel.Caption>
       </Carousel.Item>
@@ -74,8 +92,15 @@ function Home() {
           alt="First slide"
           style={{ height: "500px", width: "1500px" }}
         />
-        <Carousel.Caption 
-        style={{ color: "white",opacity: ".5", color: "#557153", fontFamily:"Lato" }}>
+        <Carousel.Caption
+          style={{
+            color: "white",
+            opacity: ".5",
+            color: "#557153",
+            fontFamily: "Baloo Bhai 2",
+            cursive,
+          }}
+        >
           <h5
             style={{
               fontWeight: "bold",
@@ -83,18 +108,19 @@ function Home() {
               color: "#557153",
               textAlign: "center",
               height: "300px",
-              paddingTop:"40px",
-              paddingLeft:"40px",
-              paddingRight:"40px",
-              background:"white",
-              font:"Lato"
+              paddingTop: "40px",
+              paddingLeft: "40px",
+              paddingRight: "40px",
+              background: "white",
+              font: "Baloo Bhai 2",
+              cursive,
             }}
           >
-            Join Our Team 
-            <br></br><br></br>
-            Wildlife conservation volunteering is the
-            perfect conservation opportunity to protect endangered species from
-            extinction.{" "}
+            Join Our Team
+            <br></br>
+            <br></br>
+            Wildlife conservation volunteering is the perfect conservation
+            opportunity to protect endangered species from extinction.{" "}
           </h5>
         </Carousel.Caption>
       </Carousel.Item>

@@ -1,8 +1,8 @@
 import React from "react";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
-import Status from "./Status.js"
-import StatusTwo from "./StatusTwo.js"
+import Status from "./Status.js";
+import StatusTwo from "./StatusTwo.js";
 const sanctuary = () => {
   const [selectedTab, setSelectedTab] = React.useState(0);
 
@@ -16,19 +16,29 @@ const sanctuary = () => {
         value={selectedTab}
         onChange={handleChange}
         style={{ textAlign: "center" }}
-        position= "static"
+        position="static"
       >
         <Tab
           label="Search Wildlife"
-          style={{ width: "800px", fontSize: "20px", fontFamily:"Lato" }}
+          style={{
+            width: "800px",
+            fontSize: "20px",
+            fontFamily: "Baloo Bhai 2",
+            cursive,
+          }}
         />
         <Tab
           label="View All Wildlife"
-          style={{ width: "800px", fontSize: "20px" , fontFamily:"Lato"}}
+          style={{
+            width: "800px",
+            fontSize: "20px",
+            fontFamily: "Baloo Bhai 2",
+            cursive,
+          }}
         />
       </Tabs>
-        {selectedTab === 0 && <Status/>}
-        {/* {selectedTab == 1 && <StatusTwo/>} */}
+      {selectedTab === 0 && <Status />}
+      {/* {selectedTab == 1 && <StatusTwo/>} */}
     </>
   );
 };
