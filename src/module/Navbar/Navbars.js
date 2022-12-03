@@ -13,17 +13,12 @@ function Navbars() {
       <Navbar
         expand="sm"
         style={{
-          backgroundColor: "#00FF80",
-          className: "ml-auto",
-          minHeight: "35px",
-          padding: "1rem",
-                    // maxHeight:"65px", marginTop:"50px"}
-                    height:"60px"
+          className: "ml-auto"
         }}
       >
         <Container>
           <h1>
-            <img src={Wildlife} style={{ width: "200px", height: "100px"}} />
+            <img src={Wildlife} style={{ width: "150px", height: "70px", marginTop: "25px"}} />
           </h1>
           &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -58,10 +53,8 @@ function Navbars() {
                   Species
                 </Nav.Link>
               </li>
-              <br></br>
-              <br></br>
               <NavDropdown
-                style={{ padding: "19px 19px", fontSize: "20px" }}
+                style={{ marginTop: "6px", fontSize: "20px" }}
                 title="Services"
                 id="basic-nav-dropdown"
               >
@@ -103,7 +96,7 @@ function Navbars() {
                 <Nav.Link
                   as={Link}
                   to="/ContactUs"
-                  style={{ fontSize: "20px" }}
+                  style={{ fontSize: "20px", width: "130px" }}
                 >
                   Contact Us
                 </Nav.Link>
