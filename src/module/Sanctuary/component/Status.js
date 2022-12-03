@@ -83,8 +83,8 @@ const Status = () => {
       }}
     >
       <div style={{ fontWeight: "bold", fontSize: "35px" , background: "yellow"}}>Animals</div>
-      <TextField
-          style={{ marginTop: "20px", width:"500px", fontSize:"100px"}}
+      <input
+          style={{ marginTop: "15px", width:"500px", fontSize: "25px", marginBottom: "15px",}}
           placeholder="Search Animal"
           id="search"
           name="search"
@@ -93,7 +93,7 @@ const Status = () => {
           onChange={handleChange}
           className="input"
         >
-          </TextField>
+      </input>
       <Grid
         container
         spacing={{ xs: 2, md: 3 }}
