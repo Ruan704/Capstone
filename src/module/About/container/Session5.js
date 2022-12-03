@@ -55,7 +55,7 @@ export default function AlternateTimeline() {
             style={{
               textAlign: "center",
               fontFamily: "Baloo Bhai 2",
-              cursive,
+              
               fontSize: "20px",
             }}
           >
@@ -85,7 +85,7 @@ export default function AlternateTimeline() {
             style={{
               textAlign: "center",
               fontFamily: "Baloo Bhai 2",
-              cursive,
+              
               fontSize: "20px",
             }}
           >
@@ -114,7 +114,7 @@ export default function AlternateTimeline() {
             style={{
               textAlign: "center",
               fontFamily: "Baloo Bhai 2",
-              cursive,
+              
               fontSize: "20px",
             }}
           >

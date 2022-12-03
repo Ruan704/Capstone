@@ -15,7 +15,7 @@ const inlineStyle = {
   padding: "20px",
   transform: "translate(-50%,-50%)",
   fontFamily: "Baloo Bhai 2",
-  cursive,
+  
 };
 function About() {
   return (

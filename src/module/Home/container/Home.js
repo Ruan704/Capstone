@@ -20,7 +20,7 @@ function Home() {
             fontWeight: "bold",
             fontSize: "25px",
             fontFamily: "Baloo Bhai 2",
-            cursive,
+            
             opacity: ".5",
           }}
         >
@@ -36,7 +36,7 @@ function Home() {
               paddingRight: "40px",
               background: "white",
               font: "Baloo Bhai 2",
-              cursive,
+              
             }}
           >
             Welcome to World Wildlife Protection (WWP). WWP works in unity with
@@ -58,7 +58,7 @@ function Home() {
             fontWeight: "bold",
             fontSize: "25px",
             fontFamily: "Baloo Bhai 2",
-            cursive,
+            
             opacity: ".5",
           }}
         >
@@ -74,7 +74,7 @@ function Home() {
               paddingRight: "40px",
               background: "white",
               font: "Baloo Bhai 2",
-              cursive,
+              
             }}
           >
             Service to wildlife protection
@@ -98,7 +98,7 @@ function Home() {
             opacity: ".5",
             color: "#557153",
             fontFamily: "Baloo Bhai 2",
-            cursive,
+            
           }}
         >
           <h5
@@ -113,7 +113,7 @@ function Home() {
               paddingRight: "40px",
               background: "white",
               font: "Baloo Bhai 2",
-              cursive,
+              
             }}
           >
             Join Our Team

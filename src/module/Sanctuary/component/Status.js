@@ -56,7 +56,7 @@ const Status = () => {
                   style={{
                     width: "300px",
                     fontFamily: "Baloo Bhai 2",
-                    cursive,
+                    
                   }}
                 >
                   <p style={{ fontWeight: "bold", fontSize: "20px" }}>
@@ -64,7 +64,7 @@ const Status = () => {
                       style={{
                         color: "#A9AF7E",
                         fontFamily: "Baloo Bhai 2",
-                        cursive,
+                        
                       }}
                     >
                       Canonical Name:{" "}
@@ -76,7 +76,7 @@ const Status = () => {
                       style={{
                         color: "#A9AF7E",
                         fontFamily: "Baloo Bhai 2",
-                        cursive,
+                        
                       }}
                     >
                       Threat Status{" "}
@@ -88,7 +88,7 @@ const Status = () => {
                       style={{
                         color: "#A9AF7E",
                         fontFamily: "Baloo Bhai 2",
-                        cursive,
+                        
                       }}
                     >
                       Kingdom:
@@ -114,7 +114,7 @@ const Status = () => {
           fontSize: "35px",
           background: "#E6E5A3",
           fontFamily: "Baloo Bhai 2",
-          cursive,
+          
         }}
       >
         Animals

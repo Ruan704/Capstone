@@ -25,7 +25,7 @@ export default function Stack4() {
           <img
             src={volunteer}
             alt="Joinus"
-            style={{ width: "300px", height: "300px" }}
+            style={{ width: "300px", height: "300px", objectFit: "cover" }}
           />
         </Item>
         <Item sx={{ boxShadow: "none", backgroundColor: "#7D8F69" }}>
@@ -37,7 +37,7 @@ export default function Stack4() {
                 textAlign: "center",
                 color: "#E6E5A3",
                 fontFamily: "Baloo Bhai 2",
-                cursive,
+                
                 marginTop: "25px",
                 paddingLeft: "25px",
                 paddingRight: "25px",
@@ -54,7 +54,7 @@ export default function Stack4() {
                   fontSize: "20px",
                   color: "#A9AF7E",
                   fontFamily: "Baloo Bhai 2",
-                  cursive,
+                  
                   paddingLeft: "40px",
                   paddingRight: "40px",
                 }}
@@ -73,7 +73,7 @@ export default function Stack4() {
                   fontSize: "20px",
                   marginLeft: "25px",
                   fontFamily: "Baloo Bhai 2",
-                  cursive,
+                  
                   backgroundColor: "#f4a460",
                 }}
               >

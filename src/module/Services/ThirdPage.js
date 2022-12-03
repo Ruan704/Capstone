@@ -48,7 +48,7 @@ const ThirdPage = () => {
                     fontWeight: "bold",
                     fontSize: "30px",
                     fontFamily: "Baloo Bhai 2",
-                    cursive,
+                    
                   }}
                 >
                   {p.author}
@@ -64,7 +64,7 @@ const ThirdPage = () => {
                     borderRadius: "15px",
                     margin: "5px",
                     fontFamily: "Baloo Bhai 2",
-                    cursive,
+                    
                   }}
                 />
                 <div className="type">
@@ -72,14 +72,14 @@ const ThirdPage = () => {
                     style={{
                       fontSize: "18px",
                       fontFamily: "Baloo Bhai 2",
-                      cursive,
+                      
                     }}
                   >
                     <div
                       style={{
                         color: "brown",
                         fontFamily: "Baloo Bhai 2",
-                        cursive,
+                        
                       }}
                     >
                       Description:
@@ -95,7 +95,7 @@ const ThirdPage = () => {
                     fontSize: "20px",
                     marginLeft: "25px",
                     fontFamily: "Baloo Bhai 2",
-                    cursive,
+                    
                     backgroundColor: "#f4a460",
                   }}
                 >
@@ -120,7 +120,7 @@ const ThirdPage = () => {
           fontSize: "35px",
           background: "#E6E5A3",
           fontFamily: "Baloo Bhai 2",
-          cursive,
+          
         }}
       >
         Articles

@@ -33,7 +33,7 @@ class youtube extends Component {
           textAlign: "center",
           background: "#cc9900",
           fontFamily: "Baloo Bhai 2",
-          cursive,
+          
           fontWeight: "bold",
         }}
       >

@@ -179,7 +179,7 @@ class Query extends Component {
             fontSize: "40px",
             fontWeight: "bold",
             fontFamily: "Baloo Bhai 2",
-            cursive,
+            
           }}
         >
           Contact Us
@@ -189,7 +189,7 @@ class Query extends Component {
             textAlign: "center",
             fontSize: "25px",
             fontFamily: "Baloo Bhai 2",
-            cursive,
+            
           }}
         >
           We would like to hear from your question and <br></br> help us success{" "}
@@ -202,7 +202,7 @@ class Query extends Component {
                 fontSize: "30px",
                 font: "bold",
                 fontFamily: "Baloo Bhai 2",
-                cursive,
+                
               }}
             >
               Send your request
@@ -214,7 +214,7 @@ class Query extends Component {
                     style={{
                       fontSize: "20px",
                       fontFamily: "Baloo Bhai 2",
-                      cursive,
+                      
                     }}
                   >
                     Name:{" "}
@@ -230,7 +230,7 @@ class Query extends Component {
                     style={{
                       fontSize: "20px",
                       fontFamily: "Baloo Bhai 2",
-                      cursive,
+                      
                     }}
                   />
                 </div>
@@ -243,7 +243,7 @@ class Query extends Component {
                     style={{
                       fontSize: "20px",
                       fontFamily: "Baloo Bhai 2",
-                      cursive,
+                      
                     }}
                   >
                     Email:{" "}
@@ -259,7 +259,7 @@ class Query extends Component {
                     style={{
                       fontSize: "20px",
                       fontFamily: "Baloo Bhai 2",
-                      cursive,
+                      
                     }}
                   />
                   <p
@@ -267,7 +267,7 @@ class Query extends Component {
                       color: "red",
                       fontSize: "15px",
                       fontFamily: "Baloo Bhai 2",
-                      cursive,
+                      
                     }}
                   >
                     {this.state.emailError}
@@ -279,7 +279,7 @@ class Query extends Component {
                     style={{
                       fontSize: "20px",
                       fontFamily: "Baloo Bhai 2",
-                      cursive,
+                      
                     }}
                   >
                     Subject:{" "}
@@ -299,7 +299,7 @@ class Query extends Component {
                       color: "red",
                       fontSize: "15px",
                       fontFamily: "Baloo Bhai 2",
-                      cursive,
+                      
                     }}
                   >
                     {this.state.subjectError}
@@ -312,7 +312,7 @@ class Query extends Component {
                   style={{
                     fontSize: "20px",
                     fontFamily: "Baloo Bhai 2",
-                    cursive,
+                    
                   }}
                 >
                   Message
@@ -330,7 +330,7 @@ class Query extends Component {
                     height: "300px",
                     fontSize: "20px",
                     fontFamily: "Baloo Bhai 2",
-                    cursive,
+                    
                   }}
                 />
                 <p
@@ -338,7 +338,7 @@ class Query extends Component {
                     color: "red",
                     fontSize: "15px",
                     fontFamily: "Baloo Bhai 2",
-                    cursive,
+                    
                   }}
                 >
                   {this.state.messageError}
@@ -360,7 +360,7 @@ class Query extends Component {
                     marginLeft: "200px",
                     fontSize: "30px",
                     fontFamily: "Baloo Bhai 2",
-                    cursive,
+                    
                     backgroundColor: "#f4a460",
                   }}
                 >
@@ -368,7 +368,7 @@ class Query extends Component {
                     style={{
                       fontSize: "20px",
                       fontFamily: "Baloo Bhai 2",
-                      cursive,
+                      
                     }}
                   >
                     Contact Us
@@ -389,7 +389,7 @@ class Query extends Component {
                   style={{
                     fontSize: "20px",
                     fontFamily: "Baloo Bhai 2",
-                    cursive,
+                    
                   }}
                 >
                   WLP@gmail.com
@@ -406,7 +406,7 @@ class Query extends Component {
                   style={{
                     fontSize: "20px",
                     fontFamily: "Baloo Bhai 2",
-                    cursive,
+                    
                   }}
                 >
                   +65 6438 8900
@@ -425,7 +425,7 @@ class Query extends Component {
                   style={{
                     fontSize: "20px",
                     fontFamily: "Baloo Bhai 2",
-                    cursive,
+                    
                   }}
                 >
                   4 Shenton Way No 01-01 SGX <br></br> Centre 2 068807 Singapore{" "}

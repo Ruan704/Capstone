@@ -30,7 +30,7 @@ export default function Stack1() {
                 textAlign: "center",
                 color: "#E6E5A3",
                 fontFamily: "Baloo Bhai 2",
-                cursive,
+                
                 marginTop: "25px",
                 paddingLeft: "25px",
                 paddingRight: "25px",
@@ -53,7 +53,7 @@ export default function Stack1() {
                   fontSize: "20px",
                   color: "#A9AF7E",
                   fontFamily: "Baloo Bhai 2",
-                  cursive,
+                  
                   paddingLeft: "40px",
                   paddingRight: "40px",
                 }}
@@ -79,7 +79,7 @@ export default function Stack1() {
                   fontSize: "20px",
                   marginLeft: "25px",
                   fontFamily: "Baloo Bhai 2",
-                  cursive,
+                  
                   backgroundColor: "#f4a460",
                 }}
               >

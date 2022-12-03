@@ -24,7 +24,6 @@ const sanctuary = () => {
             width: "800px",
             fontSize: "20px",
             fontFamily: "Baloo Bhai 2",
-            cursive,
           }}
         />
         <Tab
@@ -33,7 +32,7 @@ const sanctuary = () => {
             width: "800px",
             fontSize: "20px",
             fontFamily: "Baloo Bhai 2",
-            cursive,
+            
           }}
         />
       </Tabs>

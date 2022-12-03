@@ -69,15 +69,15 @@ class News extends Component {
     return (
       <>
         <div className="text-img">
-          <Container style={{ backgroundColor: "#E6E5A3" }}>
+          <Container style={{ backgroundColor: "#E6E5A3CC", padding: "20px", paddingBottom: 0, borderRadius: "15px" }}>
             <div class="news" style={{ color: "green" }}>
               <h2
                 style={{
-                  fontSize: "40px",
+                  fontSize: "30px",
                   color: "#557153",
                   textAlign: "center",
                   fontFamily: "Baloo Bhai 2",
-                  cursive,
+                  lineHeight: 1.8,
                 }}
               >
                 Sign Up for Our Updates
@@ -105,7 +105,6 @@ class News extends Component {
                               backgroundColor: "transparent",
                               margin: "auto",
                               fontFamily: "Baloo Bhai 2",
-                              cursive,
                             }}
                           />
                           <p
@@ -113,7 +112,7 @@ class News extends Component {
                               color: "red",
                               fontSize: "15px",
                               fontFamily: "Baloo Bhai 2",
-                              cursive,
+                              
                             }}
                           >
                             {this.state.emailError}
@@ -129,9 +128,10 @@ class News extends Component {
                               width: "250px",
                               height: "50px",
                               fontSize: "20px",
+                              marginTop: 0,
                               marginLeft: "25px",
                               fontFamily: "Baloo Bhai 2",
-                              cursive,
+                              borderRadius: "30px",
                               backgroundColor: "#f4a460",
                             }}
                             onClick={() => {
@@ -140,7 +140,7 @@ class News extends Component {
                               });
                             }}
                           >
-                            <span style={{ fontSize: "20px" }}>SIGN UP</span>
+                            <span style={{ fontSize: "20px", fontFamily: "'Baloo Bhai 2', cursive" }}>SIGN UP</span>
                           </Button>
                         </div>
                       </>

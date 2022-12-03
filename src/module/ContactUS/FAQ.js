@@ -23,7 +23,7 @@ export default function ControlledAccordions() {
           fontSize: "40px",
           fontWeight: "bold",
           fontFamily: "Baloo Bhai 2",
-          cursive,
+          
         }}
       >
         Frequently Asked Questions(FAQs)
@@ -43,7 +43,7 @@ export default function ControlledAccordions() {
               color: "text.secondary",
               fontSize: "20px",
               fontFamily: "Baloo Bhai 2",
-              cursive,
+              
             }}
           >
             #1 What does it mean that WWF is accredited by GFAS?{" "}
@@ -55,7 +55,6 @@ export default function ControlledAccordions() {
               fontSize: "20px",
               marginRight: "120px",
               fontFamily: "Baloo Bhai 2",
-              cursive,
             }}
           >
             Accreditation by the Global Federation of Animal Sanctuaries (GFAS)
@@ -80,7 +79,7 @@ export default function ControlledAccordions() {
               color: "text.secondary",
               fontSize: "20px",
               fontFamily: "Baloo Bhai 2",
-              cursive,
+              
             }}
           >
             #2 Can people pet the animals at WWH?
@@ -92,7 +91,7 @@ export default function ControlledAccordions() {
               fontSize: "20px",
               marginRight: "120px",
               fontFamily: "Baloo Bhai 2",
-              cursive,
+              
             }}
           >
             No. The animal residents live at WWH for refuge and to have a safe
@@ -119,7 +118,7 @@ export default function ControlledAccordions() {
               color: "text.secondary",
               fontSize: "20px",
               fontFamily: "Baloo Bhai 2",
-              cursive,
+              
             }}
           >
             #3 Can I take photographs?
@@ -131,7 +130,7 @@ export default function ControlledAccordions() {
               fontSize: "20px",
               marginRight: "120px",
               fontFamily: "Baloo Bhai 2",
-              cursive,
+              
             }}
           >
             Yes, but WWH rules require guests turn off their flash, and never
@@ -153,7 +152,7 @@ export default function ControlledAccordions() {
               color: "text.secondary",
               fontSize: "20px",
               fontFamily: "Baloo Bhai 2",
-              cursive,
+              
             }}
           >
             #4 Do I need a reservation?
@@ -165,7 +164,7 @@ export default function ControlledAccordions() {
               fontSize: "20px",
               marginRight: "120px",
               fontFamily: "Baloo Bhai 2",
-              cursive,
+              
             }}
           >
             Reservations are not necessary for general visitation on Wednesdays,

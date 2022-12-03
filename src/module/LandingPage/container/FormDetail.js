@@ -63,26 +63,24 @@ export class FormDetail extends Component {
 
             <div className="contact-left">
               <form>
-                <Typography
-                  component="h1"
-                  variant="h5"
+                <h2
                   style={{
                     textAlign: "center",
                     fontSize: "40px",
                     fontWeight: "bold",
                     fontFamily: "Baloo Bhai 2",
-                    cursive,
+                    color: "#f4a460"
                   }}
                 >
                   Join Our Volunteer Team
-                </Typography>
+                </h2>
                 <div class="input-row">
                   <div class="input-group">
                     <label
                       style={{
                         fontSize: "20px",
                         fontFamily: "Baloo Bhai 2",
-                        cursive,
+                        color: "#f4a460"
                       }}
                     >
                       Name:{" "}
@@ -109,7 +107,7 @@ export class FormDetail extends Component {
                       style={{
                         fontSize: "20px",
                         fontFamily: "Baloo Bhai 2",
-                        cursive,
+                        color: "#f4a460"
                       }}
                     >
                       Email:{" "}
@@ -124,7 +122,7 @@ export class FormDetail extends Component {
                       placeholder="Please enter your email"
                       defaultValue={values.email}
                       onChange={handleChange("email")}
-                      style={{ fontSize: "20px", fontSize: "15px" }}
+                      style={{ fontSize: "20px" }}
                     />
                     <p style={{ color: "maroon", fontSize: "15px" }}>
                       {values.emailError}
@@ -135,9 +133,8 @@ export class FormDetail extends Component {
                     <label
                       style={{
                         fontSize: "20px",
-                        fontSize: "15px",
                         fontFamily: "Baloo Bhai 2",
-                        cursive,
+                        color: "#f4a460"
                       }}
                     >
                       Number:{" "}
@@ -167,13 +164,13 @@ export class FormDetail extends Component {
                     onClick={this.continue}
                     style={{
                       width: "200px",
-                      height: "100px",
+                      height: "50px",
                       margin: "auto",
                       marginLeft: "200px",
-                      fontSize: "30px",
+                      fontSize: "15px",
                       fontFamily: "Baloo Bhai 2",
-                      cursive,
                       backgroundColor: "#f4a460",
+                      borderRadius: "25px"
                     }}
                   >
                     Continue
@@ -222,15 +219,16 @@ export class FormDetail extends Component {
                   </td>
                   <br></br>
                 </tr>
-                <img
+
+              </table>
+              <img
                   src={image}
                   style={{
                     width: "400px",
-                    height: "300px",
-                    marginLeft: "80px",
+                    height: "200px",
+                    margin: "40px"
                   }}
                 />
-              </table>
             </div>
           </div>
         </Container>

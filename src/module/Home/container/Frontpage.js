@@ -21,7 +21,7 @@ class Frontpage extends Component {
             fontSize: "20px",
             color: "#7D8F69",
             fontFamily: "Baloo Bhai 2",
-            cursive,
+            
           }}
         >
           The Protecting Wildlife program is one of Singapore largest wildlife

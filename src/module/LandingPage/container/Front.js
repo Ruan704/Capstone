@@ -17,7 +17,7 @@ class Front extends Component {
               fontSize: "30px",
               color: "#7D8F69",
               fontFamily: "Baloo Bhai 2",
-              cursive,
+              
             }}
           >
             {" "}

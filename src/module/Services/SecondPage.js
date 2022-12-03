@@ -25,7 +25,7 @@ const SecondPage = () => {
                     fontSize: "30px",
                     textAlign: "center",
                     fontFamily: "Baloo Bhai 2",
-                    cursive,
+                    
                   }}
                 >
                   Wildlife Supporting
@@ -35,7 +35,7 @@ const SecondPage = () => {
                   style={{
                     fontSize: "20px",
                     fontFamily: "Baloo Bhai 2",
-                    cursive,
+                    
                   }}
                 >
                   Have a real life distance between u and the wildlife
@@ -49,7 +49,7 @@ const SecondPage = () => {
                     fontSize: "20px",
                     marginLeft: "25px",
                     fontFamily: "Baloo Bhai 2",
-                    cursive,
+                    
                     backgroundColor: "#f4a460",
                   }}
                 >
@@ -64,7 +64,7 @@ const SecondPage = () => {
             style={{
               marginRight: "150px",
               fontFamily: "Baloo Bhai 2",
-              cursive,
+              
             }}
           >
             <div
@@ -72,7 +72,7 @@ const SecondPage = () => {
               style={{
                 marginRight: "100px",
                 fontFamily: "Baloo Bhai 2",
-                cursive,
+                
               }}
             >
               <img
@@ -83,7 +83,7 @@ const SecondPage = () => {
                   width: "350px",
                   height: "200px",
                   fontFamily: "Baloo Bhai 2",
-                  cursive,
+                  
                 }}
               />
               <div class="card-body">
@@ -94,7 +94,7 @@ const SecondPage = () => {
                     fontSize: "30px",
                     textAlign: "center",
                     fontFamily: "Baloo Bhai 2",
-                    cursive,
+                    
                   }}
                 >
                   Wildlife Education
@@ -104,7 +104,7 @@ const SecondPage = () => {
                   style={{
                     fontSize: "20px",
                     fontFamily: "Baloo Bhai 2",
-                    cursive,
+                    
                   }}
                 >
                   Learning more about wildlife by Knowledge
@@ -118,7 +118,7 @@ const SecondPage = () => {
                     fontSize: "20px",
                     marginLeft: "25px",
                     fontFamily: "Baloo Bhai 2",
-                    cursive,
+                    
                     backgroundColor: "#f4a460",
                   }}
                 >
@@ -143,7 +143,7 @@ const SecondPage = () => {
                     fontSize: "30px",
                     textAlign: "center",
                     fontFamily: "Baloo Bhai 2",
-                    cursive,
+                    
                   }}
                 >
                   Wildlife Save
@@ -153,7 +153,7 @@ const SecondPage = () => {
                   style={{
                     fontSize: "20px",
                     fontFamily: "Baloo Bhai 2",
-                    cursive,
+                    
                   }}
                 >
                   What measures are we using to save the wildlife
@@ -167,7 +167,7 @@ const SecondPage = () => {
                     fontSize: "20px",
                     marginLeft: "25px",
                     fontFamily: "Baloo Bhai 2",
-                    cursive,
+                    
                     backgroundColor: "#f4a460",
                   }}
                 >

@@ -12,7 +12,7 @@ const AboutWildlife = () => {
           color: "green",
           textAlign: "center",
           fontFamily: "Baloo Bhai 2",
-          cursive,
+          
         }}
       >
         About Wildlife Protection
@@ -26,7 +26,7 @@ const AboutWildlife = () => {
               fontWeight: "bold",
               color: "#996600",
               fontFamily: "Baloo Bhai 2",
-              cursive,
+              
             }}
           >
             CHARTING A CHANGING HABITAT
@@ -39,7 +39,7 @@ const AboutWildlife = () => {
               fontWeight: "bold",
               display: "inline",
               fontFamily: "Baloo Bhai 2",
-              cursive,
+              
             }}
           >
             As the world’s leading conservation organization, Our teams works in

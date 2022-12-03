@@ -36,7 +36,7 @@ function Navbars() {
                   style={{
                     fontSize: "20px",
                     fontFamily: "Baloo Bhai 2",
-                    cursive,
+                    
                   }}
                 >
                   Home
@@ -49,7 +49,7 @@ function Navbars() {
                   style={{
                     fontSize: "20px",
                     fontFamily: "Baloo Bhai 2",
-                    cursive,
+                    
                   }}
                 >
                   About
@@ -62,7 +62,7 @@ function Navbars() {
                   style={{
                     fontSize: "20px",
                     fontFamily: "Baloo Bhai 2",
-                    cursive,
+                    
                   }}
                 >
                   Species
@@ -73,7 +73,7 @@ function Navbars() {
                   marginTop: "6px",
                   fontSize: "20px",
                   fontFamily: "Baloo Bhai 2",
-                  cursive,
+                  
                 }}
                 title="Services"
                 id="basic-nav-dropdown"
@@ -84,7 +84,7 @@ function Navbars() {
                   style={{
                     fontSize: "20px",
                     fontFamily: "Baloo Bhai 2",
-                    cursive,
+                    
                   }}
                 >
                   Services
@@ -95,7 +95,7 @@ function Navbars() {
                   style={{
                     fontSize: "20px",
                     fontFamily: "Baloo Bhai 2",
-                    cursive,
+                    
                   }}
                 >
                   Wildlife Supporting
@@ -106,7 +106,7 @@ function Navbars() {
                   style={{
                     fontSize: "20px",
                     fontFamily: "Baloo Bhai 2",
-                    cursive,
+                    
                   }}
                 >
                   Wildlife Education
@@ -117,7 +117,7 @@ function Navbars() {
                   style={{
                     fontSize: "20px",
                     fontFamily: "Baloo Bhai 2",
-                    cursive,
+                    
                   }}
                 >
                   Wildlife Save
@@ -131,7 +131,7 @@ function Navbars() {
                   style={{
                     fontSize: "20px",
                     fontFamily: "Baloo Bhai 2",
-                    cursive,
+                    
                   }}
                 >
                   Join Us

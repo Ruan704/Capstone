@@ -72,7 +72,7 @@ export class FormConfirm extends Component {
                     fontSize: "40px",
                     fontWeight: "bold",
                     fontFamily: "Baloo Bhai 2",
-                    cursive,
+                    
                   }}
                 >
                   We would like to hear more about you
@@ -83,7 +83,7 @@ export class FormConfirm extends Component {
                       style={{
                         fontSize: "20px",
                         fontFamily: "Baloo Bhai 2",
-                        cursive,
+                        
                       }}
                     >
                       occupation:{" "}
@@ -110,7 +110,7 @@ export class FormConfirm extends Component {
                       style={{
                         fontSize: "20px",
                         fontFamily: "Baloo Bhai 2",
-                        cursive,
+                        
                       }}
                     >
                       NRIC:{" "}
@@ -137,7 +137,7 @@ export class FormConfirm extends Component {
                       style={{
                         fontSize: "20px",
                         fontFamily: "Baloo Bhai 2",
-                        cursive,
+                        
                       }}
                     >
                       Remark:{" "}

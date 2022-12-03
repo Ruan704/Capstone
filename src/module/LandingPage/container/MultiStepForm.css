@@ -136,10 +136,10 @@ body {
 }
 
 input {
-  border: 2px solid rgb(98, 0, 255);
+  border: 2px solid rgb(244, 164, 96);
   border-radius: 5px;
 }
 
 input:focus {
-  border: 3px solid rgb(98, 0, 255);
+  border: 3px solid rgb(244, 164, 96);
 }
