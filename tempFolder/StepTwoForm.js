@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Grid from "@mui/material/Grid";
 import { connect } from "react-redux";
-import { onAddFormData } from "../../../action";
+import { onAddFormData } from "../src/action";
 import "./StepOneForm.css";
 import Button from "@mui/material/Button";
 import { v4 as uuid } from "uuid";

@@ -174,20 +174,20 @@ class Query extends Component {
   render() {
     return (
       <div className="container">
-        <h2 style={{ textAlign: "center", fontSize:"40px" , fontWeight: "bold"}}>Contact Us</h2>
-        <h3 style={{ textAlign: "center", fontSize:"25px" }}>
+        <h2 style={{ textAlign: "center", fontSize:"40px" , fontWeight: "bold", fontFamily:"Lato"}}>Contact Us</h2>
+        <h3 style={{ textAlign: "center", fontSize:"25px", fontFamily:"Lato" }}>
           We would like to hear from your question and <br></br> help us success{" "}
           Feel free to get in touch with <br></br>us
         </h3>
         <div className="contact-box">
           <div className="contact-left">
-            <h3 style={{ fontSize: "30px", font: "bold" }}>
+            <h3 style={{ fontSize: "30px", font: "bold", fontFamily:"Lato" }}>
               Send your request
             </h3>
             <form>
               <div class="input-row">
                 <div class="input-group">
-                  <label style={{ fontSize: "20px" }}>Name: </label>
+                  <label style={{ fontSize: "20px", fontFamily:"Lato" }}>Name: </label>
                   <input
                     id="name"
                     label="Enter Name"
@@ -196,13 +196,13 @@ class Query extends Component {
                     value={this.state.name}
                     onChange={this.handleChange}
                     placeholder="Please enter your name"
-                    style={{ fontSize: "20px" }}
+                    style={{ fontSize: "20px", fontFamily:"Lato" }}
                   />
                 </div>
                 <p style={{ color: "red" , fontSize: "15px"}}>{this.state.nameError}</p>
                 <br></br>
                 <div class="input-group">
-                  <label style={{ fontSize: "20px" }}>Email: </label>
+                  <label style={{ fontSize: "20px" , fontFamily:"Lato" }}>Email: </label>
                   <input
                     id="email"
                     label="Email Address"
@@ -211,13 +211,13 @@ class Query extends Component {
                     value={this.state.email}
                     onChange={this.handleChange}
                     placeholder="Enter Email"
-                    style={{ fontSize: "20px" }}
+                    style={{ fontSize: "20px", fontFamily:"Lato" }}
                   />
-                  <p style={{ color: "red" , fontSize: "15px"}}>{this.state.emailError}</p>
+                  <p style={{ color: "red" , fontSize: "15px" , fontFamily:"Lato"}}>{this.state.emailError}</p>
                 </div>
                 <br></br>
                 <div class="input-group">
-                  <label style={{ fontSize: "20px" }}>Subject: </label>
+                  <label style={{ fontSize: "20px" , fontFamily:"Lato" }}>Subject: </label>
                   <input
                     id="subject"
                     label="subject"
@@ -228,12 +228,12 @@ class Query extends Component {
                     placeholder="Enter subject"
                     style={{ fontSize: "20px" }}
                   />
-                  <p style={{ color: "red" , fontSize: "15px"}}>{this.state.subjectError}</p>
+                  <p style={{ color: "red" , fontSize: "15px" , fontFamily:"Lato"}}>{this.state.subjectError}</p>
                   <br></br>
                 </div>
                 <br></br>
 
-                <label style={{ fontSize: "20px" }}>Message</label>
+                <label style={{ fontSize: "20px", fontFamily:"Lato" }}>Message</label>
                 <textarea
                   id="message"
                   label="Message Entered"
@@ -242,12 +242,15 @@ class Query extends Component {
                   value={this.state.message}
                   onChange={this.handleChange}
                   placeholder="Enter Message Here"
-                  style={{ width: "600px", height: "300px", fontSize: "20px" }}
+                  style={{ width: "600px", height: "300px", fontSize: "20px" , fontFamily:"Lato" }}
                 />
-                <p style={{ color: "red" , fontSize: "15px"}}>{this.state.messageError}</p>
+                <p style={{ color: "red" , fontSize: "15px" , fontFamily:"Lato"}}>{this.state.messageError}</p>
                 <br></br>
 
+
+               {/* <p style={{color:maroon}} >{email.error}</p> */}
                 <Button
+                // data-testid="button-up"
                   type="submit"
                   variant="contained"
                   className="btn"
@@ -255,8 +258,9 @@ class Query extends Component {
                   onClick={this.handleSubmit}
                   style={{width:"200px", height:"150px", margin: "auto", marginLeft: '140px'}}
                 >
-                  <span style={{fontSize:"20px"}}>Contact Us</span>
+                  <span style={{fontSize:"20px",fontFamily:"Lato" }}>Contact Us</span>
                 </Button>
+
               </div>
             </form>
           </div>
@@ -266,20 +270,20 @@ class Query extends Component {
 
               <tr>
                 <td style={{ fontSize: "20px" }}><EmailIcon fontSize="large" />&nbsp;&nbsp;Email:&nbsp;</td>
-                <td style={{ fontSize: "20px" }}>WLP@gmail.com</td>
+                <td style={{ fontSize: "20px", fontFamily:"Lato" }}>WLP@gmail.com</td>
               </tr>
               <br></br>
 
               <tr>
                 <td style={{ fontSize: "20px" }}><ContactPhoneIcon fontSize="large" />&nbsp;&nbsp;&nbsp;Phone:&nbsp;</td>
-                <td style={{ fontSize: "20px" }}>+65 6438 8900</td>
+                <td style={{ fontSize: "20px", fontFamily:"Lato" }}>+65 6438 8900</td>
               </tr>
               <br></br>
 
 <br></br><br></br>
               <tr>
                 <td style={{ fontSize: "20px",  marginLeft: '300px'}}><LocationOnIcon fontSize="large" />&nbsp;&nbsp;&nbsp;Address:&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                <td style={{ fontSize: "20px" }}>
+                <td style={{ fontSize: "20px", fontFamily:"Lato" }}>
                   4 Shenton Way No 01-01 SGX <br></br> Centre 2  068807
                   Singapore{" "}
                 </td>

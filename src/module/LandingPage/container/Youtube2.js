@@ -27,8 +27,8 @@ class youtube extends Component {
     const {videoId} = this.props
 
     return (
-        <div style={{fontSize:"25px", color:"light-brown",textAlign:"center", 
-        background: "#cc9900"
+        <div style={{fontSize:"35px", color:"light-brown",textAlign:"center", 
+        background: "#cc9900", fontFamily:"Lato", fontWeight:"bold"
      ,}}> Find Out more about our volunteering job with the video below
            <br></br><br></br>
       <YouTube videoId={videoId} opts={opts} onReady={this.videoonReady} 

@@ -12,7 +12,8 @@ const inlineStyle = {
   top:"50%",
   position: "absolute",
   padding: '20px',
-  transform: "translate(-50%,-50%)"
+  transform: "translate(-50%,-50%)",
+  fontFamily:"Lato"
 }
 function Volunteer() {
 return(

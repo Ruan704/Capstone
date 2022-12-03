@@ -2,8 +2,7 @@ import React, { Component } from 'react'
 import About from './About.js'
 import AboutWildlife from './AboutWildlife.js'
 import Session2 from './Session2.js'
-import Vision from './Vision.js'
-import Cards from './Cards.js'
+import Session5 from "./Session5.js"
 class AboutComponent extends Component{
     render(){
         return(
@@ -11,10 +10,11 @@ class AboutComponent extends Component{
             <About/>
             <AboutWildlife/>
             <Session2/>
-            <Vision/>
+            {/* <Vision/> */}
             <br></br>
-            <Cards/>
-            <br></br><br></br>
+            {/* <Cards/> */}
+            <br></br><br></br> 
+            <Session5/>
             </>
         )
     }

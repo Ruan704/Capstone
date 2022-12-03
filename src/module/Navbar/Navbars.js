@@ -6,14 +6,26 @@ import "./Navbar.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
 import NavDropdown from "react-bootstrap/NavDropdown";
-function ColorSchemesExample() {
+import Wildlife from "../../images/wildlife.png";
+function Navbars() {
   return (
     <>
-      <Navbar bg="dark" variant="dark" expand="md">
+      <Navbar
+        expand="sm"
+        style={{
+          backgroundColor: "#00FF80",
+          className: "ml-auto",
+          minHeight: "35px",
+          padding: "1rem",
+                    // maxHeight:"65px", marginTop:"50px"}
+                    height:"60px"
+        }}
+      >
         <Container>
           <h1>
-            WILDLIFE<span> PROTECTION</span>
+            <img src={Wildlife} style={{ width: "200px", height: "100px"}} />
           </h1>
+          &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse>
             <Nav style={{ padding: "15px 30px" }} className="me-auto">
@@ -21,7 +33,7 @@ function ColorSchemesExample() {
               <li>
                 <Nav.Link
                   as={Link}
-                  to="/Frontpage"
+                  to="/"
                   className="words"
                   style={{ fontSize: "20px" }}
                 >
@@ -31,7 +43,7 @@ function ColorSchemesExample() {
               <li>
                 <Nav.Link
                   as={Link}
-                  to="/aboutComponent"
+                  to="/overview"
                   style={{ fontSize: "20px" }}
                 >
                   About
@@ -40,7 +52,7 @@ function ColorSchemesExample() {
               <li>
                 <Nav.Link
                   as={Link}
-                  to="/sanctuary"
+                  to="/gallery-animal"
                   style={{ fontSize: "20px" }}
                 >
                   Species
@@ -49,7 +61,7 @@ function ColorSchemesExample() {
               <br></br>
               <br></br>
               <NavDropdown
-                style={{ padding: "15px 15px", fontSize: "23px" }}
+                style={{ padding: "19px 19px", fontSize: "20px" }}
                 title="Services"
                 id="basic-nav-dropdown"
               >
@@ -62,21 +74,21 @@ function ColorSchemesExample() {
                 </NavDropdown.Item>
                 <NavDropdown.Item
                   as={Link}
-                  to="/WildlifeSupporting"
+                  to="/Services-WildlifeSupporting"
                   style={{ fontSize: "20px" }}
                 >
                   Wildlife Supporting
                 </NavDropdown.Item>
                 <NavDropdown.Item
                   as={Link}
-                  to="/WildlifeEducation"
+                  to="/Services-WildlifeEducation"
                   style={{ fontSize: "20px" }}
                 >
                   Wildlife Education
                 </NavDropdown.Item>
                 <NavDropdown.Item
                   as={Link}
-                  to="/WildlifeSave"
+                  to="/Services-WildlifeSave"
                   style={{ fontSize: "20px" }}
                 >
                   Wildlife Save
@@ -84,7 +96,7 @@ function ColorSchemesExample() {
               </NavDropdown>
               <li>
                 <Nav.Link as={Link} to="/Front" style={{ fontSize: "20px" }}>
-                  Join
+                  Join Us
                 </Nav.Link>
               </li>
               <li>
@@ -93,7 +105,7 @@ function ColorSchemesExample() {
                   to="/ContactUs"
                   style={{ fontSize: "20px" }}
                 >
-                  Contact
+                  Contact Us
                 </Nav.Link>
               </li>
               {/* <li><Nav.Link  }>Services</Nav.Link></li> */}
@@ -105,4 +117,5 @@ function ColorSchemesExample() {
   );
 }
 
-export default ColorSchemesExample;
+export default Navbars;
+

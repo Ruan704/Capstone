@@ -7,8 +7,8 @@ class Footer extends Component {
     return (
       <>
         <footer class="text-center text-lg-start bg-white text-muted">
-          <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-            <div class="me-5 d-none d-lg-block">
+          <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom" style={{backgroundColor:"#A9AF7E"}}>
+            <div class="me-5 d-none d-lg-block" style={{color:"red"}}>
               <span style={{color:"grey", fontSize: "25px" }}>
                 Get connected with us on social networks:
               </span>
@@ -34,9 +34,10 @@ class Footer extends Component {
               </a>
             </div>
           </section>
-          <section class="">
+          <div style={{backgroundColor:"#E6E5A3"}}></div>
+          <section class="" style={{backgroundColor:"#E6E5A3"}}>
             <div class="container text-center text-md-start mt-5">
-              <div class="row mt-3">
+              <div class="row mt-3" >
                 <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                   
                     <i class="bi bi-bug bi-3x" style={{ fontSize: "20px" ,margintop: '400px'}}/>

@@ -14,3 +14,5 @@ export const DELETE_DATA = 'DELETE_DATA';
 
 export const ADD_FORM = 'ADD_FORM';
 export const DELETE_FORM = 'DELETE_FORM';
+
+export const GET_POSTS ='GET_POSTS';

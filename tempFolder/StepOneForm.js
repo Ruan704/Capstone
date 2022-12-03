@@ -3,7 +3,7 @@ import Grid from "@mui/material/Grid";
 import { v4 as uuid } from "uuid";
 import { connect } from "react-redux";
 import Button from "@mui/material/Button";
-import { onAddData } from "../../../action";
+import { onAddData } from "../src/action";
 import "./StepOneForm.css";
 
 class StepOneForm extends Component {

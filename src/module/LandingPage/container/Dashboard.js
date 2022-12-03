@@ -1,133 +1,215 @@
-//based on boolean attritubute disable the tab.
-//logo comes to center
-// forms should be coming tomorrow.
-// finds API for project
-// add images 
-//do 2 tab first.
-//change the color for the complete website
-// display 3 card in api and have a lot of ui
+import React, { Component } from 'react'
+import FormConfirm from "./FormConfirm";
+import FormDetail from "./FormDetail";
+import FormSuccess from './FormSuccess';
+export default class Dashboard extends Component{
+   constructor(){
+    super();
+    this.state ={
+      step:1,
+      name:'',
+      email:'',
+      contact:'',
+      NRIC:'',
+      occupation:'',
+      remark:'',
+      nameError:'',
+      emailError:'',
+      contactError:'',
+      NRICError:'',
+      occupationError:'',
+      remarkError:'',
+      formIsValid: false,
+    }
+   }
 
-import * as React from 'react';
-import CssBaseline from '@mui/material/CssBaseline';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Container from '@mui/material/Container';
-import Toolbar from '@mui/material/Toolbar';
-import Paper from '@mui/material/Paper';
-import Stepper from '@mui/material/Stepper';
-import Step from '@mui/material/Step';
-import StepLabel from '@mui/material/StepLabel';
-import Button from '@mui/material/Button';
-import Link from '@mui/material/Link';
-import Typography from '@mui/material/Typography';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
-import StepOneForm from './StepOneForm';
-import StepTwoForm from './StepTwoForm';
-import "./Dashboard.css";
-function Copyright() {
-  return (
-    <Typography variant="body2" color="text.secondary" align="center" style={{fontSize: "30px"}}>
-      {'Copyright © '}
-      <Link color="inherit" href="https://education.nationalgeographic.org/resource/wildlife-conservation"
-      >
-       WWP
-      </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
-    </Typography>
-  );
-}
+   nextStep = () =>{
+    const {step} = this.state;
+    this.setState({step: step+1})
+   }
 
-const steps = ['Step 1', 'Step 2'];
+   prevStep = () =>{
+    const {step} = this.state;
+    this.setState({step: step-1})
+   }
 
-function getStepContent(step) {
-  switch (step) {
-    case 0:
-      return <StepOneForm />;
+   handleChange = input => event =>{
+   if(event.target.id=='name'){
+    this.validateName(event.target.value);
+   }
+    else if(event.target.id == "email"){
+      this.validateEmail(event.target.value);
+    }
+    else if(event.target.id == "contact"){
+      this.validateContact(event.target.value);
+    }
+    else if(event.target.id=="occupation"){
+      this.validateOccupation(event.target.value);
+    }
+    else if(event.target.id=="remark"){
+      this.validateRemark(event.target.value);
+    }
+    else if(event.target.id=="NRIC"){
+      this.validateNRIC(event.target.value);
+    }
+   }
+
+   validateName = (name) => {
+    let nameError = this.state.nameError;
+    let formIsValid = this.state.formIsValid;
+    var patterns = new RegExp(/[^a-zA-Z]/);
+    if (String(name).trim() === "") {
+      nameError = "*Please enter your name.";
+      formIsValid = false;
+    } else if (patterns.test(name)) {
+      formIsValid = false;
+      nameError = "Please enter valid name";
+    } else {
+      nameError = "";
+      formIsValid = true;
+    }
+    this.setState({
+      name,
+      nameError,
+      formIsValid,
+    });
+    return formIsValid;
+  };
+
+  validateEmail = (email) => {
+    let emailError = this.state.emailError;
+    let formIsValid = this.state.formIsValid;
+
+    if (String(email).trim() === "") {
+      emailError = "*Please enter your email-ID.";
+      formIsValid = false;
+    } else {
+      var pattern = new RegExp(
+        /^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i
+      );
+      if (pattern.test(email)) {
+        formIsValid = true;
+        emailError = "";
+      } else {
+        emailError = "*Please enter valid email-ID.";
+        formIsValid = false;
+      }
+    }
+
+    this.setState({
+      email,
+      emailError,
+      formIsValid,
+    });
+    return formIsValid;
+  };
+
+  validateContact = (contact) => {
+    let contactError = this.state.contactError;
+    let formIsValid = this.state.formIsValid;
+    var pattern = new RegExp(/^[0-9]{8}$/);
+    if (String(contact).trim() === "") {
+      contactError = "*Please enter your contact.";
+      formIsValid = false;
+    } else if (!pattern.test(contact)) {
+      formIsValid = false;
+      contactError = "Please enter valid contact";
+    } else {
+      contactError = "";
+      formIsValid = true;
+    }
+    this.setState({
+      contact,
+      contactError,
+      formIsValid,
+    });
+    return formIsValid;
+  };
+
+  validateOccupation = (occupation) => {
+    let occupationError = this.state.occupationError;
+    let formIsValid = this.state.formIsValid;
+    if (String(occupation).trim() === "") {
+      occupationError = "*Please enter your occupation.";
+      formIsValid = false;
+    } else {
+      occupationError = "";
+      formIsValid = true;
+    }
+    this.setState({
+      occupation,
+      occupationError,
+      formIsValid,
+    });
+    return formIsValid;
+  };
+
+  validateRemark = (remark) => {
+    let remarkError = this.state.remarkError;
+    let formIsValid = this.state.formIsValid;
+    if (String(remark).trim() === "") {
+      remarkError = "*Please enter your remark.";
+      formIsValid = false;
+    } else {
+      remarkError = "";
+      formIsValid = true;
+    }
+    this.setState({
+      remark,
+      remarkError,
+      formIsValid,
+    });
+    return formIsValid;
+  };
+
+  validateNRIC = (NRIC) => {
+    let NRICError = this.state.NRICError;
+    let formIsValid = this.state.formIsValid;
+    // first letter must start with S, T, F or G. Last letter must be A - Z
+    var patterns = new RegExp("^[STFG]\\d{7}[A-Z]$");
+    if (String(NRIC).trim() === "") {
+      NRICError = "*Please enter your NRIC.";
+      formIsValid = false;
+    } else if (!patterns.test(NRIC)) {
+      formIsValid = false;
+      NRICError =  "Please enter valid NRIC (first letter must start with S, T, F or G. Last letter must be A - Z)";
+    } else {
+      NRICError = "";
+      formIsValid = true;
+    }
+    this.setState({
+      NRIC,
+      NRICError,
+      formIsValid,
+    });
+    return formIsValid;
+  };
+  
+  render(){
+   const {step} = this.state;
+   const{name, email,contact,NRIC,occupation,remark, nameError, emailError,contactError,NRICError,occupationError,remarkError,formIsValid} = this.state;
+   const values = {name, email,contact,NRIC,occupation,remark, nameError, emailError,contactError,NRICError,occupationError,remarkError,formIsValid};
+   switch(step){
     case 1:
-      return <StepTwoForm />;
-    default:
-      throw new Error('Unknown step');
+      return(
+        <FormDetail
+        nextStep = {this.nextStep}
+        handleChange = {this.handleChange}
+        values = {values}
+        />
+      )
+      case 2:
+        return(
+          <FormConfirm
+          prevStep = {this.prevStep}
+          nextStep = {this.nextStep}
+          handleChange = {this.handleChange}
+          values = {values}/>
+        )
+        case 3:
+          return(
+            <FormSuccess />
+          )
+   }
   }
-}
-
-const theme = createTheme();
-
-export default function Dashboard() {
-  const [activeStep, setActiveStep] = React.useState(0);
-
-  const handleNext = () => {
-    setActiveStep(activeStep + 1);
-  };
-
-  const handleBack = () => {
-    setActiveStep(activeStep - 1);
-  };
-
-  return (
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <AppBar
-        position="absolute"
-        color="default"
-        elevation={0}
-        sx={{
-          position: 'relative',
-          borderBottom: (t) => `1px solid ${t.palette.divider}`,
-        }}
-      >
-        <Toolbar>
-          {/* <Typography variant="h6" color="inherit" noWrap>
-            Company name
-          </Typography> */}
-        </Toolbar>
-      </AppBar>
-      <Container component="main" maxWidth="sm" sx={{ mb: 4 }}>
-        <Paper variant="outlined" sx={{ my: { xs: 3, md: 6 }, p: { xs: 2, md: 3 } }} style={{width:"900px",height:"800px"}}>
-          <Typography component="h1" variant="h4" align="center">
-          JOIN US NOW 
-          </Typography>
-          <Stepper activeStep={activeStep} sx={{ pt: 3, pb: 5 }}>
-
-            {steps.map((label) => (
-              <Step key={label}>
-                <StepLabel>{label}</StepLabel>
-              </Step>
-            ))}
-          </Stepper>
-          {activeStep === steps.length ? (
-            <React.Fragment>
-              <Typography variant="h5" gutterBottom style={{fontSize: "30px" , fontWeight:"bold"}}>
-                Thank you for Joining
-              </Typography>
-              <Typography variant="subtitle1" style={{fontSize: "20px"}}>
-                Thanks you for the interest for joining our team. we hope to see you soon. 😀 😃 😄 😁 
-              </Typography>
-            </React.Fragment>
-          ) : (
-            <React.Fragment>
-              {getStepContent(activeStep)}
-              <Box sx={{ display: 'flex', justifyContent: 'flex-end' }}>
-                {activeStep !== 0 && (
-                  <Button onClick={handleBack} sx={{ mt: 3, ml: 1 }}>
-                    Back
-                  </Button>
-                )}
-
-                <Button
-                  variant="contained"
-                  onClick={handleNext}
-                  sx={{ mt: 3, ml: 1 }}
-                >
-                  {activeStep === steps.length - 1 ? 'Join' : 'Next'}
-
-                </Button>
-              </Box>
-            </React.Fragment>
-          )}
-        </Paper>
-        <Copyright />
-      </Container>
-    </ThemeProvider>
-  );
 }

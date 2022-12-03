@@ -1,0 +1,19 @@
+.text-img{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://thumbs.dreamstime.com/b/beautiful-green-nature-background-summer-sunset-landscape-blue-sky-wallpaper-creative-photography-clouds-tree-yellow-colors-233484163.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* #content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    width:50%;
+    background-color:rgba(0,0,0,0.8)
+    font-size:40px;
+} */

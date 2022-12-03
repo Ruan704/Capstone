@@ -7,7 +7,7 @@ import Frontpage from "./module/Home/container/Frontpage";
 import Sanctuary from "./module/Sanctuary/component/sanctuary";
 import ContactUs from "./module/ContactUs/ContactUs"
 import Footer from "./Footer"
-import StepTwoForm from "./module/LandingPage/container/StepTwoForm";
+// import StepTwoForm from "./module/LandingPage/container/StepTwoForm";
 import Modal from "./module/PrivacyPolicy/Modal"
 import Services from "./module/Services/Services"
 import WildlifeSupporting from "./module/Services/WildlifeSupporting"
@@ -23,15 +23,14 @@ const Routing = () => {
         <Route exact path="/" element={<Frontpage />} />
         <Route path="/Frontpage" element={<Frontpage />} />
         <Route path="/Front" element={<Front />} />
-        <Route path="/StepTwoForm" element={<StepTwoForm />} />
-        <Route path="/aboutComponent" element={<AboutComponent />} />
-        <Route path="/sanctuary" element={<Sanctuary />} />
+        <Route path="/overview" element={<AboutComponent />} />
+        <Route path="/gallery-animal" element={<Sanctuary />} />
         <Route path="/ContactUs" element={<ContactUs />} />
         <Route path="/Modal" element={<Modal />} />
         <Route path="/Services" element={<Services />} />
-        <Route path="/WildlifeSupporting" element={<WildlifeSupporting />} />
-        <Route path="/WildlifeEducation" element={<WildlifeEducation />} />
-        <Route path="/WildlifeSave" element={<WildlifeSave />} />
+        <Route path="/Services-WildlifeSupporting" element={<WildlifeSupporting />} />
+        <Route path="/Services-WildlifeEducation" element={<WildlifeEducation />} />
+        <Route path="/Services-WildlifeSave" element={<WildlifeSave />} />
         <Route path="/TermsAndCondition" element={<TermsAndCondition />} />
       </Routes> 
       <Footer/>

@@ -1,26 +1,5 @@
 import * as actions from './actionType';
-
-export const onAddData = (item) => {
-    // return  {
-    //     axios.post(url, {}, {headers}).then().catch()
-    // }
-    return {
-        // return to home component
-        type: actions.ADD_ITEM,
-        payload: item
-    }
-}
-
-export const onDelete = (id) => {
-    // return  {
-    //     axios.post(url, {}, {headers}).then().catch()
-    // }
-    return {
-        type: actions.REMOVE_ITEM,
-        payload: id
-    }
-}
-
+import axios from 'axios';
 export const onAddContactData = (item) => {
     // return  {
     //     axios.post(url, {}, {headers}).then().catch()
@@ -32,13 +11,20 @@ export const onAddContactData = (item) => {
     }
 }
 
-export const onAddFormData = (item) => {
-    // return  {
-    //     axios.post(url, {}, {headers}).then().catch()
-    // }
-    return {
-        // return to home component
-        type: actions.ADD_ITEM,
-        payload: item
+export const onGetData =() => {
+    return (dispatch) => {
+        let url = "https://api.gbif.org/v1/species";
+        axios.get(url)
+            .then((res => {
+                dispatch( 
+                    ((data) => {
+                        return{
+                type:actions.GET_POSTS,
+                payload: {httpResponse:data}
+                }
+        })   (res.data)
+            )} 
+            ))  
+           .catch (err => console.log(err) )
     }
 }

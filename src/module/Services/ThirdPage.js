@@ -64,6 +64,7 @@ const ThirdPage = () => {
                     {p.description}
                   </p>
                 </div>
+                <a href={p.url} target="_bank">URL</a>
               </Item>
             </Grid>
             // </div>
