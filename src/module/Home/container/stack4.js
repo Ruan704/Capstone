@@ -25,18 +25,21 @@ export default function Stack4() {
           <img
             src={volunteer}
             alt="Joinus"
-            style={{ width: "600px", height: "500px" }}
+            style={{ width: "300px", height: "300px" }}
           />
         </Item>
         <Item sx={{ boxShadow: "none", backgroundColor: "#7D8F69" }}>
           <div className="homevolunteer">
             <h1
               style={{
-                fontSize: "35px",
+                fontSize: "25px",
                 color: "light-brown",
                 textAlign: "center",
                 color: "#E6E5A3",
                 fontFamily: "Lato",
+                marginTop: "25px",
+                paddingLeft: "25px",
+                paddingRight: "25px",
               }}
             >
               Be a volunteer
@@ -47,31 +50,18 @@ export default function Stack4() {
                   textAlign: "center",
                   alignItems: "center",
                   width: "100%",
-                  fontSize: "30px",
+                  fontSize: "20px",
                   color: "#A9AF7E",
                   fontFamily: "Lato",
+                  paddingLeft: "40px",
+                  paddingRight: "40px",
                 }}
               >
-                {" "}
                 By Joining our team and volunteering we includes task like
                 observing and saving endangered species for both reseatch and
-                anti-poaching measures.
+                anti-poaching measures.If interested to play a part to save the
+                animal please press the button for volunteering below.
               </h8>
-              <br></br>
-              <h8
-                style={{
-                  textAlign: "center",
-                  alignItems: "center",
-                  width: "100%",
-                  fontSize: "30px",
-                  color: "#A9AF7E",
-                  fontFamily: "Lato",
-                }}
-              >
-                If interested to play a part to save the animal please press the
-                button for volunteering below.
-              </h8>
-              <br></br>
               <button
                 className="btn btn-primary"
                 onClick={() => navigate("/Front")}
@@ -79,7 +69,9 @@ export default function Stack4() {
                   width: "250px",
                   height: "50px",
                   fontSize: "20px",
-                  marginLeft: "90px",
+                  marginLeft: "25px",
+                  fontFamily: "Lato",
+                  backgroundColor: "#f4a460",
                 }}
               >
                 Join Us Now

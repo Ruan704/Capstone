@@ -43,7 +43,13 @@ const ThirdPage = () => {
               columns={{ xs: 4, sm: 8, md: 12 }}
             >
               <Item>
-                <p style={{ fontWeight: "bold", fontSize: "30px" }}>
+                <p
+                  style={{
+                    fontWeight: "bold",
+                    fontSize: "30px",
+                    fontFamily: "Lato",
+                  }}
+                >
                   {p.author}
                 </p>
                 <img
@@ -56,15 +62,30 @@ const ThirdPage = () => {
                     objectFit: "cover",
                     borderRadius: "15px",
                     margin: "5px",
+                    fontFamily: "Lato",
                   }}
                 />
                 <div className="type">
-                  <p style={{ fontSize: "18px" }}>
-                    <div style={{ color: "brown" }}>Description:</div>{" "}
+                  <p style={{ fontSize: "18px", fontFamily: "Lato" }}>
+                    <div style={{ color: "brown", fontFamily: "Lato" }}>
+                      Description:
+                    </div>{" "}
                     {p.description}
                   </p>
                 </div>
-                <a href={p.url} target="_bank">URL</a>
+                <a
+                  href={p.url}
+                  style={{
+                    width: "250px",
+                    height: "50px",
+                    fontSize: "20px",
+                    marginLeft: "25px",
+                    fontFamily: "Lato",
+                    backgroundColor: "#f4a460",
+                  }}
+                >
+                  URL
+                </a>
               </Item>
             </Grid>
             // </div>
@@ -78,7 +99,16 @@ const ThirdPage = () => {
         textAlign: "center",
       }}
     >
-      <div style={{ fontWeight: "bold", fontSize: "35px" , background: "yellow"}}>Articles</div>
+      <div
+        style={{
+          fontWeight: "bold",
+          fontSize: "35px",
+          background: "#E6E5A3",
+          fontFamily: "Lato",
+        }}
+      >
+        Articles
+      </div>
       <Grid
         container
         spacing={{ xs: 2, md: 3 }}

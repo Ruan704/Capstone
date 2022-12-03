@@ -13,7 +13,7 @@ class Frontpage extends Component {
       <div>
         <Home />
         <br></br>
-        <p style={{textAlign: 'center',alignItems:"center", width: '100%',fontSize: "30px", color:"#7D8F69", fontFamily:"Lato"}}>
+        <p style={{textAlign: 'center',alignItems:"center", width: '100%',fontSize: "20px", color:"#7D8F69", fontFamily:"Lato"}}>
           The Protecting Wildlife program is one of Singapore largest wildlife protection organisation, delivering <br></br> and influencing
           effective conservation platform for more than 10 million people in Singapore.
         </p>

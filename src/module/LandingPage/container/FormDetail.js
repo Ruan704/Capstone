@@ -70,13 +70,14 @@ export class FormDetail extends Component {
                     textAlign: "center",
                     fontSize: "40px",
                     fontWeight: "bold",
+                    fontFamily:"Lato"
                   }}
                 >
                   Join Our Volunteer Team
                 </Typography>
                 <div class="input-row">
                   <div class="input-group">
-                    <label style={{ fontSize: "20px" }}>Name: </label>
+                    <label style={{ fontSize: "20px", fontFamily:"Lato"}}>Name: </label>
                     <input
                       margin="normal"
                       required
@@ -95,7 +96,7 @@ export class FormDetail extends Component {
                   </div>
 
                   <div class="input-group">
-                    <label style={{ fontSize: "20px" }}>Email: </label>
+                    <label style={{ fontSize: "20px" , fontFamily:"Lato"}}>Email: </label>
                     <input
                       margin="normal"
                       required
@@ -112,12 +113,11 @@ export class FormDetail extends Component {
                   </div>
 
                   <div class="input-group">
-                    <label style={{ fontSize: "20px" , fontSize: "15px"}}>Number: </label>
+                    <label style={{ fontSize: "20px" , fontSize: "15px", fontFamily:"Lato"}}>Number: </label>
                     <input
                       margin="normal"
                       required
                       fullWidth
-                      type="number"
                       id="contact"
                       name="contact"
                       placeholder="Contact No."
@@ -143,6 +143,8 @@ export class FormDetail extends Component {
                       margin: "auto",
                       marginLeft: "200px",
                       fontSize: "30px",
+                      fontFamily:"Lato",
+                  backgroundColor: "#f4a460"
                     }}
                   >
                     Continue
@@ -194,8 +196,8 @@ export class FormDetail extends Component {
                 <img
                   src={image}
                   style={{
-                    width: "300px",
-                    height: "250px",
+                    width: "400px",
+                    height: "300px",
                     marginLeft: "80px",
                   }}
                 />

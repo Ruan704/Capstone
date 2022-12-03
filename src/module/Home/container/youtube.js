@@ -27,7 +27,7 @@ class youtube extends Component {
     const {videoId} = this.props
 
     return (
-        <div style={{fontSize:"35px", color:"light-brown",textAlign:"center", 
+        <div style={{fontSize:"25px", color:"light-brown",textAlign:"center", 
         background: "#cc9900", fontFamily:"Lato", fontWeight:"bold"
      ,}}> What is  Wildlife protection Program?
            <br></br><br></br>

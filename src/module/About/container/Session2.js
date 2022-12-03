@@ -11,10 +11,10 @@ const Session2 = () =>{
                      return(
                         <div className='box flex'>
                             <div className='text'>
-                                 <h1>{value.number}</h1>
+                                 <h1 style={{fontFamily:"Lato",}}>{value.number}</h1>
                             </div>
                             <div className='para'>
-                                <h2>{value.strDescription}</h2>
+                                <h2 tyle={{fontFamily:"Lato",}}>{value.strDescription}</h2>
                                 </div>
                             </div>
                      )

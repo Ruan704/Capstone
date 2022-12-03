@@ -54,19 +54,18 @@ const Status = () => {
               md={4}
               key={p.key}
               columns={{ xs: 4, sm: 8, md: 12 }}
-              
             >
-              <Item style={{width:"500px"}}>
+              <Item style={{width:"300px",fontFamily: "Lato"}}>
                 <p style={{ fontWeight: "bold", fontSize: "20px" }}>
-                  <div style={{color:"#A9AF7E"}}>Canonical Name: </div>
+                  <div style={{color:"#A9AF7E" ,fontFamily: "Lato",}}>Canonical Name: </div>
                   {p.scientificName}
                 </p>
                 <p style={{ fontWeight: "bold", fontSize: "20px" }}>
-                  <div style={{color:"#A9AF7E"}}>Threat Status </div>
+                  <div style={{color:"#A9AF7E",fontFamily: "Lato"}}>Threat Status </div>
                   {p.taxonomicStatus}
                 </p>
                   <p style={{ fontWeight: "bold", fontSize: "20px" }}>
-                    <div style={{color:"#A9AF7E"}} >Kingdom:</div>{" "}
+                    <div style={{color:"#A9AF7E",fontFamily: "Lato"}} >Kingdom:</div>{" "}
                     {p.kingdom}
                   </p>
               </Item>
@@ -82,18 +81,16 @@ const Status = () => {
         textAlign: "center",
       }}
     >
-      <div style={{ fontWeight: "bold", fontSize: "35px" , background: "yellow"}}>Animals</div>
-      <TextField
-          style={{ marginTop: "20px", width:"500px", fontSize:"100px"}}
+      <div style={{ fontWeight: "bold", fontSize: "35px" , background: "#E6E5A3", fontFamily: "Lato",}}>Animals</div>
+      <input
+          style={{ marginTop: "15px", width:"500px", fontSize: "25px", marginBottom: "15px",}}
           placeholder="Search Animal"
           id="search"
           name="search"
-          type="text"
-          value={term}
           onChange={handleChange}
           className="input"
         >
-          </TextField>
+          </input>
       <Grid
         container
         spacing={{ xs: 2, md: 3 }}

@@ -256,7 +256,13 @@ class Query extends Component {
                   className="btn"
                   // sx={{ mt: 3, mb: 2 }}
                   onClick={this.handleSubmit}
-                  style={{width:"200px", height:"150px", margin: "auto", marginLeft: '140px'}}
+                  style={{ width: "200px",
+                  height: "100px",
+                  margin: "auto",
+                  marginLeft: "200px",
+                  fontSize: "30px",
+                  fontFamily:"Lato",
+              backgroundColor: "#f4a460"}}
                 >
                   <span style={{fontSize:"20px",fontFamily:"Lato" }}>Contact Us</span>
                 </Button>

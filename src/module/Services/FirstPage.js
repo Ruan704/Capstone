@@ -1,7 +1,7 @@
 import React from 'react';
 import { Parallax, Background } from 'react-parallax';
 
-const image1 = "https://image.shutterstock.com/shutterstock/photos/1855260898/display_1500/stock-photo-a-leopard-that-jumps-fast-to-hunt-1855260898.jpg";
+const image1 = "https://wallpapershome.com/images/wallpapers/tiger-2560x1440-5k-4k-wallpaper-green-grass-close-nature-wild-animal-1623.jpg";
 
 const inlineStyle = {
   fontSize:"105px",
@@ -17,7 +17,7 @@ const inlineStyle = {
 function FirstPage() {
 return(
  <Parallax bgImage={image1} className="parallex" blur={{min:-1, max:2}}>
-  <div style={{height: "500px"}}>
+  <div style={{height: "500px",fontFamily: "Lato" }}>
     <div style={inlineStyle}>SERVICES</div>
   </div>
 

@@ -21,21 +21,23 @@ const SecondPage = () => {
               <div class="card-body">
                 <h5
                   class="card-title"
-                  style={{ fontWeight: "bold", fontSize: "30px", textAlign:"center" }}
+                  style={{ fontWeight: "bold", fontSize: "30px", textAlign:"center" , fontFamily:"Lato",}}
                 >
                   Wildlife Supporting
                 </h5>
-                <p class="card-text" style={{ fontSize: "20px" }}>
+                <p class="card-text" style={{ fontSize: "20px", fontFamily:"Lato", }}>
                   Have a real life distance between u and the wildlife
                 </p>
                 <button
                   className="btn btn-primary"
                   onClick={() =>navigate('/wildlifeSupporting')}
                   style={{
-                    width: "150px",
+                    width: "250px",
                     height: "50px",
                     fontSize: "20px",
-                    marginLeft: '90px'
+                    marginLeft: "25px",
+                    fontFamily:"Lato",
+                    backgroundColor: "#f4a460"
                   }}
 
                 >
@@ -45,32 +47,34 @@ const SecondPage = () => {
             </div>
           </div>
           &nbsp;&nbsp;
-          <div className="col-md-3" style={{marginRight: "150px"}}>
-            <div class="card" style={{marginRight: "100px"}}>
+          <div className="col-md-3" style={{marginRight: "150px", fontFamily:"Lato",}}>
+            <div class="card" style={{marginRight: "100px", fontFamily:"Lato",}}>
               <img
                 class="card-img-top"
                 src="https://www.librarypoint.org/wp-content/uploads/sites/60/2018/04/raina1med.jpg"
                 alt="Card image cap"
-                style={{ width: "350px", height: "200px" }}
+                style={{ width: "350px", height: "200px", fontFamily:"Lato", }}
               />
               <div class="card-body">
                 <h5
                   class="card-title"
-                  style={{ fontWeight: "bold", fontSize: "30px",  textAlign:"center" }}
+                  style={{ fontWeight: "bold", fontSize: "30px",  textAlign:"center", fontFamily:"Lato", }}
                 >
                   Wildlife Education
                 </h5>
-                <p class="card-text" style={{ fontSize: "20px" }}>
+                <p class="card-text" style={{ fontSize: "20px" , fontFamily:"Lato",}}>
                   Learning more about wildlife by Knowledge
                 </p>
                 <button
                   className="btn btn-primary"
                   onClick={() =>navigate('/wildlifeEducation')}
                   style={{
-                    width: "150px",
-                    height: "50px",
-                    fontSize: "20px",
-                    marginLeft: '90px'
+                    width: "250px",
+                  height: "50px",
+                  fontSize: "20px",
+                  marginLeft: "25px",
+                  fontFamily:"Lato",
+                  backgroundColor: "#f4a460"
                   }}
                 >
                   Read More
@@ -89,21 +93,23 @@ const SecondPage = () => {
               <div class="card-body">
                 <h5
                   class="card-title"
-                  style={{ fontWeight: "bold", fontSize: "30px",  textAlign:"center" }}
+                  style={{ fontWeight: "bold", fontSize: "30px",  textAlign:"center", fontFamily:"Lato", }}
                 >
                   Wildlife Save
                 </h5>
-                <p class="card-text" style={{ fontSize: "20px" }}>
+                <p class="card-text" style={{ fontSize: "20px" , fontFamily:"Lato",}}>
                   What measures are we using to save the wildlife
                 </p>
                 <button
                   className="btn btn-primary"
                   onClick={() =>navigate('/wildlifeSave')}
                   style={{
-                    width: "150px",
+                    width: "250px",
                     height: "50px",
                     fontSize: "20px",
-                    marginLeft: '90px'
+                    marginLeft: "25px",
+                    fontFamily:"Lato",
+                    backgroundColor: "#f4a460"
                   }}
                 >
                   Read More

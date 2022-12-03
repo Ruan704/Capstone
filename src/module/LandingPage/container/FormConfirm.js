@@ -67,13 +67,14 @@ export class FormConfirm extends Component {
                     textAlign: "center",
                     fontSize: "40px",
                     fontWeight: "bold",
+                    fontFamily:"Lato",
                   }}
                 >
                   We would like to hear more about you
                 </Typography>
                 <div class="input-row">
                   <div class="input-group">
-                    <label style={{ fontSize: "20px" }}>occupation: </label>
+                    <label style={{ fontSize: "20px",  fontFamily:"Lato",}}>occupation: </label>
                     <input
                       margin="normal"
                       required
@@ -90,7 +91,7 @@ export class FormConfirm extends Component {
                   </div>
 
                   <div class="input-group">
-                    <label style={{ fontSize: "20px" }}>NRIC: </label>
+                    <label style={{ fontSize: "20px" ,  fontFamily:"Lato"}}>NRIC: </label>
                     <input
                       margin="normal"
                       required
@@ -107,7 +108,7 @@ export class FormConfirm extends Component {
                   </div>
 
                   <div class="input-group">
-                  <label style={{ fontSize: "20px" }}>Remark: </label>
+                  <label style={{ fontSize: "20px" ,  fontFamily:"Lato"}}>Remark: </label>
                   <TextareaAutosize
                     aria-label="empty textarea"
                     style={{ width: 400, height: 200,  fontSize: "20px"}}

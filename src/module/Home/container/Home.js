@@ -20,10 +20,13 @@ function Home() {
           <p
             style={{
               fontWeight: "bold",
-              fontSize: "45px",
+              fontSize: "25px",
               color: "#557153",
               textAlign: "center",
               height: "300px",
+              paddingTop:"40px",
+              paddingLeft:"40px",
+              paddingRight:"40px",
               background:"white",
               font:"Lato"
             }}
@@ -47,11 +50,15 @@ function Home() {
           <h5
             style={{
               fontWeight: "bold",
-              fontSize: "45px",
+              fontSize: "25px",
               color: "#557153",
               textAlign: "center",
               height: "300px",
-              background:"white"
+              paddingTop:"40px",
+              paddingLeft:"40px",
+              paddingRight:"40px",
+              background:"white",
+              font:"Lato"
             }}
           >
             Service to wildlife protection
@@ -72,11 +79,15 @@ function Home() {
           <h5
             style={{
               fontWeight: "bold",
-              fontSize: "45px",
+              fontSize: "25px",
               color: "#557153",
               textAlign: "center",
               height: "300px",
-              background:"white"
+              paddingTop:"40px",
+              paddingLeft:"40px",
+              paddingRight:"40px",
+              background:"white",
+              font:"Lato"
             }}
           >
             Join Our Team 

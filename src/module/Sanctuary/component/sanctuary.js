@@ -19,12 +19,12 @@ const sanctuary = () => {
         position= "static"
       >
         <Tab
-          label="Search Wildlife By Status"
-          style={{ width: "1000px", fontSize: "25px" }}
+          label="Search Wildlife"
+          style={{ width: "800px", fontSize: "20px", fontFamily:"Lato" }}
         />
         <Tab
           label="View All Wildlife"
-          style={{ width: "1000px", fontSize: "25px" }}
+          style={{ width: "800px", fontSize: "20px" , fontFamily:"Lato"}}
         />
       </Tabs>
         {selectedTab === 0 && <Status/>}

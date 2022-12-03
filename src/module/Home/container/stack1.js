@@ -25,38 +25,32 @@ export default function Stack1() {
       >
         <Item sx={{ boxShadow: "none", backgroundColor: "#557153" }}>
           <div className="homevolunteer">
-            <h1 style={{ fontSize:"35px", color:"light-brown",textAlign:"center", 
-        color:"#E6E5A3", fontFamily:"Lato" }}>About Us</h1>
-            <div style={{ fontSize: "25px" }}>
-              <h8 style={{textAlign: 'center',alignItems:"center", width: '100%',fontSize: "30px", color:"#A9AF7E", fontFamily:"Lato"}}>
+            <h1 style={{ fontSize:"25px", color:"light-brown",textAlign:"center", 
+        color:"#E6E5A3", fontFamily:"Lato", marginTop:"25px",paddingLeft:"25px", paddingRight:"25px" }}>About Us</h1>
+            <div style={{ fontSize: "20px" , paddingLeft:"40px", paddingRight:"40px"}}>
+              <h8 style={{textAlign: 'center',alignItems:"center", width: '100%',fontSize: "20px", color:"#A9AF7E", fontFamily:"Lato", paddingLeft:"40px", paddingRight:"40px" }}>
                 {" "}
                 Wildlife conservation volunteering is the perfect conservation
                 opportunity to protect endangered species from extinction.
-              </h8>
-              <h8 style={{textAlign: 'center',alignItems:"center", width: '100%',fontSize: "30px", color:"#A9AF7E", fontFamily:"Lato"}}>
                 Volunteering with wild animals includes tasks like observe and
-                monitor exotic species for research and anti-poaching measures.{" "}
-              </h8>
-              <h8 style={{textAlign: 'center',alignItems:"center", width: '100%',fontSize: "30px", color:"#A9AF7E", fontFamily:"Lato"}}>
-                {" "}
+                monitor exotic species for research and anti-poaching measures.
                 Volunteer with those animals that cannot be released back into
                 the wild. Learn to care for these animals and help these animals
-                by giving your unconditional love.{" "}
-              </h8>
-              <h8 style={{textAlign: 'center',alignItems:"center", width: '100%',fontSize: "30px", color:"#A9AF7E", fontFamily:"Lato"}}>
-                {" "}
+                by giving your unconditional love.
                 Make a difference and conserve the diversity of life on earth by
-                protecting endangered wildlife!{" "}
+                protecting endangered wildlife!
               </h8>
               <br></br>
               <button
                 className="btn btn-primary"
-                onClick={() => navigate("/aboutComponent")}
+                onClick={() => navigate("/overview")}
                 style={{
                   width: "250px",
                   height: "50px",
                   fontSize: "20px",
-                  marginLeft: "150px",
+                  marginLeft: "25px",
+                  fontFamily:"Lato",
+                  backgroundColor: "#f4a460"
                 }}
               >
                 Read More About Us
@@ -68,7 +62,7 @@ export default function Stack1() {
           <img
             src={Home}
             alt="Joinus"
-            style={{ width: "500px", height: "400px" }}
+            style={{ width: "300px", height: "300px" }}
           />
         </Item>
       </Stack>

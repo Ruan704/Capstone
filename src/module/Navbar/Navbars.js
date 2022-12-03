@@ -13,17 +13,12 @@ function Navbars() {
       <Navbar
         expand="sm"
         style={{
-          backgroundColor: "#00FF80",
           className: "ml-auto",
-          minHeight: "35px",
-          padding: "1rem",
-                    // maxHeight:"65px", marginTop:"50px"}
-                    height:"60px"
         }}
       >
         <Container>
           <h1>
-            <img src={Wildlife} style={{ width: "200px", height: "100px"}} />
+          <img src={Wildlife} style={{ width: "150px", height: "70px", marginTop: "25px"}} />
           </h1>
           &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -35,7 +30,7 @@ function Navbars() {
                   as={Link}
                   to="/"
                   className="words"
-                  style={{ fontSize: "20px" }}
+                  style={{ fontSize: "20px", fontFamily:"Lato" }}
                 >
                   Home
                 </Nav.Link>
@@ -44,7 +39,7 @@ function Navbars() {
                 <Nav.Link
                   as={Link}
                   to="/overview"
-                  style={{ fontSize: "20px" }}
+                  style={{ fontSize: "20px", fontFamily:"Lato" }}
                 >
                   About
                 </Nav.Link>
@@ -53,49 +48,48 @@ function Navbars() {
                 <Nav.Link
                   as={Link}
                   to="/gallery-animal"
-                  style={{ fontSize: "20px" }}
+                  style={{ fontSize: "20px" , fontFamily:"Lato"}}
                 >
                   Species
                 </Nav.Link>
               </li>
-              <br></br>
-              <br></br>
               <NavDropdown
-                style={{ padding: "19px 19px", fontSize: "20px" }}
+                style={{ marginTop: "6px", fontSize: "20px" , fontFamily:"Lato"}}
                 title="Services"
                 id="basic-nav-dropdown"
               >
                 <NavDropdown.Item
                   as={Link}
                   to="/Services"
-                  style={{ fontSize: "20px" }}
+                  style={{ fontSize: "20px" , fontFamily:"Lato"}}
                 >
                   Services
                 </NavDropdown.Item>
                 <NavDropdown.Item
                   as={Link}
                   to="/Services-WildlifeSupporting"
-                  style={{ fontSize: "20px" }}
+                  style={{ fontSize: "20px" , fontFamily:"Lato"}}
                 >
                   Wildlife Supporting
                 </NavDropdown.Item>
                 <NavDropdown.Item
                   as={Link}
                   to="/Services-WildlifeEducation"
-                  style={{ fontSize: "20px" }}
+                  style={{ fontSize: "20px" , fontFamily:"Lato"}}
                 >
                   Wildlife Education
                 </NavDropdown.Item>
                 <NavDropdown.Item
                   as={Link}
                   to="/Services-WildlifeSave"
-                  style={{ fontSize: "20px" }}
+                  style={{ fontSize: "20px" , fontFamily:"Lato"}}
                 >
                   Wildlife Save
                 </NavDropdown.Item>
               </NavDropdown>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <li>
-                <Nav.Link as={Link} to="/Front" style={{ fontSize: "20px" }}>
+                <Nav.Link as={Link} to="/Front" style={{ fontSize: "20px" , fontFamily:"Lato"}}>
                   Join Us
                 </Nav.Link>
               </li>
@@ -103,7 +97,7 @@ function Navbars() {
                 <Nav.Link
                   as={Link}
                   to="/ContactUs"
-                  style={{ fontSize: "20px" }}
+                  style={{ fontSize: "20px", width: "130px" }}
                 >
                   Contact Us
                 </Nav.Link>
