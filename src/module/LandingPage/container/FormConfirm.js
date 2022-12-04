@@ -3,7 +3,6 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import ContactPhoneIcon from "@mui/icons-material/ContactPhone";
 import EmailIcon from "@mui/icons-material/Email";
 import image from "../../../images/picture.jpg";
-import "./FormConfirm.css"
 import {
   Button,
   CssBaseline,
@@ -69,23 +68,18 @@ export class FormConfirm extends Component {
     const { values, handleChange } = this.props;
     return (
       <>
-        <Container component="main" maxWidth="lg" style={{ marginTop: "20px" }}>
+        <Container
+          component="main"
+          maxWidth="sm"
+          style={{ marginTop: "20px", marginLeft: "200px" }}
+        >
           <CssBaseline />
-          {/* , marginLeft: "200px" */}
-          <div
-            className="contact-box"
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              justifyContent: "center",
-              alignItems: "center",
-              flexWrap: "wrap",
-            }}
-          >
+
+          <div className="contact-box">
             <br></br>
             <br></br>
 
-            <div className="contact-left" style={{ maxWidth: "500px" }}>
+            <div className="contact-left">
               <form>
                 <h3
                   style={{
@@ -210,13 +204,13 @@ export class FormConfirm extends Component {
                     aria-describedby="modal-modal-description"
                   >
                     <Box
-                    class= "box"
                       sx={{
                         position: "absolute",
                         top: "50%",
                         left: "50%",
                         transform: "translate(-50%, -50%)",
-                        width: 400,
+                        width: 500,
+                        height: 500,
                         bgcolor: "background.paper",
                         border: "2px solid #000",
                         boxShadow: 24,
@@ -244,7 +238,7 @@ export class FormConfirm extends Component {
                         (iv) you agree, on behalf of the party that you
                         represent, to these Terms of Use.
                       </p>
-                      <h4>I agree to the <span>Terms of Service</span> and I read the privacy notice</h4>
+                      <h4>I agree to the Terms of Service and I read the privacy notice</h4>
                       <div class="buttons">
                         <button class="btn red-btn" onClick={this.handleCloseModal}>Close</button>
                       </div>
@@ -308,7 +302,7 @@ export class FormConfirm extends Component {
               </form>
             </div>
 
-            <div className="contact-right" style={{ maxWidth: "500px" }}>
+            <div className="contact-right">
               <h3>Reach Us</h3>
               <table>
                 <tr>

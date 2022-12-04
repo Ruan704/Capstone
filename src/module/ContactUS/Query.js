@@ -8,8 +8,7 @@ import { v4 as uuid } from "uuid";
 import "./Query.css";
 import { connect } from "react-redux";
 import { onAddContactData } from "../../action";
-import Container from "@mui/material/Container";
-import CssBaseline from "@mui/material/CssBaseline";
+
 class Query extends Component {
   constructor() {
     super();
@@ -173,7 +172,8 @@ class Query extends Component {
 
   render() {
     return (
-      <div className="container" >
+      <div className="container">
+        <div style={{display: 'flex', flexDirection: 'column', width:"1200px"}}>
         <h2
           style={{
             textAlign: "center",
@@ -185,42 +185,27 @@ class Query extends Component {
         >
           Contact Us
         </h2>
+        <br></br>
         <h3
           style={{
             textAlign: "center",
-            fontSize: "25px",
+            fontSize: "20px",
             fontFamily: "Baloo Bhai 2",
             
           }}
         >
-          We would like to hear from your question and <br></br> help us success{" "}
-          Feel free to get in touch with <br></br>us
+          We would like to hear from your question and help us success{" "}
+          Feel free to get in touch with us
         </h3>
-        <Container
-          component="main"
-          maxWidth="lg"
-          style={{ marginTop: "20px" }}
-        >
-  <CssBaseline />
-{/* , marginLeft: "200px" */}
-          <div className="contact-box" style={{
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "center",
-            alignItems: "center",
-            flexWrap: "wrap",
-          }}>
-        {/* </Container> */}
-        {/* <div className="contact-box" maxWidth="lg"
-      style={{ marginTop: "20px" }}> */}
-          <div className="contact-left" style={{maxWidth: "500px"}}>
+        </div>
+        <div className="contact-box">
+          <div className="contact-left">
             <h3
               style={{
-                textAlign: "center",
-                fontSize: "40px",
-                fontWeight: "bold",
+                fontSize: "30px",
+                font: "bold",
                 fontFamily: "Baloo Bhai 2",
-                color: "#f4a460",
+                
               }}
             >
               Send your request
@@ -232,6 +217,7 @@ class Query extends Component {
                     style={{
                       fontSize: "20px",
                       fontFamily: "Baloo Bhai 2",
+                      
                     }}
                   >
                     Name:{" "}
@@ -260,6 +246,7 @@ class Query extends Component {
                     style={{
                       fontSize: "20px",
                       fontFamily: "Baloo Bhai 2",
+                      
                     }}
                   >
                     Email:{" "}
@@ -371,13 +358,13 @@ class Query extends Component {
                   onClick={this.handleSubmit}
                   style={{
                     width: "200px",
-                    height: "50px",
+                    height: "100px",
                     margin: "auto",
                     marginLeft: "200px",
-                    fontSize: "15px",
+                    fontSize: "30px",
                     fontFamily: "Baloo Bhai 2",
+                    
                     backgroundColor: "#f4a460",
-                    borderRadius: "25px"
                   }}
                 >
                   <span
@@ -393,7 +380,7 @@ class Query extends Component {
               </div>
             </form>
           </div>
-          <div className="contact-right" style={{maxWidth: "500px",height:"800px", marginLeft:"170px"}}>
+          <div className="contact-right">
             <h3>Reach Us</h3>
             <table>
               <tr>
@@ -449,8 +436,7 @@ class Query extends Component {
               </tr>
             </table>
           </div>
-        {/* </div> */}</div>
-        </Container>
+        </div>
       </div>
     );
   }

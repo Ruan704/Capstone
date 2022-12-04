@@ -1,12 +1,6 @@
-.box{
-    margin: 0;
-    padding: 0;
-    background: url(https://www.naturepl.com/cache/pcache2/01635238.jpg);
-}
 .term-box{
     max-width: 400px;
     background-color: #333;
-    color: #fff;
     font-family: "Montserrat";
     padding: 60px 30px;
 }
@@ -16,7 +10,6 @@
     overflow: auto;
     font-size: 14px;
     font-weight: 500;
-    color: #f1f1f1;
 }
 .terms-text::webkit-scrollbar{
     width:2px;

@@ -67,9 +67,8 @@ class News extends Component {
   };
   render() {
     return (
-      <>
         <div className="text-img">
-          <Container style={{ backgroundColor: "#E6E5A3CC", padding: "20px", paddingBottom: 0, borderRadius: "15px" }}>
+          <Container style={{ backgroundColor: "#E6E5A3CC", padding: "20px", paddingBottom: 0, borderRadius: "15px", maxWidth: "660px" }}>
             <div class="news" style={{ color: "green" }}>
               <h2
                 style={{
@@ -151,7 +150,6 @@ class News extends Component {
             </div>
           </Container>
         </div>
-      </>
     );
   }
 }

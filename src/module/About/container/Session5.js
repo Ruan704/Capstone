@@ -12,6 +12,7 @@ import image4 from "../../../images/five.jpg";
 import "./Session5.css";
 export default function AlternateTimeline() {
   return (
+    <>
     <Timeline position="alternate" style={{ marginLeft: "700px" }}>
       <TimelineItem>
         <TimelineSeparator>
@@ -29,7 +30,7 @@ export default function AlternateTimeline() {
             }}
           >
             <div class="container">
-              <div class="box">
+              <div class="timelinebox">
                 <div class="imgBx">
                   <img
                     src={image1}
@@ -77,7 +78,7 @@ export default function AlternateTimeline() {
             style={{ width: "500px", height: "400px", margin: "center", marginLeft:"-100px" }}
           >
             <div class="container">
-              <div class="box">
+              <div class="timelinebox">
                 <div class="imgBx">
                   <img src={image2} style={{ width: "300px", height: "300px",}}/>
                 </div>
@@ -129,7 +130,7 @@ export default function AlternateTimeline() {
             }}
           >
             <div class="container">
-              <div class="box">
+              <div class="timelinebox">
                 <div class="imgBx">
                   <img
                     src={image3}
@@ -187,7 +188,7 @@ export default function AlternateTimeline() {
             }}
           >
             <div class="container">
-              <div class="box">
+              <div class="timelinebox">
                 <div class="imgBx">
                   <img
                     src={image4}
@@ -230,5 +231,6 @@ export default function AlternateTimeline() {
         </TimelineContent>
       </TimelineItem>
     </Timeline>
+    </>
   );
 }

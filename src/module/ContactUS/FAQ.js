@@ -15,7 +15,7 @@ export default function ControlledAccordions() {
   return (
     <div
       class="containerFluid"
-      style={{ width: "1250px", textAlign: "center", maxWidth:"500px"}}
+      style={{ width: "1250px", textAlign: "center" }}
     >
       <h2
         style={{
@@ -23,7 +23,7 @@ export default function ControlledAccordions() {
           fontSize: "40px",
           fontWeight: "bold",
           fontFamily: "Baloo Bhai 2",
-          maxWidth:"500px"
+          
         }}
       >
         Frequently Asked Questions(FAQs)
@@ -37,9 +37,7 @@ export default function ControlledAccordions() {
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1bh-content"
           id="panel1bh-header"
-          
         >
-          {/* */}
           <Typography
             sx={{
               color: "text.secondary",

@@ -23,8 +23,8 @@ const ThirdPage = () => {
         "https://newsdata.io/api/1/news?apikey=pub_14166fee73acf4d8d8326c94ed921ea7c5979&category=environment&language=en"
       )
       .then((res) => {
-        console.log(res.data.articles);
-        setPost(res.data.articles);
+        console.log(res.data.results);
+        setPost(res.data.results);
       })
       .catch((error) => console.log(error));
   }, []);
