@@ -24,7 +24,6 @@ const Status = () => {
   const [post, setPost] = useState("");
   const [term, setTerm] = useState("");
   const [filter, setFilter] = useState("");
-  const filterTerms = ["Accepted", "Doubtful", "Synonym"];
 
   useEffect(() => {
     axios

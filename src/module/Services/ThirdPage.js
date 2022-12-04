@@ -31,7 +31,7 @@ const ThirdPage = () => {
 
   const postList =
   post.length || post === undefined
-  ? post.map((p) => {
+  ? post.filter(x => x.image_url !== null).map((p) => {
           return (
             // <div>
             <Grid
@@ -82,7 +82,6 @@ const ThirdPage = () => {
                         
                       }}
                     >
-                      Description:
                     </div>{" "}
                     {p.title}
                   </p>
@@ -95,11 +94,11 @@ const ThirdPage = () => {
                     fontSize: "20px",
                     marginLeft: "25px",
                     fontFamily: "Baloo Bhai 2",
-                    
-                    backgroundColor: "#f4a460",
+                    color: "white",
+                    textDecoration: "none"
                   }}
                 >
-                  URL
+                  View More
                 </a>
               </Item>
             </Grid>
