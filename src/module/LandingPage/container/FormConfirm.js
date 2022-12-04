@@ -209,15 +209,41 @@ export class FormConfirm extends Component {
                         top: "50%",
                         left: "50%",
                         transform: "translate(-50%, -50%)",
-                        width: 400,
+                        width: 500,
+                        height: 500,
                         bgcolor: "background.paper",
                         border: "2px solid #000",
                         boxShadow: 24,
                         p: 4,
                       }}
                     >
-                      <button onClick={this.handleCloseModal}>x</button>
-                      <h1>12345</h1>
+                      <div class="terms-box">
+                        <div class="terms-text">
+                      {/* <button >x</button> */}
+                      <h2>Terms and condition</h2>
+                      <p>Last Edit: 4/12/2022</p>
+                      <p>Greeting Users</p>
+                      <p>
+                        By accessing, registering for, downloading or installing
+                        the Platform and/or using the Services, you agree to be
+                        bound by these Terms of Use. If you are agreeing to be
+                        bound on behalf of your employer or another entity, you
+                        represent and warrant that: (i) your employer, or the
+                        applicable entity, is duly organised, validly existing
+                        and in good standing under the laws of the country in
+                        which it is organised or incorporated; (ii) you have
+                        full legal authority to bind your employer, or the
+                        applicable entity, to these terms and conditions; (iii)
+                        you have read and understand these Terms of Use; and
+                        (iv) you agree, on behalf of the party that you
+                        represent, to these Terms of Use.
+                      </p>
+                      <h4>I agree to the Terms of Service and I read the privacy notice</h4>
+                      <div class="buttons">
+                        <button class="btn red-btn" onClick={this.handleCloseModal}>Close</button>
+                      </div>
+                      </div>
+                      </div>
                     </Box>
                   </Modal>
                   <Typography

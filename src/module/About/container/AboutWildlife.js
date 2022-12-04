@@ -1,7 +1,6 @@
 import React from "react";
 import lifewil from "../../../images/lifewil-about.png";
 import "./AboutWildlife.css";
-
 const AboutWildlife = () => {
   return (
     <div className="aboutwildlife">

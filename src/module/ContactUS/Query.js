@@ -173,6 +173,7 @@ class Query extends Component {
   render() {
     return (
       <div className="container">
+        <div style={{display: 'flex', flexDirection: 'column', width:"1200px"}}>
         <h2
           style={{
             textAlign: "center",
@@ -184,17 +185,19 @@ class Query extends Component {
         >
           Contact Us
         </h2>
+        <br></br>
         <h3
           style={{
             textAlign: "center",
-            fontSize: "25px",
+            fontSize: "20px",
             fontFamily: "Baloo Bhai 2",
             
           }}
         >
-          We would like to hear from your question and <br></br> help us success{" "}
-          Feel free to get in touch with <br></br>us
+          We would like to hear from your question and help us success{" "}
+          Feel free to get in touch with us
         </h3>
+        </div>
         <div className="contact-box">
           <div className="contact-left">
             <h3
@@ -355,13 +358,13 @@ class Query extends Component {
                   onClick={this.handleSubmit}
                   style={{
                     width: "200px",
-                    height: "50px",
+                    height: "100px",
                     margin: "auto",
                     marginLeft: "200px",
-                    fontSize: "15px",
+                    fontSize: "30px",
                     fontFamily: "Baloo Bhai 2",
+                    
                     backgroundColor: "#f4a460",
-                    borderRadius: "25px"
                   }}
                 >
                   <span

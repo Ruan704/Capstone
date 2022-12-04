@@ -9,14 +9,14 @@ const Session2 = () => {
         <div className="container grid" id="sta">
           {data.stastics.map((value) => {
             return (
-              <div className="box flex">
+              <div className="box flex" style={{maxWidth: "200px"}}>
                 <div className="text">
                   <h1 style={{ fontFamily: "'Baloo Bhai 2', cursive" }}>
                     {value.number}
                   </h1>
                 </div>
                 <div className="para">
-                  <h2 tyle={{ fontFamily: "'Baloo Bhai 2', cursive" }}>
+                  <h2 style={{ fontFamily: "'Baloo Bhai 2', cursive" }}>
                     {value.strDescription}
                   </h2>
                 </div>

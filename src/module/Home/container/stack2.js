@@ -62,7 +62,7 @@ export default function Stack1() {
                   alignItems: "center",
                   width: "100%",
                   fontSize: "20px",
-                  color: "#A9AF7E",
+                  color: "#395144",
                   fontFamily: "Baloo Bhai 2",
                   paddingLeft: "40px",
                   paddingRight: "40px",

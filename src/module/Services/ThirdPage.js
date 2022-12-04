@@ -20,18 +20,18 @@ const ThirdPage = () => {
   useEffect(() => {
     axios
       .get(
-        "https://newsdata.io/api/1/news?apikey=pub_14166fee73acf4d8d8326c94ed921ea7c5979&q=natural"
+        "https://newsdata.io/api/1/news?apikey=pub_14166fee73acf4d8d8326c94ed921ea7c5979&category=environment&language=en"
       )
       .then((res) => {
-        console.log(res.data.articles);
-        setPost(res.data.articles);
+        console.log(res.data.results);
+        setPost(res.data.results);
       })
       .catch((error) => console.log(error));
   }, []);
 
   const postList =
-    post.length || post === undefined
-      ? post.map((p) => {
+  post.length || post === undefined
+  ? post.map((p) => {
           return (
             // <div>
             <Grid
@@ -51,10 +51,10 @@ const ThirdPage = () => {
                     
                   }}
                 >
-                  {p.author}
+                  {p.creator}
                 </p>
                 <img
-                  src={p.urlToImage}
+                  src={p.image_url}
                   alt="recipe-data"
                   className="recipe-image"
                   style={{
@@ -84,11 +84,11 @@ const ThirdPage = () => {
                     >
                       Description:
                     </div>{" "}
-                    {p.description}
+                    {p.title}
                   </p>
                 </div>
                 <a
-                  href={p.url}
+                  href={p.link}
                   style={{
                     width: "250px",
                     height: "50px",

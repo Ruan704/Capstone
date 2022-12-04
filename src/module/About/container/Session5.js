@@ -9,8 +9,10 @@ import image1 from "../../../images/one.jpg";
 import image2 from "../../../images/three.jpg";
 import image3 from "../../../images/four.jpg";
 import image4 from "../../../images/five.jpg";
+import "./Session5.css";
 export default function AlternateTimeline() {
   return (
+    <>
     <Timeline position="alternate" style={{ marginLeft: "700px" }}>
       <TimelineItem>
         <TimelineSeparator>
@@ -18,10 +20,39 @@ export default function AlternateTimeline() {
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>
-          <img
-            src={image1}
-            style={{ width: "300px", height: "300px", margin: "center" }}
-          />
+          <div
+            class="body"
+            style={{
+              width: "500px",
+              height: "400px",
+              margin: "center",
+              marginTop: "-40px",
+            }}
+          >
+            <div class="container">
+              <div class="timelinebox">
+                <div class="imgBx">
+                  <img
+                    src={image1}
+                    style={{
+                      width: "300px",
+                      height: "300px",
+                      margin: "center",
+                    }}
+                  />
+                </div>
+                <div class="content">
+                  <div>
+                    <h2 style={{textAlign:"center"}}>First House</h2>
+                    <p>
+                      Below picture is the first house being build by WWP in
+                      April, 1961
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <h1
             style={{ color: "purple", fontFamily: "'Baloo Bhai 2', cursive" }}
           >
@@ -42,10 +73,27 @@ export default function AlternateTimeline() {
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>
-          <img
-            src={image2}
-            style={{ width: "400px", height: "300px", margin: "center" }}
-          />
+          <div
+            class="body"
+            style={{ width: "500px", height: "400px", margin: "center", marginLeft:"-100px" }}
+          >
+            <div class="container">
+              <div class="timelinebox">
+                <div class="imgBx">
+                  <img src={image2} style={{ width: "300px", height: "300px",}}/>
+                </div>
+                <div class="content">
+                  <div>
+                    <h2 style={{textAlign:"center"}}>First Success</h2>
+                    <p>
+                      First project being conducted By Doctor Albert in national
+                      University of Singapore
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <h1
             style={{ color: "purple", fontFamily: "'Baloo Bhai 2', cursive" }}
           >
@@ -55,7 +103,7 @@ export default function AlternateTimeline() {
             style={{
               textAlign: "center",
               fontFamily: "Baloo Bhai 2",
-              
+
               fontSize: "20px",
             }}
           >
@@ -72,10 +120,39 @@ export default function AlternateTimeline() {
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>
-          <img
-            src={image3}
-            style={{ width: "400px", height: "300px", margin: "center" }}
-          />
+          <div
+            class="body"
+            style={{
+              width: "500px",
+              height: "400px",
+              margin: "center",
+              marginTop: "-40px",
+            }}
+          >
+            <div class="container">
+              <div class="timelinebox">
+                <div class="imgBx">
+                  <img
+                    src={image3}
+                    style={{
+                      width: "300px",
+                      height: "300px",
+                      margin: "center",
+                    }}
+                  />
+                </div>
+                <div class="content">
+                  <div>
+                    <h2 style={{textAlign:"center"}}>Expansion</h2>
+                    <p>
+                      This is a picture of the wildlife sanctuary expanded in
+                      Bishan April 2000 in Singapore.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <h1
             style={{ color: "purple", fontFamily: "'Baloo Bhai 2', cursive" }}
           >
@@ -85,7 +162,7 @@ export default function AlternateTimeline() {
             style={{
               textAlign: "center",
               fontFamily: "Baloo Bhai 2",
-              
+
               fontSize: "20px",
             }}
           >
@@ -101,10 +178,39 @@ export default function AlternateTimeline() {
           <TimelineDot style={{ width: "30px", height: "30px" }} />
         </TimelineSeparator>
         <TimelineContent>
-          <img
-            src={image4}
-            style={{ width: "400px", height: "300px", margin: "center" }}
-          />
+          <div
+            class="body"
+            style={{
+              width: "500px",
+              height: "400px",
+              margin: "center",
+              marginTop: "-40px",
+            }}
+          >
+            <div class="container">
+              <div class="timelinebox">
+                <div class="imgBx">
+                  <img
+                    src={image4}
+                    style={{
+                      width: "400px",
+                      height: "300px",
+                      margin: "center",
+                    }}
+                  />
+                </div>
+                <div class="content">
+                  <div>
+                    <h2 style={{textAlign:"center"}}>Covid</h2>
+                    <p>
+                      Even though covid have make us lost some profit due to
+                      lesser people are coming to WLP. But we sure we can do it
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <h1
             style={{ color: "purple", fontFamily: "'Baloo Bhai 2', cursive" }}
           >
@@ -114,7 +220,7 @@ export default function AlternateTimeline() {
             style={{
               textAlign: "center",
               fontFamily: "Baloo Bhai 2",
-              
+
               fontSize: "20px",
             }}
           >
@@ -125,5 +231,6 @@ export default function AlternateTimeline() {
         </TimelineContent>
       </TimelineItem>
     </Timeline>
+    </>
   );
 }

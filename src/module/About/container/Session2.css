@@ -10,14 +10,14 @@
     padding: 50px 0;
 }
 .branding h1{
-    font-size: 40px;
+    font-size: 35px;
     color: #38d16a;
     margin-right: 20px;
 }
 .branding h2{
     font-weight: 500;
-    font-style: 22px;
-    margin: 10px 0 20px 0;
+    font-style: 18px;
+    margin: 10px 0 10px 0;
 }
 .branding p{
     color: #fff;
@@ -26,8 +26,10 @@
 #sta {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
-@media (max-width: 800px) {
+@media (max-width: 600px) {
     #sta {
         display: flex;
         flex-direction: column;

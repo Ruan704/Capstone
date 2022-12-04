@@ -190,7 +190,7 @@ export default class Dashboard extends Component{
    const{name, email,contact,NRIC,occupation,remark, nameError, emailError,contactError,NRICError,occupationError,remarkError,formIsValid} = this.state;
    const values = {name, email,contact,NRIC,occupation,remark, nameError, emailError,contactError,NRICError,occupationError,remarkError,formIsValid};
    switch(step){
-    case 1:
+    case 2:
       return(
         <FormDetail
         nextStep = {this.nextStep}
@@ -198,7 +198,7 @@ export default class Dashboard extends Component{
         values = {values}
         />
       )
-      case 2:
+      case 1:
         return(
           <FormConfirm
           prevStep = {this.prevStep}
