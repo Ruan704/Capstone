@@ -4,6 +4,7 @@ import volunteer from "../../../images/volunteering.jpg";
 import image2 from "../../../images/wildlife3.jpg";
 import image1 from "../../../images/wildlife4.jpg";
 import "./Home.css";
+import "./stack3.css";
 function Home() {
   return (
     <Carousel variant="dark">
@@ -14,14 +15,20 @@ function Home() {
           alt="Third slide"
           style={{ height: "500px", width: "900px",  objectFit: "cover" }}
         />
+           <div class="container">
+          <div class = "box">
+            
         <Carousel.Caption
           style={{
             // color: "#557153",
             fontWeight: "bold",
             fontSize: "25px",
             fontFamily: "Baloo Bhai 2",
-            Color: "white",
-            opacity: ".5",
+            color: "#C147E9",
+            paddingLeft: "300px",
+            paddingTop: "400px",
+            // color: "#E6E5A3CC"
+           
           }}
         >
           <p
@@ -29,12 +36,13 @@ function Home() {
               fontWeight: "bold",
               fontSize: "25px",
               textAlign: "center",
-              height: "300px",
-              paddingTop: "40px",
-              paddingLeft: "40px",
-              paddingRight: "40px",
-              background: "white",
-              font: "Baloo Bhai 2",
+              height: "150px",
+              width:"700px",
+              top: "50%",
+              left: "50%",
+              backgroundColor: "#E6E5A3CC",
+              font: "Baloo Bhai 2", 
+              boxShadow: "5px 10px #735F32"
             }}
           >
             Welcome to World Wildlife Protection (WWP). WWP works in unity with
@@ -42,6 +50,8 @@ function Home() {
             protect and restore species and their habitats.
           </p>
         </Carousel.Caption>
+        </div>
+        </div>
       </Carousel.Item>
       <Carousel.Item>
         <img
@@ -50,27 +60,34 @@ function Home() {
           alt="Second slide"
           style={{ height: "500px", width: "900px", objectFit: "cover" }}
         />
+        <div class="container">
+          <div class = "box">
         <Carousel.Caption
           style={{
             fontWeight: "bold",
             fontSize: "25px",
             fontFamily: "Baloo Bhai 2",
-            Color: "white",
-            opacity: ".5",
+            color: "#C147E9",
+            paddingLeft: "300px",
+            paddingTop: "400px",
           }}
         >
-          <h5
+          <p
             style={{
               fontWeight: "bold",
               fontSize: "25px",
               textAlign: "center",
-              height: "300px",
-              paddingTop: "40px",
-              paddingLeft: "40px",
-              paddingRight: "40px",
-              background: "white",
-              font: "Baloo Bhai 2",
-              Color: "white",
+              height: "150px",
+              width:"700px",
+              top: "50%",
+              left: "50%",
+              // 
+              // paddingLeft: "200px",
+              // paddingRight: "100px",
+              // background: "white",
+              backgroundColor: "#E6E5A3CC",
+              font: "Baloo Bhai 2", 
+              boxShadow: "5px 10px #735F32"
             }}
           >
             Service to wildlife protection
@@ -78,8 +95,10 @@ function Home() {
             <br></br>
             At WWP we includes serveral kinds of different services such as
             contact us, FAQ and be a volunteer services
-          </h5>
+          </p>
         </Carousel.Caption>
+        </div>
+        </div>
       </Carousel.Item>
       <Carousel.Item>
         <img
@@ -88,26 +107,34 @@ function Home() {
           alt="First slide"
           style={{ height: "500px", width: "1800px",  objectFit: "cover" }}
         />
+        <div class="container">
+          <div class = "box">
         <Carousel.Caption
           style={{
-            opacity: ".5",
-            // color: "#557153",
+            fontWeight: "bold",
+            fontSize: "25px",
             fontFamily: "Baloo Bhai 2",
-            Color: "white",
+            color: "#C147E9",
+            paddingLeft: "300px",
+            paddingTop: "400px",
           }}
         >
-          <h5
+          <p
             style={{
               fontWeight: "bold",
               fontSize: "25px",
               textAlign: "center",
-              height: "300px",
-              paddingTop: "40px",
-              paddingLeft: "40px",
-              paddingRight: "40px",
-              background: "white",
-              font: "Baloo Bhai 2",
-              Color: "white",
+              height: "150px",
+              width:"700px",
+              top: "50%",
+              left: "50%",
+              // 
+              // paddingLeft: "200px",
+              // paddingRight: "100px",
+              // background: "white",
+              backgroundColor: "#E6E5A3CC",
+              font: "Baloo Bhai 2", 
+              boxShadow: "5px 10px #735F32"
             }}
           >
             Join Our Team
@@ -115,8 +142,10 @@ function Home() {
             <br></br>
             Wildlife conservation volunteering is the perfect conservation
             opportunity to protect endangered species from extinction.{" "}
-          </h5>
+          </p>
         </Carousel.Caption>
+        </div>
+        </div>
       </Carousel.Item>
     </Carousel>
   );

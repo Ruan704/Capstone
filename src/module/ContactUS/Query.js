@@ -8,7 +8,8 @@ import { v4 as uuid } from "uuid";
 import "./Query.css";
 import { connect } from "react-redux";
 import { onAddContactData } from "../../action";
-
+import Container from "@mui/material/Container";
+import CssBaseline from "@mui/material/CssBaseline";
 class Query extends Component {
   constructor() {
     super();
@@ -172,7 +173,7 @@ class Query extends Component {
 
   render() {
     return (
-      <div className="container">
+      <div className="container" >
         <h2
           style={{
             textAlign: "center",
@@ -195,14 +196,31 @@ class Query extends Component {
           We would like to hear from your question and <br></br> help us success{" "}
           Feel free to get in touch with <br></br>us
         </h3>
-        <div className="contact-box">
-          <div className="contact-left">
+        <Container
+          component="main"
+          maxWidth="lg"
+          style={{ marginTop: "20px" }}
+        >
+  <CssBaseline />
+{/* , marginLeft: "200px" */}
+          <div className="contact-box" style={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "center",
+            alignItems: "center",
+            flexWrap: "wrap",
+          }}>
+        {/* </Container> */}
+        {/* <div className="contact-box" maxWidth="lg"
+      style={{ marginTop: "20px" }}> */}
+          <div className="contact-left" style={{maxWidth: "500px"}}>
             <h3
               style={{
-                fontSize: "30px",
-                font: "bold",
+                textAlign: "center",
+                fontSize: "40px",
+                fontWeight: "bold",
                 fontFamily: "Baloo Bhai 2",
-                
+                color: "#f4a460",
               }}
             >
               Send your request
@@ -214,7 +232,6 @@ class Query extends Component {
                     style={{
                       fontSize: "20px",
                       fontFamily: "Baloo Bhai 2",
-                      
                     }}
                   >
                     Name:{" "}
@@ -243,7 +260,6 @@ class Query extends Component {
                     style={{
                       fontSize: "20px",
                       fontFamily: "Baloo Bhai 2",
-                      
                     }}
                   >
                     Email:{" "}
@@ -377,7 +393,7 @@ class Query extends Component {
               </div>
             </form>
           </div>
-          <div className="contact-right">
+          <div className="contact-right" style={{maxWidth: "500px",height:"800px", marginLeft:"170px"}}>
             <h3>Reach Us</h3>
             <table>
               <tr>
@@ -433,7 +449,8 @@ class Query extends Component {
               </tr>
             </table>
           </div>
-        </div>
+        {/* </div> */}</div>
+        </Container>
       </div>
     );
   }

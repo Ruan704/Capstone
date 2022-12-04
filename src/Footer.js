@@ -19,20 +19,17 @@ class Footer extends Component {
               </span>
             </div>
             <div style={{textAlign:"center"}}>
-              <a href="https://www.facebook.com/" class="me-4 link-secondary">
+              <a href="https://www.facebook.com/VeerWildlifeProtection" class="me-4 link-secondary">
                 <i class="fab fa-facebook-f fa-3x"></i>
               </a>
-              <a href="" class="me-4 link-secondary">
+              <a href="https://twitter.com/MoveTheWorldCA" class="me-4 link-secondary">
                 <i class="fab fa-twitter fa-3x"></i>
               </a>
-              <a href="" class="me-4 link-secondary">
+              <a href="https://www.worldanimalprotection.org/?gclid=CjwKCAiAp7GcBhA0EiwA9U0mtvzM9RvgTVRPLtDfWb3rz9UqmZUgPslI_bLNAonBMbI-woo7dsXSWBoCGUIQAvD_BwE" class="me-4 link-secondary">
                 <i class="fab fa-google fa-3x"></i>
               </a>
-              <a href="" class="me-4 link-secondary">
+              <a href="https://www.instagram.com/_.save._.our._.wildlife._/" class="me-4 link-secondary">
                 <i class="fab fa-instagram fa-3x"></i>
-              </a>
-              <a href="" class="me-4 link-secondary">
-                <i class="fab fa-linkedin fa-3x"></i>
               </a>
               <a href="" class="me-4 link-secondary">
                 <i class="fab fa-github fa-3x"></i>

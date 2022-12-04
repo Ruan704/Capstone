@@ -31,3 +31,7 @@
     color: #111010;
     background-color: white;
 }
+
+p:hover{
+    color:blue
+}

@@ -3,6 +3,7 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import ContactPhoneIcon from "@mui/icons-material/ContactPhone";
 import EmailIcon from "@mui/icons-material/Email";
 import image from "../../../images/picture.jpg";
+import "./FormConfirm.css"
 import {
   Button,
   CssBaseline,
@@ -68,18 +69,23 @@ export class FormConfirm extends Component {
     const { values, handleChange } = this.props;
     return (
       <>
-        <Container
-          component="main"
-          maxWidth="sm"
-          style={{ marginTop: "20px", marginLeft: "200px" }}
-        >
+        <Container component="main" maxWidth="lg" style={{ marginTop: "20px" }}>
           <CssBaseline />
-
-          <div className="contact-box">
+          {/* , marginLeft: "200px" */}
+          <div
+            className="contact-box"
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "center",
+              alignItems: "center",
+              flexWrap: "wrap",
+            }}
+          >
             <br></br>
             <br></br>
 
-            <div className="contact-left">
+            <div className="contact-left" style={{ maxWidth: "500px" }}>
               <form>
                 <h3
                   style={{
@@ -204,6 +210,7 @@ export class FormConfirm extends Component {
                     aria-describedby="modal-modal-description"
                   >
                     <Box
+                    class= "box"
                       sx={{
                         position: "absolute",
                         top: "50%",
@@ -216,8 +223,33 @@ export class FormConfirm extends Component {
                         p: 4,
                       }}
                     >
-                      <button onClick={this.handleCloseModal}>x</button>
-                      <h1>12345</h1>
+                      <div class="terms-box">
+                        <div class="terms-text">
+                      {/* <button >x</button> */}
+                      <h2>Terms and condition</h2>
+                      <p>Last Edit: 4/12/2022</p>
+                      <p>Greeting Users</p>
+                      <p>
+                        By accessing, registering for, downloading or installing
+                        the Platform and/or using the Services, you agree to be
+                        bound by these Terms of Use. If you are agreeing to be
+                        bound on behalf of your employer or another entity, you
+                        represent and warrant that: (i) your employer, or the
+                        applicable entity, is duly organised, validly existing
+                        and in good standing under the laws of the country in
+                        which it is organised or incorporated; (ii) you have
+                        full legal authority to bind your employer, or the
+                        applicable entity, to these terms and conditions; (iii)
+                        you have read and understand these Terms of Use; and
+                        (iv) you agree, on behalf of the party that you
+                        represent, to these Terms of Use.
+                      </p>
+                      <h4>I agree to the <span>Terms of Service</span> and I read the privacy notice</h4>
+                      <div class="buttons">
+                        <button class="btn red-btn" onClick={this.handleCloseModal}>Close</button>
+                      </div>
+                      </div>
+                      </div>
                     </Box>
                   </Modal>
                   <Typography
@@ -276,7 +308,7 @@ export class FormConfirm extends Component {
               </form>
             </div>
 
-            <div className="contact-right">
+            <div className="contact-right" style={{ maxWidth: "500px" }}>
               <h3>Reach Us</h3>
               <table>
                 <tr>
