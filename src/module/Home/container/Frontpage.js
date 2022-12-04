@@ -39,6 +39,7 @@ class Frontpage extends Component {
         <Stack3 />
         <br></br>
         <Stack4 />
+        <br></br>
         <News />
       </div>
     );

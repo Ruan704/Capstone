@@ -4,7 +4,7 @@ import Stack from "@mui/material/Stack";
 import { styled } from "@mui/material/styles";
 import volunteer from "../../../images/vol.jpg";
 import { useNavigate } from "react-router";
-
+import "./stack3.css";
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
   ...theme.typography.body2,
@@ -22,11 +22,15 @@ export default function Stack4() {
         spacing={{ xs: 1, sm: 2, md: 4 }}
       >
         <Item sx={{ boxShadow: "none", backgroundColor: "#557153" }}>
+        <div class="container">
+          <div class = "box">
           <img
             src={volunteer}
             alt="Joinus"
             style={{ width: "300px", height: "300px", objectFit: "cover" }}
           />
+           </div>
+        </div>
         </Item>
         <Item sx={{ boxShadow: "none", backgroundColor: "#7D8F69" }}>
           <div className="homevolunteer">
@@ -37,7 +41,6 @@ export default function Stack4() {
                 textAlign: "center",
                 color: "#E6E5A3",
                 fontFamily: "Baloo Bhai 2",
-                
                 marginTop: "25px",
                 paddingLeft: "25px",
                 paddingRight: "25px",
@@ -64,6 +67,7 @@ export default function Stack4() {
                 anti-poaching measures.If interested to play a part to save the
                 animal please press the button for volunteering below.
               </h8>
+              <br></br>
               <button
                 className="btn btn-primary"
                 onClick={() => navigate("/Front")}

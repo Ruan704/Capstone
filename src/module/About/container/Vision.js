@@ -6,7 +6,7 @@ const Vision = () => {
         <h1 style={{textAlign: "center"}}>VISION</h1>
         <div className="first">
           <div className="des-text">
-            <p style={{fontSize:"20px", fontWeight: 'bold', marginLeft: "300px" }}>
+            <p style={{fontSize:"20px", fontWeight: 'bold', marginLeft: "300px", fontFamily: "'Baloo Bhai 2', cursive" }}>
            View a different world with different perspective of eye.
             </p>
           </div>

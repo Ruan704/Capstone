@@ -355,13 +355,13 @@ class Query extends Component {
                   onClick={this.handleSubmit}
                   style={{
                     width: "200px",
-                    height: "100px",
+                    height: "50px",
                     margin: "auto",
                     marginLeft: "200px",
-                    fontSize: "30px",
+                    fontSize: "15px",
                     fontFamily: "Baloo Bhai 2",
-                    
                     backgroundColor: "#f4a460",
+                    borderRadius: "25px"
                   }}
                 >
                   <span

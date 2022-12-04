@@ -12,15 +12,15 @@ function Home() {
           className="d-block w-100"
           src={image2}
           alt="Third slide"
-          style={{ height: "500px", width: "900px" }}
+          style={{ height: "500px", width: "900px",  objectFit: "cover" }}
         />
         <Carousel.Caption
           style={{
-            color: "#557153",
+            // color: "#557153",
             fontWeight: "bold",
             fontSize: "25px",
             fontFamily: "Baloo Bhai 2",
-            
+            Color: "white",
             opacity: ".5",
           }}
         >
@@ -28,7 +28,6 @@ function Home() {
             style={{
               fontWeight: "bold",
               fontSize: "25px",
-              color: "#557153",
               textAlign: "center",
               height: "300px",
               paddingTop: "40px",
@@ -36,7 +35,6 @@ function Home() {
               paddingRight: "40px",
               background: "white",
               font: "Baloo Bhai 2",
-              
             }}
           >
             Welcome to World Wildlife Protection (WWP). WWP works in unity with
@@ -50,15 +48,14 @@ function Home() {
           className="d-block w-100"
           src={image1}
           alt="Second slide"
-          style={{ height: "500px", width: "900px" }}
+          style={{ height: "500px", width: "900px", objectFit: "cover" }}
         />
         <Carousel.Caption
           style={{
-            color: "#557153",
             fontWeight: "bold",
             fontSize: "25px",
             fontFamily: "Baloo Bhai 2",
-            
+            Color: "white",
             opacity: ".5",
           }}
         >
@@ -66,7 +63,6 @@ function Home() {
             style={{
               fontWeight: "bold",
               fontSize: "25px",
-              color: "#557153",
               textAlign: "center",
               height: "300px",
               paddingTop: "40px",
@@ -74,7 +70,7 @@ function Home() {
               paddingRight: "40px",
               background: "white",
               font: "Baloo Bhai 2",
-              
+              Color: "white",
             }}
           >
             Service to wildlife protection
@@ -90,22 +86,20 @@ function Home() {
           className="volunteer"
           src={volunteer}
           alt="First slide"
-          style={{ height: "500px", width: "1500px" }}
+          style={{ height: "500px", width: "1800px",  objectFit: "cover" }}
         />
         <Carousel.Caption
           style={{
-            color: "white",
             opacity: ".5",
-            color: "#557153",
+            // color: "#557153",
             fontFamily: "Baloo Bhai 2",
-            
+            Color: "white",
           }}
         >
           <h5
             style={{
               fontWeight: "bold",
               fontSize: "25px",
-              color: "#557153",
               textAlign: "center",
               height: "300px",
               paddingTop: "40px",
@@ -113,7 +107,7 @@ function Home() {
               paddingRight: "40px",
               background: "white",
               font: "Baloo Bhai 2",
-              
+              Color: "white",
             }}
           >
             Join Our Team

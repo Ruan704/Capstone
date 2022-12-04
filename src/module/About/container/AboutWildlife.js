@@ -26,7 +26,6 @@ const AboutWildlife = () => {
               fontWeight: "bold",
               color: "#996600",
               fontFamily: "Baloo Bhai 2",
-              
             }}
           >
             CHARTING A CHANGING HABITAT
@@ -39,7 +38,6 @@ const AboutWildlife = () => {
               fontWeight: "bold",
               display: "inline",
               fontFamily: "Baloo Bhai 2",
-              
             }}
           >
             As the world’s leading conservation organization, Our teams works in

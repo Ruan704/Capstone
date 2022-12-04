@@ -20,7 +20,7 @@ const ThirdPage = () => {
   useEffect(() => {
     axios
       .get(
-        "https://newsapi.org/v2/everything?q=nature&pageSize=6&apiKey=5ba853a666084f2789ba19fb82268284"
+        "https://newsdata.io/api/1/news?apikey=pub_14166fee73acf4d8d8326c94ed921ea7c5979&q=natural"
       )
       .then((res) => {
         console.log(res.data.articles);

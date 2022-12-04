@@ -32,9 +32,9 @@ export class FormDetail extends Component {
 
     if (name.length != 0 && email.length != 0 && !isNaN(contact)) {
       if (
-        nameError.length == 0 &&
+        nameError.length &&
         emailError.length == 0 &&
-        contactError.trim.length == 0
+        contactError.length == 0
       ) {
         this.props.nextStep();
       }

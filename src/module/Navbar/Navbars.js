@@ -20,7 +20,7 @@ function Navbars() {
           <h1>
             <img
               src={Wildlife}
-              style={{ width: "150px", height: "70px", marginTop: "25px" }}
+              style={{ width: "200px", height: "100px", marginTop: "25px" }}
             />
           </h1>
           &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
@@ -146,7 +146,6 @@ function Navbars() {
                   Contact Us
                 </Nav.Link>
               </li>
-              {/* <li><Nav.Link  }>Services</Nav.Link></li> */}
             </Nav>
           </Navbar.Collapse>
         </Container>

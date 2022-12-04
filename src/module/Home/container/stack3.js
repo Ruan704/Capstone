@@ -4,7 +4,7 @@ import Stack from "@mui/material/Stack";
 import { styled } from "@mui/material/styles";
 import Home from "../../../images/home2.jpg";
 import { useNavigate } from "react-router";
-
+import "./stack3.css";
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
   ...theme.typography.body2,
@@ -53,7 +53,6 @@ export default function Stac3() {
                   fontSize: "20px",
                   color: "#A9AF7E",
                   fontFamily: "Baloo Bhai 2",
-                  
                   paddingLeft: "40px",
                   paddingRight: "40px",
                 }}
@@ -68,7 +67,7 @@ export default function Stac3() {
               <br></br>
               <button
                 className="btn btn-primary"
-                onClick={() => navigate("/sanctuary")}
+                onClick={() => navigate("/gallery-animal")}
                 style={{
                   width: "250px",
                   height: "50px",
@@ -83,13 +82,20 @@ export default function Stac3() {
             </div>
           </div>
         </Item>
+        
         <Item sx={{ boxShadow: "none", backgroundColor: "#557153" }}>
+          <div class="container">
+          <div class = "box">
           <img
             src={Home}
             alt="Joinus"
-            style={{ width: "400px", height: "300px", objectFit: "cover" }}
-          />
+            className="Home"
+            style={{ width: "300px", height: "300px", objectFit: "cover", marginRight:"30px" }}
+          /> 
+          </div>
+        </div>
         </Item>
+       
       </Stack>
     </div>
   );

@@ -4,7 +4,7 @@ import Stack from "@mui/material/Stack";
 import { styled } from "@mui/material/styles";
 import stack from "../../../images/tiger.jpg";
 import { useNavigate } from "react-router";
-
+import "./stack3.css";
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
   ...theme.typography.body2,
@@ -20,13 +20,17 @@ export default function Stack1() {
       <Stack
         direction={{ xs: "column", sm: "row" }}
         spacing={{ xs: 1, sm: 2, md: 4 }}
-      >
+      >     
         <Item sx={{ boxShadow: "none", backgroundColor: "#557153" }}>
+        <div class="container">
+          <div class = "box">
           <img
             src={stack}
             alt="Joinus"
             style={{ width: "200px", height: "300px" }}
           />
+           </div>
+        </div>
         </Item>
         <Item sx={{ boxShadow: "none", backgroundColor: "#7D8F69" }}>
           <div className="homevolunteer">
@@ -60,7 +64,6 @@ export default function Stack1() {
                   fontSize: "20px",
                   color: "#A9AF7E",
                   fontFamily: "Baloo Bhai 2",
-                  
                   paddingLeft: "40px",
                   paddingRight: "40px",
                 }}

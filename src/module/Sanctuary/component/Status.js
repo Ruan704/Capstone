@@ -26,7 +26,7 @@ const Status = () => {
 
   useEffect(() => {
     axios
-      .get("https://api.gbif.org/v1/species")
+      .get("https://newsdata.io/api/1/news?apikey=pub_14166fee73acf4d8d8326c94ed921ea7c5979&q=natural")
       .then((res) => {
         console.log(res.data.results);
         setPost(res.data.results);

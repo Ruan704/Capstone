@@ -4,14 +4,34 @@ import lifewil from "../../images/services-lifewil-6.jpg";
 const AboutWildlife = () => {
   return (
     <div className="aboutwildlife">
-      <h1 style={{textAlign:"center"}}>About Wildlife Supporting</h1>
+      <h1
+        style={{
+          fontSize: "35px",
+          fontWeight: "bold",
+          color: "green",
+          textAlign: "center",
+          fontFamily: "Baloo Bhai 2",
+        }}
+      >
+        About Wildlife Supporting
+      </h1>
+
+      <div className="first">
+        <div className="des-text">
       <p style={{ fontSize: "35px", fontWeight: "bold", color: "#996600" }}>
         CHARTING A CHANGING HABITAT
       </p>
 
       <div className="first">
         <div className="des-text">
-          <p style={{ fontSize: "20px", fontWeight: "bold", display: "inline", textAlign:"center" }}>
+          <p
+            style={{
+              fontSize: "20px",
+              fontWeight: "bold",
+              display: "inline",
+              fontFamily: "Baloo Bhai 2",
+            }}
+          >
             The first step towards inspiring children to do their part for
             wildlife conservation is to connect them to the natural world.
             Adopt-An-Animal School Edition is designed to empower children to be
@@ -26,10 +46,12 @@ const AboutWildlife = () => {
           <img
             alt="img"
             src={lifewil}
-            style={{ width: "500px", height: "600px" }}
+            style={{ width: "500px", height: "600px", marginRight: "-800px" }}
           />
         </div>
       </div>
+    </div>
+    </div>
     </div>
   );
 };

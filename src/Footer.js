@@ -2,13 +2,15 @@ import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
 import Nav from "react-bootstrap/Nav";
+import "./Footer.css"
+// import FooterFunctions from "./FooterFunction"
 class Footer extends Component {
   render() {
     return (
       <>
         <footer class="text-center text-lg-start bg-white text-muted">
           <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom" style={{backgroundColor:"#A9AF7E"}}>
-            <div class="me-5 d-none d-lg-block" style={{color:"red"}}>
+            <div class="me-5 d-none d-lg-block">
               <span style={{color:"grey", fontSize: "25px" }}>
                 Get connected with us on social networks:
               </span>
@@ -34,8 +36,43 @@ class Footer extends Component {
               </a>
             </div>
           </section>
-          <div style={{backgroundColor:"#E6E5A3"}}></div>
-          <section class="" style={{backgroundColor:"#E6E5A3"}}>
+<section class="" style={{backgroundColor:"#E6E5A3"}}>
+<div class="body" >
+  
+           {/* <section class="carousel">
+            <div class="carousel_slider">
+              <ul class="carousel_list">
+                <li class="carousel_item">
+                <span style={{color:"red"}}>1</span>
+              </li>
+                <li class="carousel_item">
+                <span style={{color:"red"}}>1</span>
+             </li>
+             <li class="carousel_item">
+                <span style={{color:"red"}}>1</span>
+              </li>
+              <li class="carousel_item">
+                <span style={{color:"red"}}>1</span>
+              </li>
+              <li class="carousel_item">
+                <span style={{color:"red"}}>1</span>
+              </li>
+              <li class="carousel_item">
+                <span style={{color:"red"}}>1</span>
+              </li>
+              <li class="carousel_item">
+                <span style={{color:"red"}}>1</span>
+              </li>
+              <li class="carousel_item">
+                <span style={{color:"red"}}>1</span>
+</li>
+              </ul>
+            </div>
+           </section> */}
+           {/* <FooterFunctions/> */}
+
+          <div ></div>
+          {/* // style={{backgroundColor:"#E6E5A3"}} */}
             <div class="container text-center text-md-start mt-5">
               <div class="row mt-3" >
                 <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
@@ -63,7 +100,7 @@ class Footer extends Component {
                   <li>
                     <Nav.Link
                       as={Link}
-                      to="/Frontpage"
+                      to="/"
                       className="words"
                       style={{ fontSize: "20px" }}
                     >
@@ -74,7 +111,7 @@ class Footer extends Component {
                   <li>
                     <Nav.Link
                       as={Link}
-                      to="/aboutComponent"
+                      to="/overview"
                       style={{ fontSize: "20px" }}
                     >
                       About
@@ -84,7 +121,7 @@ class Footer extends Component {
                   <li>
                     <Nav.Link
                       as={Link}
-                      to="/sanctuary"
+                      to="/gallery-animal"
                       style={{ fontSize: "20px" }}
                     >
                       Species
@@ -120,6 +157,7 @@ class Footer extends Component {
                     </Nav.Link>
                   </li>
                   <li>
+                    <br></br>
                     <Nav.Link
                       as={Link}
                       to="/TermsAndCondition"
@@ -157,6 +195,7 @@ class Footer extends Component {
                   </p>
                 </div>
               </div>
+            </div>
             </div>
           </section>
           <div class="text-center p-4">

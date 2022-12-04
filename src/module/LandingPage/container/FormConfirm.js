@@ -72,7 +72,7 @@ export class FormConfirm extends Component {
                     fontSize: "40px",
                     fontWeight: "bold",
                     fontFamily: "Baloo Bhai 2",
-                    
+                    color: "#f4a460"
                   }}
                 >
                   We would like to hear more about you
@@ -178,37 +178,44 @@ export class FormConfirm extends Component {
                     Your Privacy is Important to us. For Details about our use
                     of your information, we always keeps in top secret
                   </Typography>
+                  <div>
                   <Button
                     cariant="contained"
                     type="submit"
                     disabled={this.state.isChecked ? false : true}
                     onClick={this.continue}
                     style={{
-                      width: "150px",
-                      height: "100px",
+                      width: "200px",
+                      height: "50px",
                       margin: "auto",
-                      fontSize: "20px",
+                      fontSize: "15px",
+                      fontFamily: "Baloo Bhai 2",
+                      borderRadius: "25px",
                     }}
                   >
                     Submit Form
                   </Button>
-
+</div>
+<div>
                   <span className="btnBack">
                     <Button
                       variant="contained"
                       type="submit"
                       onClick={this.back}
                       style={{
-                        width: "150px",
-                        height: "100px",
+                        width: "200px",
+                        height: "50px",
                         margin: "auto",
-                        fontSize: "10px",
+                        fontSize: "15px",
+                        fontFamily: "Baloo Bhai 2",
+                        backgroundColor: "#f4a460",
+                        borderRadius: "25px"
                       }}
                     >
                       Go Back
                     </Button>
                   </span>
-
+</div>
                   {values.formIsValid ? null : (
                     <p style={{ color: "green", fontSize: "15px" }}>
                       {this.state.formConfirmError}
@@ -252,15 +259,15 @@ export class FormConfirm extends Component {
                   </td>
                   <br></br>
                 </tr>
-                <img
+              </table>
+              <img
                   src={image}
                   style={{
-                    width: "300px",
-                    height: "250px",
-                    marginLeft: "80px",
+                    width: "400px",
+                    height: "200px",
+                    margin: "40px"
                   }}
                 />
-              </table>
             </div>
             <br />
           </div>

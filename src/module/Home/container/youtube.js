@@ -21,6 +21,7 @@ class youtube extends Component {
     const opts = {
       height: "350",
       width: "500",
+      marginTop:"40px",
     };
 
     const { videoId } = this.props;
@@ -28,12 +29,12 @@ class youtube extends Component {
     return (
       <div
         style={{
+          padding: "20px",
           fontSize: "25px",
           color: "light-brown",
           textAlign: "center",
           background: "#cc9900",
           fontFamily: "Baloo Bhai 2",
-          
           fontWeight: "bold",
         }}
       >
