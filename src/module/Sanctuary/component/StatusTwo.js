@@ -27,7 +27,6 @@ function Search() {
   };
 
   return (
-    
     <div className="searchAnimal" style={{textAlign:"center", margin:"30px"}}>
     <Grid container spacing={{ xs: 2, md: 2 }} columns={{ xs:4, sm:5, md:5 }}>
     <h1>Search for Animal Status</h1> <br/>

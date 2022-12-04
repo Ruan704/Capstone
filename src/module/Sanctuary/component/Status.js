@@ -26,7 +26,7 @@ const Status = () => {
 
   useEffect(() => {
     axios
-      .get("https://newsdata.io/api/1/news?apikey=pub_14166fee73acf4d8d8326c94ed921ea7c5979&q=natural")
+      .get("https://api.gbif.org/v1/species")
       .then((res) => {
         console.log(res.data.results);
         setPost(res.data.results);
@@ -132,6 +132,11 @@ const Status = () => {
         onChange={handleChange}
         className="input"
       ></input>
+      {/* <div>
+        <button>Accepted</button>
+        <button>Doubtful</button>
+        <button>Synonym</button>
+      </div> */}
       <Grid
         container
         spacing={{ xs: 2, md: 3 }}

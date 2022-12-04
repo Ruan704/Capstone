@@ -11,7 +11,7 @@ import image3 from "../../../images/four.jpg";
 import image4 from "../../../images/five.jpg";
 export default function AlternateTimeline() {
   return (
-    <Timeline position="alternate" style={{ marginLeft: "600px" }}>
+    <Timeline position="alternate" style={{ marginLeft: "700px" }}>
       <TimelineItem>
         <TimelineSeparator>
           <TimelineDot style={{ width: "30px", height: "30px" }} />

@@ -6,7 +6,7 @@ const Session2 = () => {
   return (
     <>
       <section className="branding">
-        <div className="container grid">
+        <div className="container grid" id="sta">
           {data.stastics.map((value) => {
             return (
               <div className="box flex">

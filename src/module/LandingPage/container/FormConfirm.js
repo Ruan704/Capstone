@@ -7,6 +7,8 @@ import {
   Button,
   CssBaseline,
   TextField,
+  Modal,
+  Box,
   Typography,
   Container,
   TextareaAutosize,
@@ -24,6 +26,7 @@ export class FormConfirm extends Component {
     this.state = {
       isChecked: false,
       formConfirmError: "",
+      isModalOpen: false,
     };
   }
 
@@ -42,11 +45,25 @@ export class FormConfirm extends Component {
     event.preventDefault();
     this.props.prevStep();
   };
+
   handleClick = (event) => {
     this.setState({
       isChecked: event.target.checked,
     });
   };
+
+  handleOpenModal = () => {
+    this.setState({
+      isModalOpen: true,
+    });
+  };
+
+  handleCloseModal = () => {
+    this.setState({
+      isModalOpen: false,
+    });
+  };
+
   render() {
     const { values, handleChange } = this.props;
     return (
@@ -64,26 +81,23 @@ export class FormConfirm extends Component {
 
             <div className="contact-left">
               <form>
-                <Typography
-                  component="h1"
-                  variant="h5"
+                <h3
                   style={{
                     textAlign: "center",
                     fontSize: "40px",
                     fontWeight: "bold",
                     fontFamily: "Baloo Bhai 2",
-                    color: "#f4a460"
+                    color: "#f4a460",
                   }}
                 >
                   We would like to hear more about you
-                </Typography>
+                </h3>
                 <div class="input-row">
                   <div class="input-group">
                     <label
                       style={{
                         fontSize: "20px",
                         fontFamily: "Baloo Bhai 2",
-                        
                       }}
                     >
                       occupation:{" "}
@@ -110,7 +124,6 @@ export class FormConfirm extends Component {
                       style={{
                         fontSize: "20px",
                         fontFamily: "Baloo Bhai 2",
-                        
                       }}
                     >
                       NRIC:{" "}
@@ -137,7 +150,6 @@ export class FormConfirm extends Component {
                       style={{
                         fontSize: "20px",
                         fontFamily: "Baloo Bhai 2",
-                        
                       }}
                     >
                       Remark:{" "}
@@ -157,18 +169,57 @@ export class FormConfirm extends Component {
                   </div>
 
                   <br></br>
-                  <br></br>
-                  <FormControlLabel
-                    control={
-                      <Checkbox
-                        {...label}
-                        checked={this.state.isChecked}
-                        onChange={this.handleClick}
-                        inputProps={{ "aria-label": "controlled" }}
-                        label="I agreed to the Terms and Conditions"
-                      />
-                    }
-                  />
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "row",
+                      alignItems: "center",
+                    }}
+                  >
+                    <FormControlLabel
+                      control={
+                        <Checkbox
+                          {...label}
+                          checked={this.state.isChecked}
+                          onChange={this.handleClick}
+                          inputProps={{ "aria-label": "controlled" }}
+                          label="I agreed to the Terms and Conditions"
+                        />
+                      }
+                    />
+                    <h4>
+                      Read more about our{" "}
+                      <a
+                        onClick={this.handleOpenModal}
+                        style={{ color: "orange", cursor: "pointer" }}
+                      >
+                        Terms and Conditions
+                      </a>
+                    </h4>
+                  </div>
+                  <Modal
+                    open={this.state.isModalOpen}
+                    onClose={this.handleCloseModal}
+                    aria-labelledby="modal-modal-title"
+                    aria-describedby="modal-modal-description"
+                  >
+                    <Box
+                      sx={{
+                        position: "absolute",
+                        top: "50%",
+                        left: "50%",
+                        transform: "translate(-50%, -50%)",
+                        width: 400,
+                        bgcolor: "background.paper",
+                        border: "2px solid #000",
+                        boxShadow: 24,
+                        p: 4,
+                      }}
+                    >
+                      <button onClick={this.handleCloseModal}>x</button>
+                      <h1>12345</h1>
+                    </Box>
+                  </Modal>
                   <Typography
                     component="h1"
                     variant="subtitle2"
@@ -179,43 +230,43 @@ export class FormConfirm extends Component {
                     of your information, we always keeps in top secret
                   </Typography>
                   <div>
-                  <Button
-                    cariant="contained"
-                    type="submit"
-                    disabled={this.state.isChecked ? false : true}
-                    onClick={this.continue}
-                    style={{
-                      width: "200px",
-                      height: "50px",
-                      margin: "auto",
-                      fontSize: "15px",
-                      fontFamily: "Baloo Bhai 2",
-                      borderRadius: "25px",
-                    }}
-                  >
-                    Submit Form
-                  </Button>
-</div>
-<div>
-                  <span className="btnBack">
                     <Button
-                      variant="contained"
+                      cariant="contained"
                       type="submit"
-                      onClick={this.back}
+                      disabled={this.state.isChecked ? false : true}
+                      onClick={this.continue}
                       style={{
                         width: "200px",
                         height: "50px",
                         margin: "auto",
                         fontSize: "15px",
                         fontFamily: "Baloo Bhai 2",
-                        backgroundColor: "#f4a460",
-                        borderRadius: "25px"
+                        borderRadius: "25px",
                       }}
                     >
-                      Go Back
+                      Submit Form
                     </Button>
-                  </span>
-</div>
+                  </div>
+                  <div>
+                    <span className="btnBack">
+                      <Button
+                        variant="contained"
+                        type="submit"
+                        onClick={this.back}
+                        style={{
+                          width: "200px",
+                          height: "50px",
+                          margin: "auto",
+                          fontSize: "15px",
+                          fontFamily: "Baloo Bhai 2",
+                          backgroundColor: "#f4a460",
+                          borderRadius: "25px",
+                        }}
+                      >
+                        Go Back
+                      </Button>
+                    </span>
+                  </div>
                   {values.formIsValid ? null : (
                     <p style={{ color: "green", fontSize: "15px" }}>
                       {this.state.formConfirmError}
@@ -261,13 +312,13 @@ export class FormConfirm extends Component {
                 </tr>
               </table>
               <img
-                  src={image}
-                  style={{
-                    width: "400px",
-                    height: "200px",
-                    margin: "40px"
-                  }}
-                />
+                src={image}
+                style={{
+                  width: "400px",
+                  height: "200px",
+                  margin: "40px",
+                }}
+              />
             </div>
             <br />
           </div>

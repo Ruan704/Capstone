@@ -32,10 +32,11 @@ export class FormDetail extends Component {
 
     if (name.length != 0 && email.length != 0 && !isNaN(contact)) {
       if (
-        nameError.length &&
-        emailError.length == 0 &&
-        contactError.length == 0
+        name.length &&
+        email.length &&
+        contact.length
       ) {
+
         this.props.nextStep();
       }
     } else {
@@ -51,17 +52,19 @@ export class FormDetail extends Component {
       <div>
         <Container
           component="main"
-          maxWidth="sm"
-          style={{ marginTop: "20px", marginLeft: "200px" }}
+          maxWidth="lg"
+          style={{ marginTop: "20px" }}
         >
           <CssBaseline />
-          <div className="contact-box">
-            {/* */}
+          <div className="contact-box" style={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "center",
+            alignItems: "center",
+            flexWrap: "wrap",
+          }}>
 
-            <br></br>
-            <br></br>
-
-            <div className="contact-left">
+            <div className="contact-left" style={{maxWidth: "500px"}}>
               <form>
                 <h2
                   style={{
@@ -185,7 +188,7 @@ export class FormDetail extends Component {
               </form>
             </div>
 
-            <div className="contact-right">
+            <div className="contact-right" style={{maxWidth: "500px"}}>
               <h3>Reach Us</h3>
               <table>
                 <tr>

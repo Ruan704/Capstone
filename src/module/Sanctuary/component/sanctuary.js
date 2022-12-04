@@ -26,7 +26,7 @@ const sanctuary = () => {
             fontFamily: "Baloo Bhai 2",
           }}
         />
-        <Tab
+        {/* <Tab
           label="View All Wildlife"
           style={{
             width: "800px",
@@ -34,7 +34,7 @@ const sanctuary = () => {
             fontFamily: "Baloo Bhai 2",
             
           }}
-        />
+        /> */}
       </Tabs>
       {selectedTab === 0 && <Status />}
       {/* {selectedTab == 1 && <StatusTwo/>} */}

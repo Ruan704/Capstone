@@ -18,8 +18,12 @@ const AboutWildlife = () => {
         About Wildlife Protection
       </h1>
 
-      <div className="first">
-        <div className="des-text">
+      <div className="first" style={{
+        display: "flex",
+        flexDirection: "row",
+        flexWrap: "wrap",
+      }}>
+        <div className="des-text" style={{ width: "500px" }}>
           <p
             style={{
               fontSize: "35px",

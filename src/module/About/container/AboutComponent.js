@@ -13,8 +13,8 @@ class AboutComponent extends Component{
             {/* <Vision/> */}
             <br></br>
             {/* <Cards/> */}
-            <br></br><br></br> 
-            <Session5 style={{margin: "500px"}}/>
+            <br></br><br></br>
+            <Session5/>
             </>
         )
     }

@@ -5,6 +5,9 @@ import Nav from "react-bootstrap/Nav";
 import "./Footer.css"
 // import FooterFunctions from "./FooterFunction"
 class Footer extends Component {
+
+  // TODO: Add icon link for social media
+
   render() {
     return (
       <>
@@ -16,7 +19,7 @@ class Footer extends Component {
               </span>
             </div>
             <div style={{textAlign:"center"}}>
-              <a href="" class="me-4 link-secondary">
+              <a href="https://www.facebook.com/" class="me-4 link-secondary">
                 <i class="fab fa-facebook-f fa-3x"></i>
               </a>
               <a href="" class="me-4 link-secondary">
@@ -127,6 +130,7 @@ class Footer extends Component {
                       Species
                     </Nav.Link>
                   </li>
+                  <br></br>
                   <li>
                     <Nav.Link
                       as={Link}
@@ -136,7 +140,7 @@ class Footer extends Component {
                       Services
                     </Nav.Link>
                   </li>
-                  <br></br>
+                  <br/>
                   <li>
                     <Nav.Link
                       as={Link}
@@ -146,7 +150,7 @@ class Footer extends Component {
                       Join
                     </Nav.Link>
                   </li>
-                  <br></br>
+                  <br/>
                   <li>
                     <Nav.Link
                       as={Link}
@@ -156,8 +160,8 @@ class Footer extends Component {
                       Contact
                     </Nav.Link>
                   </li>
+                  <br/>
                   <li>
-                    <br></br>
                     <Nav.Link
                       as={Link}
                       to="/TermsAndCondition"
@@ -166,6 +170,7 @@ class Footer extends Component {
                       Terms And Condition
                     </Nav.Link>
                   </li>
+                  <br/>
                 </div>
                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4" style={{display: "inline", textAlign:"center"}}>
                   <h6
