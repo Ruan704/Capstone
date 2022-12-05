@@ -3,6 +3,7 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import ContactPhoneIcon from "@mui/icons-material/ContactPhone";
 import EmailIcon from "@mui/icons-material/Email";
 import image from "../../../images/picture.jpg";
+import "./FormConfirm.css";
 import {
   Button,
   CssBaseline,
@@ -26,6 +27,7 @@ export class FormConfirm extends Component {
     this.state = {
       isChecked: false,
       formConfirmError: "",
+      isForeigner: false,
       isModalOpen: false,
     };
   }
@@ -126,6 +128,37 @@ export class FormConfirm extends Component {
                         fontFamily: "Baloo Bhai 2",
                       }}
                     >
+                      Data:{" "}
+                    </label>
+
+                    <input list="data" style={{ fontSize: "25px" }} />
+                    <datalist id="data">
+                      <option
+                        style={{ fontSize: "20px" }}
+                        onClick={() => {
+                          this.setState({
+                            isForeigner: true,
+                          });
+                        }}
+                      >
+                        Singaporean
+                      </option>
+                      <option style={{ fontSize: "20px" }}>Foreigner</option>
+                    </datalist>
+                  </div>
+
+                  {this.state.isForeigner ? (
+                      <h3>Thank you!</h3>
+                    ) : (
+                      <>
+                  <div class="form-box"></div>
+                  <div class="input-group">
+                    <label
+                      style={{
+                        fontSize: "20px",
+                        fontFamily: "Baloo Bhai 2",
+                      }}
+                    >
                       NRIC:{" "}
                     </label>
                     <input
@@ -143,7 +176,8 @@ export class FormConfirm extends Component {
                     <p style={{ color: "maroon", fontSize: "15px" }}>
                       {values.NRICError}
                     </p>
-                  </div>
+                  </div></>
+                    )}
 
                   <div class="input-group">
                     <label
@@ -203,46 +237,117 @@ export class FormConfirm extends Component {
                     aria-labelledby="modal-modal-title"
                     aria-describedby="modal-modal-description"
                   >
+                    {/* <div > */}
                     <Box
+                      // class="scroll"
                       sx={{
                         position: "absolute",
                         top: "50%",
                         left: "50%",
                         transform: "translate(-50%, -50%)",
-                        width: 500,
-                        height: 500,
+                        width: 600,
+                        height: 600,
                         bgcolor: "background.paper",
                         border: "2px solid #000",
                         boxShadow: 24,
                         p: 4,
+                        backgroundColor: "#f4a460",
                       }}
                     >
-                      <div class="terms-box">
+                      <div className="terms-img">
                         <div class="terms-text">
-                      {/* <button >x</button> */}
-                      <h2>Terms and condition</h2>
-                      <p>Last Edit: 4/12/2022</p>
-                      <p>Greeting Users</p>
-                      <p>
-                        By accessing, registering for, downloading or installing
-                        the Platform and/or using the Services, you agree to be
-                        bound by these Terms of Use. If you are agreeing to be
-                        bound on behalf of your employer or another entity, you
-                        represent and warrant that: (i) your employer, or the
-                        applicable entity, is duly organised, validly existing
-                        and in good standing under the laws of the country in
-                        which it is organised or incorporated; (ii) you have
-                        full legal authority to bind your employer, or the
-                        applicable entity, to these terms and conditions; (iii)
-                        you have read and understand these Terms of Use; and
-                        (iv) you agree, on behalf of the party that you
-                        represent, to these Terms of Use.
-                      </p>
-                      <h4>I agree to the Terms of Service and I read the privacy notice</h4>
-                      <div class="buttons">
-                        <button class="btn red-btn" onClick={this.handleCloseModal}>Close</button>
-                      </div>
-                      </div>
+                          {/* <button >x</button> */}
+                          <h2
+                            style={{
+                              fontSize: "35px",
+                              color: "white",
+                              textAlign: "center",
+                              fontFamily: "Baloo Bhai 2",
+                            }}
+                          >
+                            Terms and condition
+                          </h2>
+                          <p
+                            style={{
+                              fontSize: "20px",
+                              color: "white",
+                              textAlign: "center",
+                              fontFamily: "Baloo Bhai 2",
+                            }}
+                          >
+                            Last Edit: 4/12/2022
+                          </p>
+                          <p
+                            style={{
+                              fontSize: "20px",
+                              color: "white",
+                              textAlign: "center",
+                              fontFamily: "Baloo Bhai 2",
+                            }}
+                          >
+                            Greeting Users
+                          </p>
+                          <div className="scrollable-div">
+                            <p
+                              style={{
+                                fontSize: "20px",
+                                color: "black",
+                                fontFamily: "Baloo Bhai 2",
+                              }}
+                            >
+                              By accessing, registering for, downloading or
+                              installing the Platform and/or using the Services,
+                              you agree to be bound by these Terms of Use. If
+                              you are agreeing to be bound on behalf of your
+                              employer or another entity, you represent and
+                              warrant that: (i) your employer, or the applicable
+                              entity, is duly organised, validly existing and in
+                              good standing under the laws of the country in
+                              which it is organised or incorporated; (ii) you
+                              have full legal authority to bind your employer,
+                              or the applicable entity, to these terms and
+                              conditions; (iii) you have read and understand
+                              these Terms of Use; and (iv) you agree, on behalf
+                              of the party that you represent, to these Terms of
+                              Use.
+                            </p>
+                          </div>
+                          <h4
+                            style={{
+                              fontSize: "20px",
+                              color: "white",
+                              textAlign: "center",
+                              fontFamily: "Baloo Bhai 2",
+                            }}
+                          >
+                            I agree to the{" "}
+                            <span
+                              style={{
+                                fontSize: "20px",
+                                color: "#f4a460",
+                                fontWeight: "bold",
+                                fontFamily: "Baloo Bhai 2",
+                              }}
+                            >
+                              Terms of Service
+                            </span>{" "}
+                            and I read the privacy notice
+                          </h4>
+                          <div class="rainbow rainbow-1">
+                            <button
+                              class="btn"
+                              onClick={this.handleCloseModal}
+                              style={{
+                                margin: "auto",
+                                marginLeft: "170px",
+                                width: "200px",
+                                height: "50px",
+                              }}
+                            >
+                              Close
+                            </button>
+                          </div>
+                        </div>
                       </div>
                     </Box>
                   </Modal>

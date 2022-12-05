@@ -24,11 +24,8 @@ function Home() {
             fontWeight: "bold",
             fontSize: "25px",
             fontFamily: "Baloo Bhai 2",
-            color: "#C147E9",
             paddingLeft: "300px",
-            paddingTop: "400px",
-            // color: "#E6E5A3CC"
-           
+            paddingTop: "400px",   
           }}
         >
           <p
@@ -67,7 +64,6 @@ function Home() {
             fontWeight: "bold",
             fontSize: "25px",
             fontFamily: "Baloo Bhai 2",
-            color: "#C147E9",
             paddingLeft: "300px",
             paddingTop: "400px",
           }}
@@ -81,10 +77,6 @@ function Home() {
               width:"700px",
               top: "50%",
               left: "50%",
-              // 
-              // paddingLeft: "200px",
-              // paddingRight: "100px",
-              // background: "white",
               backgroundColor: "#E6E5A3CC",
               font: "Baloo Bhai 2", 
               boxShadow: "5px 10px #735F32"
@@ -114,7 +106,6 @@ function Home() {
             fontWeight: "bold",
             fontSize: "25px",
             fontFamily: "Baloo Bhai 2",
-            color: "#C147E9",
             paddingLeft: "300px",
             paddingTop: "400px",
           }}

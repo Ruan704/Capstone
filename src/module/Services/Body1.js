@@ -1,5 +1,5 @@
 import React from "react";
-import lifewil from "../../images/services-lifewil-6.jpg";
+import lifewil from "../../images/monkey.png";
 
 const AboutWildlife = () => {
   return (
@@ -16,14 +16,23 @@ const AboutWildlife = () => {
         About Wildlife Supporting
       </h1>
 
-      <div className="first">
-        <div className="des-text">
-      <p style={{ fontSize: "35px", fontWeight: "bold", color: "#996600" }}>
+      <div className="first"
+       style={{
+        display: "flex",
+        flexDirection: "row",
+        flexWrap: "wrap",
+      }}>
+        <div className="des-text" style={{ width: "500px" }}>
+      <p style={{
+              fontSize: "35px",
+              fontWeight: "bold",
+              color: "#996600",
+              fontFamily: "Baloo Bhai 2",
+            }}>
         CHARTING A CHANGING HABITAT
       </p>
-
-      <div className="first">
-        <div className="des-text">
+      <br></br>
+      <br></br>
           <p
             style={{
               fontSize: "20px",
@@ -46,12 +55,10 @@ const AboutWildlife = () => {
           <img
             alt="img"
             src={lifewil}
-            style={{ width: "500px", height: "600px", marginRight: "-800px" }}
+            style={{marginRight: "100px" ,maxWidth:"500px"}}
           />
         </div>
       </div>
-    </div>
-    </div>
     </div>
   );
 };
