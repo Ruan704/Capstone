@@ -11,6 +11,7 @@ export default class Dashboard extends Component{
       email:'',
       contact:'',
       NRIC:'',
+      nationality:'',
       occupation:'',
       remark:'',
       nameError:'',
@@ -23,10 +24,15 @@ export default class Dashboard extends Component{
     }
    }
 
-   nextStep = () =>{
-    const {step} = this.state;
-    this.setState({step: step+1})
-   }
+    addVolunteer = () => {
+      const num = parseInt(localStorage.getItem('numOfVolunteer')) + 1
+      localStorage.setItem('numOfVolunteer', num);
+    }
+
+    nextStep = () =>{
+      const {step, nationality} = this.state;
+      (nationality !== 'Singaporean') ? this.setState({step: step+2}): this.setState({step: step+1})
+    }
 
    prevStep = () =>{
     const {step} = this.state;
@@ -51,8 +57,11 @@ export default class Dashboard extends Component{
     }
     else if(event.target.id=="NRIC"){
       this.validateNRIC(event.target.value);
+    } else if(event.target.id=="nationality"){
+      this.validateNationality(event.target.value);
     }
    }
+
 
    validateName = (name) => {
     let nameError = this.state.nameError;
@@ -185,12 +194,21 @@ export default class Dashboard extends Component{
     return formIsValid;
   };
   
+  validateNationality = (nationality) => {
+    // first letter must start with S, T, F or G. Last letter must be A - Z
+    this.setState({
+      nationality,
+      formIsValid: nationality ? true: false,
+    });
+    return formIsValid;
+  };
+
   render(){
    const {step} = this.state;
-   const{name, email,contact,NRIC,occupation,remark, nameError, emailError,contactError,NRICError,occupationError,remarkError,formIsValid} = this.state;
-   const values = {name, email,contact,NRIC,occupation,remark, nameError, emailError,contactError,NRICError,occupationError,remarkError,formIsValid};
+   const{name,nationality, email,contact,NRIC,occupation,remark, nameError, emailError,contactError,NRICError,occupationError,remarkError,formIsValid} = this.state;
+   const values = {name, nationality,email,contact,NRIC,occupation,remark, nameError, emailError,contactError,NRICError,occupationError,remarkError,formIsValid};
    switch(step){
-    case 2:
+    case 1:
       return(
         <FormDetail
         nextStep = {this.nextStep}
@@ -198,7 +216,7 @@ export default class Dashboard extends Component{
         values = {values}
         />
       )
-      case 1:
+      case 2:
         return(
           <FormConfirm
           prevStep = {this.prevStep}

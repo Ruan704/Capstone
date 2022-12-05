@@ -95,7 +95,7 @@ export class FormConfirm extends Component {
                   We would like to hear more about you
                 </h3>
                 <div class="input-row">
-                  <div class="input-group">
+                  {/* <div class="input-group">
                     <label
                       style={{
                         fontSize: "20px",
@@ -119,37 +119,8 @@ export class FormConfirm extends Component {
                     <p style={{ color: "maroon", fontSize: "15px" }}>
                       {values.occupationError}
                     </p>
-                  </div>
+                  </div> */}
 
-                  <div class="input-group">
-                    <label
-                      style={{
-                        fontSize: "20px",
-                        fontFamily: "Baloo Bhai 2",
-                      }}
-                    >
-                      Data:{" "}
-                    </label>
-
-                    <input list="data" style={{ fontSize: "25px" }} />
-                    <datalist id="data">
-                      <option
-                        style={{ fontSize: "20px" }}
-                        onClick={() => {
-                          this.setState({
-                            isForeigner: true,
-                          });
-                        }}
-                      >
-                        Singaporean
-                      </option>
-                      <option style={{ fontSize: "20px" }}>Foreigner</option>
-                    </datalist>
-                  </div>
-
-                  {this.state.isForeigner ? (
-                      <h3>Thank you!</h3>
-                    ) : (
                       <>
                   <div class="form-box"></div>
                   <div class="input-group">
@@ -164,7 +135,7 @@ export class FormConfirm extends Component {
                     <input
                       margin="normal"
                       required
-                      fullWiddth
+                      fullWidth
                       type="text"
                       id="NRIC"
                       name="NRIC"
@@ -177,9 +148,8 @@ export class FormConfirm extends Component {
                       {values.NRICError}
                     </p>
                   </div></>
-                    )}
 
-                  <div class="input-group">
+                  {/* <div class="input-group">
                     <label
                       style={{
                         fontSize: "20px",
@@ -200,7 +170,7 @@ export class FormConfirm extends Component {
                     <p style={{ color: "maroon", fontSize: "15px" }}>
                       {values.remarkError}
                     </p>
-                  </div>
+                  </div> */}
 
                   <br></br>
                   <div

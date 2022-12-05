@@ -27,14 +27,16 @@ export class FormDetail extends Component {
     let name = this.props.values.name;
     let email = this.props.values.email;
     let contact = this.props.values.contact;
+    let nationality = this.props.values.nationality;
+    alert(name+email+contact+nationality)
 
     event.preventDefault();
 
-    if (name.length != 0 && email.length != 0 && !isNaN(contact)) {
+    if (name.length != 0 && email.length != 0 && !isNaN(contact) ) {
       if (
         name.length &&
         email.length &&
-        contact.length
+        contact.length && nationality
       ) {
 
         this.props.nextStep();
@@ -63,7 +65,6 @@ export class FormDetail extends Component {
             alignItems: "center",
             flexWrap: "wrap",
           }}>
-
             <div className="contact-left" style={{maxWidth: "500px"}}>
               <form>
                 <h2
@@ -104,7 +105,23 @@ export class FormDetail extends Component {
                       {values.nameError}
                     </p>
                   </div>
-
+                  <div class="input-group" style={{display: "flex", flexDirection: "column"}}>
+                    <label
+                      style={{
+                        fontSize: "20px",
+                        fontFamily: "Baloo Bhai 2",
+                        color: "#f4a460"
+                      }}
+                    >
+                      Nationality:{" "}
+                    </label>
+                    <div style={{display: "flex", flexDirection: "row", justifyContent: "flex-start", alignItems: "center", fontSize: "20px", fontWeight: "normal"}}>
+                    <input type="radio" id="nationality" name="nationality" value="Singaporean" onClick={handleChange("nationality")}/>
+                    <label for="singaporean">Singaporean</label>
+                    <input type="radio" id="nationality" name="nationality" value="Foreigner" onClick={handleChange("nationality")}/>
+                    <label for="foreigner">Foreigner</label>
+                    </div>
+                  </div>
                   <div class="input-group">
                     <label
                       style={{
@@ -176,7 +193,7 @@ export class FormDetail extends Component {
                       borderRadius: "25px"
                     }}
                   >
-                    Continue
+                    {values.nationality !== 'Singaporean'? "Submit" :"Continue"}
                   </Button>
 
                   {values.formIsValid ? null : (

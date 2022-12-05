@@ -27,6 +27,7 @@ const Item = styled(Paper)(({ theme }) => ({
                     <h1>Welcome to Team!</h1>
                     <h4>Thanks for Singing up...</h4>
                     <h4>Our team will contact with you soon.</h4>
+                    {/* <h3>You are the {localStorage.getItem('numOfVolunteer')} volunteers.</h3> */}
                 </Item>
             </Stack>
         </div>
